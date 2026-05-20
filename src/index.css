@@ -1,0 +1,321 @@
+/* ==========================================================================
+   SIGNATE ANIMAL HEALTH & NUTRITION - Bespoke Premium Design System
+   Inspired by: RSPCA Animal Futures (Editorial Serif, High-Contrast Space, Interactive UX)
+   ========================================================================== */
+
+/* 1. Design Tokens & Variables */
+:root {
+  /* Branding Colors (HSL System for high-fidelity harmonies) */
+  --color-forest: hsl(160, 95%, 9%);         /* #012A1C - Primary Clinical Deep Green */
+  --color-forest-medium: hsl(160, 80%, 15%);  /* Mid Green */
+  --color-sage: hsl(150, 20%, 93%);          /* #E9F1EE - Scientific Pastel Sage */
+  --color-sage-light: hsl(150, 25%, 97%);    /* Ultra Light Sage */
+  --color-gold: hsl(46, 68%, 51%);           /* #DCAE2F - Premium Medical Gold Accent */
+  --color-gold-hover: hsl(46, 75%, 45%);     /* Deepened Gold */
+  
+  /* Neutral Space Colors */
+  --color-ivory: hsl(40, 20%, 98%);          /* #FCFAF7 - Natural Cream/Ivory */
+  --color-dark-text: hsl(160, 60%, 12%);     /* Deep Charcoal/Green for text readability */
+  --color-light-text: hsl(40, 30%, 96%);     /* Ivory Text */
+  --color-white: hsl(0, 0%, 100%);
+  --color-border: hsla(160, 40%, 20%, 0.15); /* Subdued medical grid border */
+  
+  /* Shadow & Blur Systems */
+  --shadow-premium: 0 10px 40px -10px rgba(1, 42, 28, 0.08);
+  --shadow-glow: 0 0 25px rgba(220, 174, 47, 0.25);
+  --blur-glass: blur(14px);
+  --border-glass: 1px solid rgba(255, 255, 255, 0.08);
+  
+  /* Font Families */
+  --font-serif: 'Lora', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  
+  /* Layout Standards */
+  --max-width: 1320px;
+  --header-height: 80px;
+  
+  /* Smooth Transitions */
+  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 2. Global Resets & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: var(--color-ivory);
+  color: var(--color-dark-text);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Custom Premium Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-ivory);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-forest-medium);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);
+}
+
+/* Typography Rules */
+h1, h2, h3, .editorial-title {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+p, span, li, button, input, select {
+  font-family: var(--font-sans);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-fast);
+}
+
+/* 3. Utility Layout Classes */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-padding {
+  padding: 8rem 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+  .section-padding {
+    padding: 5rem 0;
+  }
+}
+
+/* 4. Animation Keyframes */
+@keyframes pulseGlow {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.4;
+    box-shadow: 0 0 0 10px rgba(220, 174, 47, 0);
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+.fade-in {
+  animation: fadeSlideIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* 5. Custom Reusable Layout Components */
+
+/* Premium Glassmorphic Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: var(--blur-glass);
+  -webkit-backdrop-filter: var(--blur-glass);
+  border: 1px solid rgba(1, 42, 28, 0.08);
+  border-radius: 20px;
+  box-shadow: var(--shadow-premium);
+  transition: var(--transition-smooth);
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 45px -10px rgba(1, 42, 28, 0.12);
+}
+
+.glass-card-dark {
+  background: rgba(1, 30, 20, 0.65);
+  backdrop-filter: var(--blur-glass);
+  -webkit-backdrop-filter: var(--blur-glass);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+/* Glowing Interactive Hotspot */
+.hotspot-ring {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.hotspot-core {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--color-gold);
+  box-shadow: 0 0 10px var(--color-gold);
+  transition: var(--transition-fast);
+}
+
+.hotspot-pulse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid var(--color-gold);
+  animation: pulseGlow 2.5s infinite ease-in-out;
+  pointer-events: none;
+}
+
+.hotspot-ring:hover .hotspot-core {
+  transform: scale(1.4);
+  background-color: var(--color-white);
+  box-shadow: 0 0 15px var(--color-gold), 0 0 25px var(--color-gold);
+}
+
+/* 6. RSPCA-style Interactive Tab Flips */
+.perspective-container {
+  perspective: 1500px;
+}
+
+.flipper-card {
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.flipper-card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+/* 7. Clinical Form Buttons */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-gold);
+  color: var(--color-forest);
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  box-shadow: 0 4px 15px rgba(220, 174, 47, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-white);
+  color: var(--color-forest);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: var(--color-white);
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--color-white);
+  transform: translateY(-2px);
+}
+
+/* 8. Modern Input Styling */
+.form-input {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  background: rgba(1, 42, 28, 0.03);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  color: var(--color-dark-text);
+  font-size: 1rem;
+  outline: none;
+  transition: var(--transition-smooth);
+}
+
+.form-input:focus {
+  border-color: var(--color-forest);
+  background: var(--color-white);
+  box-shadow: 0 0 0 4px rgba(1, 42, 28, 0.05);
+}
+
+/* 9. Scientific Molecule Grids */
+.molecule-bg {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(220, 174, 47, 0.02) 0%, transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(1, 42, 28, 0.03) 0%, transparent 50%);
+  z-index: 0;
+  pointer-events: none;
+}
