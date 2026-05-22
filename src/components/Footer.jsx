@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, Clock, MapPin, Send, CheckCircle, HelpCircle } from 'lucide-react';
+import signateLogo from '../../IMages/signate logo.png';
 
 export default function Footer() {
   const [formData, setFormData] = useState({
@@ -255,9 +256,11 @@ export default function Footer() {
           
           {/* Logo & motto */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            <span style={{ fontFamily: 'var(--font-serif)', fontSize: '1.6rem', fontWeight: 700, letterSpacing: '0.5px' }}>
-              SIGNATE
-            </span>
+            <img
+              src={signateLogo}
+              alt="Signate logo"
+              style={{ height: '44px', width: 'auto', objectFit: 'contain', maxWidth: '220px' }}
+            />
             <p style={{ fontSize: '0.85rem', color: 'rgba(255, 255, 255, 0.6)', lineHeight: 1.5, maxWidth: '280px', fontWeight: 300 }}>
               Specialized biochemistry and molecular animal wellness networks formulated by doctoral bioscientists.
             </p>

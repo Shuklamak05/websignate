@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X, Shield, Activity, GraduationCap } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { Menu, X } from 'lucide-react';
+import signateLogo from '../../IMages/signate logo.png';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -51,35 +52,15 @@ export default function Navbar() {
       }}>
         {/* Modern Scientific Logo */}
         <a href="#home" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontWeight: 800 }}>
-          <div style={{
-            width: '40px',
-            height: '40px',
-            borderRadius: '12px',
-            backgroundColor: 'var(--color-gold)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            color: 'var(--color-forest)',
-            boxShadow: '0 4px 15px rgba(220, 174, 47, 0.3)'
-          }}>
-            <Activity size={22} strokeWidth={2.5} />
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
-            <span style={{
-              fontFamily: 'var(--font-serif)',
-              fontSize: '1.4rem',
-              fontWeight: 700,
-              lineHeight: 1.1,
-              letterSpacing: '0.5px'
-            }}>SIGNATE</span>
-            <span style={{
-              fontSize: '0.65rem',
-              letterSpacing: '2.5px',
-              color: 'var(--color-gold)',
-              fontWeight: 700,
-              textTransform: 'uppercase'
-            }}>Scientific Solutions</span>
-          </div>
+          <img
+            src={signateLogo}
+            alt="Signate logo"
+            style={{
+              height: '42px',
+              width: 'auto',
+              objectFit: 'contain'
+            }}
+          />
         </a>
 
         {/* Desktop Links */}
