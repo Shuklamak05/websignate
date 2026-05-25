@@ -3,16 +3,12 @@ import { Menu, X } from 'lucide-react';
 import signateLogo from '../../IMages/signate logo.png';
 
 export default function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 40) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 10);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -20,11 +16,11 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Home', href: '#home' },
-    { name: 'Interactive Bio-Map', href: '#diagnostic-biomap' },
-    { name: 'Formulations', href: '#catalog' },
-    { name: 'Dose Finder', href: '#dose-finder' },
-    { name: 'Research & Services', href: '#services' },
-    { name: 'PhD Experts', href: '#founders' }
+    { name: 'About Us', href: '#about' },
+    { name: 'Products', href: '#catalog' },
+    { name: 'Services', href: '#services' },
+    { name: 'Insights/ Blogs', href: '#services' },
+    { name: 'Contact Us', href: '#contact' }
   ];
 
   return (
@@ -38,64 +34,69 @@ export default function Navbar() {
       display: 'flex',
       alignItems: 'center',
       transition: 'var(--transition-smooth)',
-      backgroundColor: isScrolled ? 'rgba(1, 42, 28, 0.9)' : 'transparent',
-      backdropFilter: isScrolled ? 'var(--blur-glass)' : 'none',
-      borderBottom: isScrolled ? '1px solid rgba(255, 255, 255, 0.08)' : '1px solid transparent',
-      color: 'var(--color-white)',
+      backgroundColor: 'hsl(60, 38%, 92%)',
+      borderBottom: isScrolled ? '1px solid rgba(1, 42, 28, 0.10)' : '1px solid rgba(1, 42, 28, 0.06)',
+      color: 'var(--color-forest)',
       padding: '0 2rem'
     }}>
       <div className="container" style={{
-        display: 'flex',
-        justifyContent: 'space-between',
+        display: 'grid',
+        gridTemplateColumns: '260px 1fr 220px',
         alignItems: 'center',
         padding: 0
       }}>
-        {/* Modern Scientific Logo */}
+        {/* Logo */}
         <a href="#home" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', fontWeight: 800 }}>
           <img
             src={signateLogo}
             alt="Signate logo"
             style={{
-              height: '42px',
+              height: '44px',
               width: 'auto',
               objectFit: 'contain'
             }}
           />
         </a>
 
-        {/* Desktop Links */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }} className="desktop-only">
+        {/* Desktop Links (centered like the reference) */}
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '2.6rem' }} className="desktop-only">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
               style={{
-                fontSize: '0.9rem',
+                fontSize: '1.05rem',
                 fontWeight: 600,
-                color: 'rgba(255, 255, 255, 0.8)',
-                letterSpacing: '0.2px'
+                color: 'rgba(1, 42, 28, 0.78)',
+                letterSpacing: '0.1px'
               }}
               onMouseEnter={(e) => {
-                e.target.style.color = 'var(--color-gold)';
-                e.target.style.transform = 'translateY(-1px)';
+                e.target.style.color = 'rgba(1, 42, 28, 1)';
               }}
               onMouseLeave={(e) => {
-                e.target.style.color = 'rgba(255, 255, 255, 0.8)';
-                e.target.style.transform = 'translateY(0)';
+                e.target.style.color = 'rgba(1, 42, 28, 0.78)';
               }}
             >
               {link.name}
             </a>
           ))}
+        </div>
+
+        {/* Right-side CTA */}
+        <div className="desktop-only" style={{ display: 'flex', justifyContent: 'flex-end' }}>
           <a
             href="#contact"
-            className="btn-primary"
             style={{
-              padding: '0.6rem 1.4rem',
-              fontSize: '0.85rem'
+              backgroundColor: 'hsl(46, 68%, 51%)',
+              color: 'var(--color-forest)',
+              fontWeight: 800,
+              fontSize: '1rem',
+              padding: '0.85rem 1.4rem',
+              borderRadius: '999px',
+              boxShadow: '0 12px 26px rgba(220, 174, 47, 0.25)'
             }}
           >
-            Scientific Consult
+            Contact Us
           </a>
         </div>
 
@@ -105,7 +106,7 @@ export default function Navbar() {
           style={{
             background: 'none',
             border: 'none',
-            color: 'var(--color-white)',
+            color: 'var(--color-forest)',
             cursor: 'pointer',
             display: 'none' /* Will show via inline responsiveness helper */
           }}
@@ -120,6 +121,7 @@ export default function Navbar() {
         @media (max-width: 1024px) {
           .desktop-only { display: none !important; }
           .mobile-toggle { display: block !important; }
+          nav .container { grid-template-columns: 1fr auto !important; }
         }
       `}} />
 
@@ -131,7 +133,7 @@ export default function Navbar() {
           left: 0,
           width: '100%',
           height: 'calc(100vh - var(--header-height))',
-          backgroundColor: 'var(--color-forest)',
+          backgroundColor: 'hsl(60, 38%, 92%)',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
@@ -149,7 +151,7 @@ export default function Navbar() {
                 fontSize: '1.4rem',
                 fontFamily: 'var(--font-serif)',
                 fontWeight: 600,
-                color: 'var(--color-white)'
+                color: 'var(--color-forest)'
               }}
             >
               {link.name}
@@ -158,14 +160,17 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="btn-primary"
             style={{
-              padding: '0.8rem 2rem',
+              backgroundColor: 'hsl(46, 68%, 51%)',
+              color: 'var(--color-forest)',
+              fontWeight: 800,
               fontSize: '1rem',
+              padding: '0.85rem 1.6rem',
+              borderRadius: '999px',
               marginTop: '1rem'
             }}
           >
-            Get in Touch
+            Contact Us
           </a>
         </div>
       )}
