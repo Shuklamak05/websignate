@@ -225,7 +225,7 @@ export default function ServicesShowcase() {
               Scientist Credentials
             </span>
             <h2 className="editorial-title" style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)', color: 'var(--color-forest)' }}>
-              Meet The <span style={{ fontStyle: 'italic' }}>PhD Founders</span>
+              Meet The <span style={{ fontStyle: 'italic' }}>Founders</span>
             </h2>
             <p style={{ maxWidth: '650px', color: 'var(--color-dark-text)', opacity: 0.8, fontSize: '1rem' }}>
               Signate is founded and operationally directed by molecular biochemists. We design formulations from the cellular level up.
@@ -259,19 +259,32 @@ export default function ServicesShowcase() {
                   <Quote size={40} strokeWidth={1} />
                 </div>
 
-                {/* Scientist Icon */}
+                {/* Founder Photo */}
                 <div style={{
-                  width: '54px',
-                  height: '54px',
-                  borderRadius: '16px',
-                  backgroundColor: 'var(--color-forest)',
+                  width: '84px',
+                  height: '84px',
+                  borderRadius: '20px',
+                  overflow: 'hidden',
+                  border: '2px solid rgba(1, 42, 28, 0.12)',
+                  boxShadow: '0 8px 20px rgba(1, 42, 28, 0.12)',
+                  backgroundColor: 'var(--color-sage)',
                   display: 'flex',
                   alignItems: 'center',
-                  justifyContent: 'center',
-                  color: 'var(--color-gold)',
-                  boxShadow: '0 4px 15px rgba(1, 42, 28, 0.15)'
+                  justifyContent: 'center'
                 }}>
-                  <GraduationCap size={28} />
+                  {dr.image ? (
+                    <img
+                      src={dr.image}
+                      alt={dr.name}
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover'
+                      }}
+                    />
+                  ) : (
+                    <GraduationCap size={30} style={{ color: 'var(--color-forest)' }} />
+                  )}
                 </div>
 
                 {/* Bios */}

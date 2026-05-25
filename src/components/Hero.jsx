@@ -62,13 +62,13 @@ export default function Hero() {
             <h1
               style={{
                 fontFamily: 'var(--font-serif)',
-                fontSize: 'clamp(2.6rem, 4.9vw, 4.3rem)',
+                fontSize: 'clamp(2.1rem, 3.2vw, 3rem)',
                 lineHeight: 1.04,
                 color: 'var(--color-forest)',
                 letterSpacing: '-1.2px'
               }}
             >
-              Welcome to Signate Animal Health <br />&amp; Nutrition
+              Welcome to Signate Animal Health &amp; Nutrition
             </h1>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '1.15rem' }}>

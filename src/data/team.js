@@ -1,6 +1,7 @@
 export const founders = [
   {
     name: "Dr. Keyur Dave",
+    image: "/IMages/keyurdave_pic.png",
     role: "Co-Founder & Director of Biochemistry",
     credentials: "Ph.D. in Biochemistry",
     specialty: "Molecular Biology, Diagnostics & Protein Chemistry",
@@ -9,6 +10,7 @@ export const founders = [
   },
   {
     name: "Dr. Shajil Madhavan",
+    image: "/IMages/shajil_pic.png",
     role: "Co-Founder & Director of Animal Nutrition",
     credentials: "Ph.D. in Veterinary Biotechnology",
     specialty: "Bioprocess Technology & Feed Formulation Engineering",
@@ -17,6 +19,7 @@ export const founders = [
   },
   {
     name: "Dr. Prashant Kunjadia",
+    image: "/IMages/prashant_pic.png",
     role: "Co-Founder & Director of Research & Development",
     credentials: "Ph.D. in Biotechnology",
     specialty: "Bioactive Compounds & Gut Microflora Genomics",
