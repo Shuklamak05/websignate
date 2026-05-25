@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 export default function App() {
   // Shared state variables
   const [activeCompanion, setActiveCompanion] = useState('companion');
+  const [activeCategory, setActiveCategory] = useState('all');
   const [selectedProductId, setSelectedProductId] = useState(null);
 
   // Quick event handler: triggers catalog filter & opens detailed technical drawer instantly
@@ -42,6 +43,8 @@ export default function App() {
 
         {/* 4. Instant searchable clinical product showcase */}
         <ProductCatalog
+          activeCategory={activeCategory}
+          setActiveCategory={setActiveCategory}
           selectedProductId={selectedProductId}
           setSelectedProductId={setSelectedProductId}
         />
