@@ -9,7 +9,7 @@ export default function ServicesShowcase() {
     diagnostics: {
       title: 'Molecular Diagnostics & Pathogen Screen',
       subtitle: 'Doctoral PCR & DNA Assay Systems',
-      description: 'We develop state-of-the-art molecular diagnostics to isolate veterinary pathogens with over 99.9% specificity. Designed by Dr. Keyur Dave (PhD Biochemistry), our assay panels target subclinical pathogens before they damage livestock herds or companion metrics.',
+      description: 'Signate has recently ventured into the field of animal health disease diagnostics. We have standardized molecular diagnostic techniques to identify various types of protozoans present in dogs’ blood, which will greatly enhance the effectiveness of treatment. Additionally, we are actively working on developing several other molecular diagnostic methods to further advance our diagnostic capabilities.',
       capabilities: [
         'Pathogen screening for dairy herds',
         'Polymerase Chain Reaction (PCR) pathogen isolation assays',
@@ -22,7 +22,7 @@ export default function ServicesShowcase() {
     research: {
       title: 'Contract Research & Efficacy Trials',
       subtitle: 'In-vivo Efficacy and Bio-equivalence Studies',
-      description: 'Before any formulation receives the Signate clinical seal, it passes through rigorous in-vitro bio-equivalence testing and clinical validation. Under the leadership of Dr. Prashant Kunjadia (PhD Biotechnology), we conduct contracted clinical research and bioavailability screening.',
+      description: 'Signate’s venture into contract research for animal health and nutrition products brings a wealth of scientific expertise to support your product development journey. Our commitment to accelerating time-to-market and conducting product efficacy trials in ruminants and companion animals sets us apart as a reliable and efficient partner. Together, we can create impactful products that benefit your business and profitable farming.',
       capabilities: [
         'Chelated mineral absorption studies',
         'Gut microflora genomic sequencing assays',
@@ -35,7 +35,7 @@ export default function ServicesShowcase() {
     manufacturing: {
       title: 'Contract Veterinary Manufacturing',
       subtitle: 'ISO & WHO Compliant Specialized Blending',
-      description: 'Our advanced biotechnology plant specializes in blending high-performance, stabilized formulations. Directed by Dr. Shajil Madhavan (PhD Veterinary Biotech), we support contract manufacturing for high-dose synbiotic powders, chelated blocks, and bypass lipids.',
+      description: 'Signate has ventured into the field of contract manufacturing for animal health and nutrition products, further solidifying our commitment to the well-being of animals. Our primary objective is to offer top-tier services that cater to the specific needs of our clients in the animal health industry. Whether you are a start-up looking to enter the market or an established brand seeking to expand your product line, we are here to assist you at every step of the way. One of our key strengths lies in delivering cost-effective solutions without compromising on quality. We strive to optimize the process to ensure competitive pricing, making our services accessible to businesses of all sizes. Whether you require small batches for market testing or large-scale production, we are equipped to meet your needs and deliver on time.',
       capabilities: [
         'Micro-encapsulation rumen-bypass processing',
         'Specialized chelated glycinate tableting',
@@ -59,14 +59,11 @@ export default function ServicesShowcase() {
             SECTION 1: SCIENTIFIC SERVICES SHOWCASE
             ========================================== */}
         <div style={{ textAlign: 'center', marginBottom: '4.5rem', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
-          <span style={{ fontSize: '0.85rem', fontWeight: 800, color: 'var(--color-forest)', textTransform: 'uppercase', letterSpacing: '2.5px' }}>
-            PhD-led Biotechnology Offerings
-          </span>
           <h2 className="editorial-title" style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)', color: 'var(--color-forest)' }}>
-            Research & <span style={{ fontStyle: 'italic' }}>Diagnostics</span>
+            Services
           </h2>
           <p style={{ maxWidth: '650px', color: 'var(--color-dark-text)', opacity: 0.8, fontSize: '1rem' }}>
-            Beyond commercial formulations, we operate advanced diagnostic and manufacturing services for veterinary pathology, feed engineering, and clinical trials.
+            Delivering cutting-edge solutions that are based on scientific research & innovation
           </p>
 
           {/* Service Selector Tabs */}
@@ -118,11 +115,44 @@ export default function ServicesShowcase() {
             gridTemplateColumns: '1.2fr 0.8fr',
             gap: '3rem',
             alignItems: 'center',
-            marginBottom: '6rem'
+            marginBottom: '6rem',
+            position: 'relative',
+            overflow: 'hidden'
           }}>
+            {(activeTab === 'diagnostics' || activeTab === 'research' || activeTab === 'manufacturing') && (
+              <div
+                aria-hidden="true"
+                style={{
+                  position: 'absolute',
+                  inset: 0,
+                  backgroundImage: activeTab === 'diagnostics'
+                    ? "url('/IMages/diagnostics-bg.png')"
+                    : activeTab === 'research'
+                      ? "url('/IMages/research-bg.png')"
+                      : "url('/IMages/manufacturing-bg.png')",
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  opacity: 0.8,
+                  pointerEvents: 'none',
+                  zIndex: 0
+                }}
+              />
+            )}
+            {(activeTab === 'diagnostics' || activeTab === 'research' || activeTab === 'manufacturing') && (
+              <div
+                aria-hidden="true"
+                style={{
+                  position: 'absolute',
+                  inset: 0,
+                  backgroundColor: 'rgba(255, 255, 255, 0.65)',
+                  pointerEvents: 'none',
+                  zIndex: 0
+                }}
+              />
+            )}
             
             {/* Service details */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', position: 'relative', zIndex: 1 }}>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
                 <span style={{ fontSize: '0.8rem', fontWeight: 800, color: activeService.color, textTransform: 'uppercase', letterSpacing: '1px' }}>
                   {activeService.subtitle}
@@ -163,7 +193,9 @@ export default function ServicesShowcase() {
               border: '1px solid rgba(1, 42, 28, 0.08)',
               display: 'flex',
               flexDirection: 'column',
-              gap: '1rem'
+              gap: '1rem',
+              position: 'relative',
+              zIndex: 1
             }}>
               <h4 style={{ fontSize: '0.85rem', fontWeight: 800, textTransform: 'uppercase', color: 'var(--color-forest)', letterSpacing: '0.5px' }}>
                 Core Capabilities & Scope
