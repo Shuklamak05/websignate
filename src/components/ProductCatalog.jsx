@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useEffect } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Search, CheckCircle2, ChevronRight, X, AlertCircle, ShoppingBag } from 'lucide-react';
 import { products } from '../data/products';
 
@@ -215,11 +215,11 @@ function ProductCard({ prod, setSelectedProductId }) {
   );
 }
 
-function ShowMoreCard({ onClick, label }) {
+function ShowMoreCard({ categoryId, label, onShowMore }) {
   return (
-    <div
+    <button
       className="glass-card fade-in"
-      onClick={onClick}
+      type="button"
       style={{
         padding: '2rem',
         backgroundColor: 'var(--color-white)',
@@ -229,8 +229,11 @@ function ShowMoreCard({ onClick, label }) {
         alignItems: 'center',
         gap: '0.9rem',
         borderTop: '4px solid var(--color-forest)',
+        textDecoration: 'none',
+        width: '100%',
         cursor: 'pointer'
       }}
+      onClick={() => onShowMore(categoryId)}
     >
       <h4 style={{ fontSize: '1.1rem', color: 'var(--color-forest)', fontWeight: 700, textAlign: 'center' }}>View All {label} Products</h4>
       <span
@@ -249,45 +252,7 @@ function ShowMoreCard({ onClick, label }) {
       >
         Show More <ChevronRight size={16} />
       </span>
-    </div>
-  );
-}
-
-function ShowLessCard({ onClick, label }) {
-  return (
-    <div
-      className="glass-card fade-in"
-      onClick={onClick}
-      style={{
-        padding: '2rem',
-        backgroundColor: 'var(--color-white)',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: '0.9rem',
-        borderTop: '4px solid var(--color-gold)',
-        cursor: 'pointer'
-      }}
-    >
-      <h4 style={{ fontSize: '1.1rem', color: 'var(--color-forest)', fontWeight: 700, textAlign: 'center' }}>Collapse {label}</h4>
-      <span
-        style={{
-          display: 'inline-flex',
-          alignItems: 'center',
-          gap: '0.5rem',
-          border: '2px solid var(--color-forest)',
-          backgroundColor: 'transparent',
-          color: 'var(--color-forest)',
-          fontWeight: 700,
-          fontSize: '0.85rem',
-          padding: '0.65rem 1.2rem',
-          borderRadius: '100px'
-        }}
-      >
-        Show Less
-      </span>
-    </div>
+    </button>
   );
 }
 
@@ -295,74 +260,20 @@ export default function ProductCatalog({ selectedProductId, setSelectedProductId
   const [searchQuery, setSearchQuery] = useState('');
   const [activeMainCategoryId, setActiveMainCategoryId] = useState('ruminant');
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
-  const [isCategoryExpanded, setIsCategoryExpanded] = useState(false);
+  const [selectedCategoryId, setSelectedCategoryId] = useState(() => new URLSearchParams(window.location.search).get('category'));
 
-  const activeMainCategory = getCategoryById(activeMainCategoryId) || CATEGORY_CONFIG[0];
-
-  // Parse URL search parameters on mount
   useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const catParam = params.get('category');
-    const expandedParam = params.get('expanded');
-
-    if (catParam) {
-      const match = CATEGORY_CONFIG.find((c) => c.id === catParam);
-      if (match) {
-        setActiveMainCategoryId(catParam);
-      }
-    }
-    if (expandedParam === 'true') {
-      setIsCategoryExpanded(true);
-    }
-  }, []);
-
-  // Listen to browser Back/Forward navigation (popstate) to keep state in sync
-  useEffect(() => {
-    const handlePopState = () => {
-      const params = new URLSearchParams(window.location.search);
-      const catParam = params.get('category');
-      const expandedParam = params.get('expanded');
-
-      if (catParam) {
-        const match = CATEGORY_CONFIG.find((c) => c.id === catParam);
-        if (match) {
-          setActiveMainCategoryId(catParam);
-        }
-      } else {
-        setActiveMainCategoryId('ruminant');
-      }
-      setIsCategoryExpanded(expandedParam === 'true');
+    const syncFromLocation = () => {
+      setSelectedCategoryId(new URLSearchParams(window.location.search).get('category'));
     };
 
-    window.addEventListener('popstate', handlePopState);
-    return () => window.removeEventListener('popstate', handlePopState);
+    window.addEventListener('popstate', syncFromLocation);
+    return () => window.removeEventListener('popstate', syncFromLocation);
   }, []);
 
-  // Synchronize state changes to URL search parameters silently
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const currentCat = params.get('category');
-    const currentExpanded = params.get('expanded') === 'true';
-
-    if (currentCat !== activeMainCategoryId || currentExpanded !== isCategoryExpanded) {
-      if (activeMainCategoryId) {
-        params.set('category', activeMainCategoryId);
-      } else {
-        params.delete('category');
-      }
-
-      if (isCategoryExpanded) {
-        params.set('expanded', 'true');
-      } else {
-        params.delete('expanded');
-      }
-
-      const newSearch = params.toString() ? `?${params.toString()}` : '';
-      const newUrl = `${window.location.pathname}${newSearch}${window.location.hash}`;
-
-      window.history.replaceState({ category: activeMainCategoryId, expanded: isCategoryExpanded }, '', newUrl);
-    }
-  }, [activeMainCategoryId, isCategoryExpanded]);
+  const selectedCategory = getCategoryById(selectedCategoryId);
+  const isCategoryPage = Boolean(selectedCategory);
+  const activeMainCategory = getCategoryById(activeMainCategoryId) || CATEGORY_CONFIG[0];
 
   const searchableProducts = useMemo(() => {
     if (!searchQuery.trim()) return products;
@@ -378,6 +289,77 @@ export default function ProductCatalog({ selectedProductId, setSelectedProductId
 
   const selectedProduct = useMemo(() => products.find((p) => p.id === selectedProductId), [selectedProductId]);
 
+  const categoryProducts = useMemo(() => {
+    if (!selectedCategory?.productCategory) return [];
+    return searchableProducts.filter((prod) => prod.category === selectedCategory.productCategory);
+  }, [searchableProducts, selectedCategory]);
+
+  const navigateToCategory = (categoryId) => {
+    const nextUrl = `/?category=${categoryId}#catalog`;
+    window.history.pushState({ categoryId }, '', nextUrl);
+    setSelectedCategoryId(categoryId);
+    const catalog = document.getElementById('catalog');
+    if (catalog) {
+      catalog.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+  const showAllCategories = () => {
+    window.history.pushState({}, '', '/#catalog');
+    setSelectedCategoryId(null);
+    const catalog = document.getElementById('catalog');
+    if (catalog) {
+      catalog.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+  const CategoryTogglePills = ({ categoryPage }) => (
+    <div
+      style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        gap: '0.5rem',
+        marginTop: '1rem',
+        backgroundColor: 'rgba(1, 42, 28, 0.03)',
+        padding: '0.35rem',
+        borderRadius: '100px',
+        border: '1px solid rgba(1, 42, 28, 0.06)'
+      }}
+    >
+      {CATEGORY_CONFIG.map((cat) => {
+        const isActive = categoryPage ? selectedCategory?.id === cat.id : activeMainCategoryId === cat.id;
+        const commonStyle = {
+          padding: '0.55rem 1.4rem',
+          borderRadius: '100px',
+          border: 'none',
+          fontSize: '0.85rem',
+          fontWeight: 700,
+          cursor: 'pointer',
+          transition: 'var(--transition-smooth)',
+          backgroundColor: isActive ? 'var(--color-forest)' : 'transparent',
+          color: isActive ? 'var(--color-white)' : 'var(--color-forest)',
+          textDecoration: 'none',
+          display: 'inline-flex',
+          alignItems: 'center'
+        };
+
+        if (categoryPage) {
+          return (
+            <button key={cat.id} type="button" onClick={() => navigateToCategory(cat.id)} style={commonStyle}>
+              {cat.label}
+            </button>
+          );
+        }
+
+        return (
+          <button key={cat.id} onClick={() => setActiveMainCategoryId(cat.id)} style={commonStyle}>
+            {cat.label}
+          </button>
+        );
+      })}
+    </div>
+  );
   return (
     <section id="catalog" className="section-padding" style={{ backgroundColor: 'var(--color-ivory)' }}>
       <div className="container">
@@ -386,7 +368,7 @@ export default function ProductCatalog({ selectedProductId, setSelectedProductId
             PhD Formulated Supplements
           </span>
           <h2 className="editorial-title" style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)', color: 'var(--color-forest)' }}>
-            The Scientific Formulations
+            {isCategoryPage ? selectedCategory.label : 'The Scientific Formulations'}
           </h2>
           <p style={{ maxWidth: '650px', color: 'var(--color-dark-text)', opacity: 0.8, fontSize: '1rem' }}>
             Zero fillers, 100% molecular trace integrity.
@@ -406,80 +388,83 @@ export default function ProductCatalog({ selectedProductId, setSelectedProductId
               style={{ position: 'absolute', left: '1.25rem', top: '50%', transform: 'translateY(-50%)', color: 'var(--color-forest)', opacity: 0.5 }}
             />
           </div>
+          {isCategoryPage && <CategoryTogglePills categoryPage />}
         </div>
 
-        <div style={{ marginBottom: '3.5rem' }}>
-          <div
-            style={{
-              display: 'flex',
-              flexWrap: 'wrap',
-              justifyContent: 'center',
-              gap: '0.5rem',
-              marginBottom: '1.6rem',
-              backgroundColor: 'rgba(1, 42, 28, 0.03)',
-              padding: '0.35rem',
-              borderRadius: '100px',
-              border: '1px solid rgba(1, 42, 28, 0.06)'
-            }}
-          >
-            {CATEGORY_CONFIG.map((cat) => (
-              <button
-                key={cat.id}
-                onClick={() => {
-                  setActiveMainCategoryId(cat.id);
-                  setIsCategoryExpanded(false);
-                }}
-                style={{
-                  padding: '0.55rem 1.4rem',
-                  borderRadius: '100px',
-                  border: 'none',
-                  fontSize: '0.85rem',
-                  fontWeight: 700,
-                  cursor: 'pointer',
-                  transition: 'var(--transition-smooth)',
-                  backgroundColor: activeMainCategoryId === cat.id ? 'var(--color-forest)' : 'transparent',
-                  color: activeMainCategoryId === cat.id ? 'var(--color-white)' : 'var(--color-forest)'
-                }}
-              >
-                {cat.label}
-              </button>
-            ))}
+        {!isCategoryPage && (
+          <div style={{ marginBottom: '3.5rem' }}>
+            <div style={{ marginBottom: '1.6rem' }}>
+              <CategoryTogglePills />
+            </div>
+
+            <h3 style={{ fontSize: '1.65rem', color: 'var(--color-forest)', marginBottom: '1.2rem' }}>{activeMainCategory.label}</h3>
+
+            {activeMainCategory.id === 'poultry' ? (
+              <div className="glass-card" style={{ padding: '2.5rem', backgroundColor: 'var(--color-white)', textAlign: 'center' }}>
+                <h4 style={{ color: 'var(--color-forest)', fontSize: '1.25rem' }}>Coming Soon</h4>
+              </div>
+            ) : (
+              (() => {
+                const data = searchableProducts.filter((prod) => prod.category === activeMainCategory.productCategory);
+                return data.length > 0 ? (
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: '2rem' }} className="product-grid">
+                    {data.slice(0, 5).map((prod) => (
+                      <ProductCard key={prod.id} prod={prod} setSelectedProductId={setSelectedProductId} />
+                    ))}
+                    {data.length > 5 && (
+                      <ShowMoreCard categoryId={activeMainCategory.id} label={activeMainCategory.label} onShowMore={navigateToCategory} />
+                    )}
+                  </div>
+                ) : (
+                  <div className="glass-card" style={{ padding: '4rem 2rem', textAlign: 'center', backgroundColor: 'var(--color-white)' }}>
+                    <AlertCircle size={48} style={{ color: 'var(--color-forest)', opacity: 0.2, marginBottom: '1.25rem' }} />
+                    <h3 style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--color-forest)', marginBottom: '0.5rem' }}>No formulations found</h3>
+                  </div>
+                );
+              })()
+            )}
           </div>
+        )}
 
-          <h3 style={{ fontSize: '1.65rem', color: 'var(--color-forest)', marginBottom: '1.2rem' }}>{activeMainCategory.label}</h3>
-
-          {activeMainCategory.id === 'poultry' ? (
+        {isCategoryPage &&
+          (selectedCategory.id === 'poultry' ? (
             <div className="glass-card" style={{ padding: '2.5rem', backgroundColor: 'var(--color-white)', textAlign: 'center' }}>
               <h4 style={{ color: 'var(--color-forest)', fontSize: '1.25rem' }}>Coming Soon</h4>
             </div>
+          ) : categoryProducts.length > 0 ? (
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: '2rem' }} className="product-grid">
+              {categoryProducts.map((prod) => (
+                <ProductCard key={prod.id} prod={prod} setSelectedProductId={setSelectedProductId} />
+              ))}
+            </div>
           ) : (
-            (() => {
-              const data = searchableProducts.filter((prod) => prod.category === activeMainCategory.productCategory);
-              const displayed = isCategoryExpanded ? data : data.slice(0, 5);
-              return data.length > 0 ? (
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: '2rem' }} className="product-grid">
-                  {displayed.map((prod) => (
-                    <ProductCard key={prod.id} prod={prod} setSelectedProductId={setSelectedProductId} />
-                  ))}
-                  {!isCategoryExpanded && data.length > 5 && (
-                    <ShowMoreCard onClick={() => setIsCategoryExpanded(true)} label={activeMainCategory.label} />
-                  )}
-                  {isCategoryExpanded && data.length > 5 && (
-                    <ShowLessCard onClick={() => {
-                      setIsCategoryExpanded(false);
-                      document.getElementById('catalog')?.scrollIntoView({ behavior: 'smooth' });
-                    }} label={activeMainCategory.label} />
-                  )}
-                </div>
-              ) : (
-                <div className="glass-card" style={{ padding: '4rem 2rem', textAlign: 'center', backgroundColor: 'var(--color-white)' }}>
-                  <AlertCircle size={48} style={{ color: 'var(--color-forest)', opacity: 0.2, marginBottom: '1.25rem' }} />
-                  <h3 style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--color-forest)', marginBottom: '0.5rem' }}>No formulations found</h3>
-                </div>
-              );
-            })()
-          )}
-        </div>
+            <div className="glass-card" style={{ padding: '4rem 2rem', textAlign: 'center', backgroundColor: 'var(--color-white)' }}>
+              <AlertCircle size={48} style={{ color: 'var(--color-forest)', opacity: 0.2, marginBottom: '1.25rem' }} />
+              <h3 style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--color-forest)', marginBottom: '0.5rem' }}>No formulations found</h3>
+            </div>
+          ))}
+
+        {isCategoryPage && (
+          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2.75rem' }}>
+            <button
+              type="button"
+              onClick={showAllCategories}
+              style={{
+                border: '1px solid rgba(1,42,28,0.12)',
+                backgroundColor: 'var(--color-white)',
+                color: 'var(--color-forest)',
+                fontWeight: 700,
+                fontSize: '0.95rem',
+                padding: '0.85rem 1.35rem',
+                borderRadius: '999px',
+                boxShadow: '0 8px 20px rgba(1, 42, 28, 0.06)',
+                cursor: 'pointer'
+              }}
+            >
+              Back to All Categories
+            </button>
+          </div>
+        )}
 
         {selectedProduct && (
           <div className="drawer-backdrop" style={{ position: 'fixed', inset: 0, zIndex: 2000, display: 'flex', justifyContent: 'flex-end' }}>
