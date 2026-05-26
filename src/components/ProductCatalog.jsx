@@ -13,6 +13,7 @@ const getCategoryById = (id) => CATEGORY_CONFIG.find((cat) => cat.id === id);
 
 function ProductCard({ prod, setSelectedProductId }) {
   const hasImage = Boolean(prod.image);
+  const primaryIndications = prod.indications.slice(0, 2);
 
   return (
     <div
@@ -25,22 +26,22 @@ function ProductCard({ prod, setSelectedProductId }) {
         flexDirection: 'column',
         gap: '1.25rem',
         position: 'relative',
-        borderTop: `4px solid ${prod.color}`,
+        borderTop: `5px solid ${prod.color}`,
         cursor: 'pointer'
       }}
     >
       <div
         style={{
-          height: '160px',
+          height: '180px',
           borderRadius: '14px',
           background: `linear-gradient(135deg, ${prod.color}08 0%, ${prod.color}18 100%)`,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          border: `1px solid rgba(1, 42, 28, 0.06)`,
+          border: `1px dashed ${prod.color}45`,
           position: 'relative',
           overflow: 'hidden',
-          padding: '0.5rem'
+          padding: hasImage ? '0' : '0.5rem'
         }}
       >
         {prod.image ? (
@@ -50,9 +51,10 @@ function ProductCard({ prod, setSelectedProductId }) {
             style={{
               width: '100%',
               height: '100%',
-              objectFit: 'cover',
+              objectFit: 'contain',
               objectPosition: prod.packaging_side || 'center',
-              borderRadius: '8px'
+              borderRadius: '12px',
+              backgroundColor: 'rgba(255,255,255,0.72)'
             }}
             className="product-card-image"
           />
@@ -117,54 +119,48 @@ function ProductCard({ prod, setSelectedProductId }) {
       </div>
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
-        <h3 style={{ fontSize: '1.35rem', fontWeight: 700, color: 'var(--color-forest)' }}>{prod.name}</h3>
-        {!hasImage && (
-          <span style={{ fontSize: '0.85rem', fontWeight: 600, color: prod.color, fontStyle: 'italic' }}>{prod.tagline}</span>
-        )}
+        <h3 style={{ fontSize: '1.85rem', fontWeight: 700, color: 'var(--color-forest)', lineHeight: 1.1 }}>{prod.name}</h3>
+        <span style={{ fontSize: '1.03rem', fontWeight: 700, color: prod.color, fontStyle: 'italic', lineHeight: 1.45 }}>{prod.tagline}</span>
       </div>
 
-      {!hasImage && (
-        <p
-          style={{
-            fontSize: '0.85rem',
-            color: 'var(--color-dark-text)',
-            opacity: 0.75,
-            lineHeight: 1.5,
-            minHeight: '65px',
-            display: '-webkit-box',
-            WebkitLineClamp: 3,
-            WebkitBoxOrient: 'vertical',
-            overflow: 'hidden'
-          }}
-        >
-          {prod.description}
-        </p>
-      )}
+      <p
+        style={{
+          fontSize: '1rem',
+          color: 'var(--color-dark-text)',
+          opacity: 0.72,
+          lineHeight: 1.55,
+          minHeight: '74px',
+          display: '-webkit-box',
+          WebkitLineClamp: 3,
+          WebkitBoxOrient: 'vertical',
+          overflow: 'hidden'
+        }}
+      >
+        {prod.description}
+      </p>
 
-      {!hasImage && (
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
-          {prod.indications.slice(0, 2).map((ind) => (
-            <span
-              key={ind}
-              style={{
-                fontSize: '0.75rem',
-                fontWeight: 500,
-                backgroundColor: 'rgba(1, 42, 28, 0.04)',
-                padding: '0.25rem 0.6rem',
-                borderRadius: '100px',
-                color: 'var(--color-forest)',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.25rem'
-              }}
-            >
-              <CheckCircle2 size={12} style={{ color: prod.color }} /> {ind}
-            </span>
-          ))}
-        </div>
-      )}
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.55rem' }}>
+        {primaryIndications.map((ind) => (
+          <span
+            key={ind}
+            style={{
+              fontSize: '0.88rem',
+              fontWeight: 600,
+              backgroundColor: 'rgba(1, 42, 28, 0.045)',
+              padding: '0.4rem 0.75rem',
+              borderRadius: '100px',
+              color: 'var(--color-forest)',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.35rem'
+            }}
+          >
+            <CheckCircle2 size={14} style={{ color: prod.color }} /> {ind}
+          </span>
+        ))}
+      </div>
 
-      {!hasImage && prod.pack_sizes && (
+      {prod.pack_sizes && (
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap', marginTop: '-0.3rem' }}>
           <span style={{ fontSize: '0.72rem', fontWeight: 800, color: 'var(--color-forest)', opacity: 0.6, textTransform: 'uppercase', letterSpacing: '0.5px' }}>Pack Sizes:</span>
           <span style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--color-dark-text)', opacity: 0.85 }}>{prod.pack_sizes}</span>
@@ -215,7 +211,7 @@ function ProductCard({ prod, setSelectedProductId }) {
   );
 }
 
-function ShowMoreCard({ categoryId, label, onShowMore }) {
+function ShowMoreCard({ onClick, label }) {
   return (
     <button
       className="glass-card fade-in"
@@ -233,7 +229,7 @@ function ShowMoreCard({ categoryId, label, onShowMore }) {
         width: '100%',
         cursor: 'pointer'
       }}
-      onClick={() => onShowMore(categoryId)}
+      onClick={onClick}
     >
       <h4 style={{ fontSize: '1.1rem', color: 'var(--color-forest)', fontWeight: 700, textAlign: 'center' }}>View All {label} Products</h4>
       <span
@@ -256,24 +252,86 @@ function ShowMoreCard({ categoryId, label, onShowMore }) {
   );
 }
 
+function ShowLessCard({ onClick, label }) {
+  return (
+    <button
+      className="glass-card fade-in"
+      type="button"
+      style={{
+        padding: '2rem',
+        backgroundColor: 'var(--color-white)',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        gap: '0.9rem',
+        borderTop: '4px solid var(--color-gold)',
+        textDecoration: 'none',
+        width: '100%',
+        cursor: 'pointer'
+      }}
+      onClick={onClick}
+    >
+      <h4 style={{ fontSize: '1.1rem', color: 'var(--color-forest)', fontWeight: 700, textAlign: 'center' }}>Collapse {label}</h4>
+      <span
+        style={{
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: '0.5rem',
+          border: '2px solid var(--color-forest)',
+          backgroundColor: 'transparent',
+          color: 'var(--color-forest)',
+          fontWeight: 700,
+          fontSize: '0.85rem',
+          padding: '0.65rem 1.2rem',
+          borderRadius: '100px'
+        }}
+      >
+        Show Less
+      </span>
+    </button>
+  );
+}
+
 export default function ProductCatalog({ selectedProductId, setSelectedProductId }) {
   const [searchQuery, setSearchQuery] = useState('');
-  const [activeMainCategoryId, setActiveMainCategoryId] = useState('ruminant');
+  const [activeMainCategoryId, setActiveMainCategoryId] = useState(() => {
+    const categoryParam = new URLSearchParams(window.location.search).get('category');
+    return getCategoryById(categoryParam)?.id || 'ruminant';
+  });
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
-  const [selectedCategoryId, setSelectedCategoryId] = useState(() => new URLSearchParams(window.location.search).get('category'));
+  const [isCategoryExpanded, setIsCategoryExpanded] = useState(() => new URLSearchParams(window.location.search).get('expanded') === 'true');
 
   useEffect(() => {
     const syncFromLocation = () => {
-      setSelectedCategoryId(new URLSearchParams(window.location.search).get('category'));
+      const params = new URLSearchParams(window.location.search);
+      const categoryParam = params.get('category');
+      setActiveMainCategoryId(getCategoryById(categoryParam)?.id || 'ruminant');
+      setIsCategoryExpanded(params.get('expanded') === 'true');
     };
 
     window.addEventListener('popstate', syncFromLocation);
     return () => window.removeEventListener('popstate', syncFromLocation);
   }, []);
 
-  const selectedCategory = getCategoryById(selectedCategoryId);
-  const isCategoryPage = Boolean(selectedCategory);
   const activeMainCategory = getCategoryById(activeMainCategoryId) || CATEGORY_CONFIG[0];
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    params.set('category', activeMainCategoryId);
+
+    if (isCategoryExpanded) {
+      params.set('expanded', 'true');
+    } else {
+      params.delete('expanded');
+    }
+
+    window.history.replaceState(
+      { category: activeMainCategoryId, expanded: isCategoryExpanded },
+      '',
+      `${window.location.pathname}?${params.toString()}${window.location.hash || '#catalog'}`
+    );
+  }, [activeMainCategoryId, isCategoryExpanded]);
 
   const searchableProducts = useMemo(() => {
     if (!searchQuery.trim()) return products;
@@ -289,31 +347,7 @@ export default function ProductCatalog({ selectedProductId, setSelectedProductId
 
   const selectedProduct = useMemo(() => products.find((p) => p.id === selectedProductId), [selectedProductId]);
 
-  const categoryProducts = useMemo(() => {
-    if (!selectedCategory?.productCategory) return [];
-    return searchableProducts.filter((prod) => prod.category === selectedCategory.productCategory);
-  }, [searchableProducts, selectedCategory]);
-
-  const navigateToCategory = (categoryId) => {
-    const nextUrl = `/?category=${categoryId}#catalog`;
-    window.history.pushState({ categoryId }, '', nextUrl);
-    setSelectedCategoryId(categoryId);
-    const catalog = document.getElementById('catalog');
-    if (catalog) {
-      catalog.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
-
-  const showAllCategories = () => {
-    window.history.pushState({}, '', '/#catalog');
-    setSelectedCategoryId(null);
-    const catalog = document.getElementById('catalog');
-    if (catalog) {
-      catalog.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
-
-  const CategoryTogglePills = ({ categoryPage }) => (
+  const CategoryTogglePills = () => (
     <div
       style={{
         display: 'flex',
@@ -328,7 +362,7 @@ export default function ProductCatalog({ selectedProductId, setSelectedProductId
       }}
     >
       {CATEGORY_CONFIG.map((cat) => {
-        const isActive = categoryPage ? selectedCategory?.id === cat.id : activeMainCategoryId === cat.id;
+        const isActive = activeMainCategoryId === cat.id;
         const commonStyle = {
           padding: '0.55rem 1.4rem',
           borderRadius: '100px',
@@ -344,16 +378,16 @@ export default function ProductCatalog({ selectedProductId, setSelectedProductId
           alignItems: 'center'
         };
 
-        if (categoryPage) {
-          return (
-            <button key={cat.id} type="button" onClick={() => navigateToCategory(cat.id)} style={commonStyle}>
-              {cat.label}
-            </button>
-          );
-        }
-
         return (
-          <button key={cat.id} onClick={() => setActiveMainCategoryId(cat.id)} style={commonStyle}>
+          <button
+            key={cat.id}
+            type="button"
+            onClick={() => {
+              setActiveMainCategoryId(cat.id);
+              setIsCategoryExpanded(false);
+            }}
+            style={commonStyle}
+          >
             {cat.label}
           </button>
         );
@@ -368,7 +402,7 @@ export default function ProductCatalog({ selectedProductId, setSelectedProductId
             PhD Formulated Supplements
           </span>
           <h2 className="editorial-title" style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)', color: 'var(--color-forest)' }}>
-            {isCategoryPage ? selectedCategory.label : 'The Scientific Formulations'}
+            The Scientific Formulations
           </h2>
           <p style={{ maxWidth: '650px', color: 'var(--color-dark-text)', opacity: 0.8, fontSize: '1rem' }}>
             Zero fillers, 100% molecular trace integrity.
@@ -388,83 +422,50 @@ export default function ProductCatalog({ selectedProductId, setSelectedProductId
               style={{ position: 'absolute', left: '1.25rem', top: '50%', transform: 'translateY(-50%)', color: 'var(--color-forest)', opacity: 0.5 }}
             />
           </div>
-          {isCategoryPage && <CategoryTogglePills categoryPage />}
         </div>
 
-        {!isCategoryPage && (
-          <div style={{ marginBottom: '3.5rem' }}>
-            <div style={{ marginBottom: '1.6rem' }}>
-              <CategoryTogglePills />
-            </div>
-
-            <h3 style={{ fontSize: '1.65rem', color: 'var(--color-forest)', marginBottom: '1.2rem' }}>{activeMainCategory.label}</h3>
-
-            {activeMainCategory.id === 'poultry' ? (
-              <div className="glass-card" style={{ padding: '2.5rem', backgroundColor: 'var(--color-white)', textAlign: 'center' }}>
-                <h4 style={{ color: 'var(--color-forest)', fontSize: '1.25rem' }}>Coming Soon</h4>
-              </div>
-            ) : (
-              (() => {
-                const data = searchableProducts.filter((prod) => prod.category === activeMainCategory.productCategory);
-                return data.length > 0 ? (
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: '2rem' }} className="product-grid">
-                    {data.slice(0, 5).map((prod) => (
-                      <ProductCard key={prod.id} prod={prod} setSelectedProductId={setSelectedProductId} />
-                    ))}
-                    {data.length > 5 && (
-                      <ShowMoreCard categoryId={activeMainCategory.id} label={activeMainCategory.label} onShowMore={navigateToCategory} />
-                    )}
-                  </div>
-                ) : (
-                  <div className="glass-card" style={{ padding: '4rem 2rem', textAlign: 'center', backgroundColor: 'var(--color-white)' }}>
-                    <AlertCircle size={48} style={{ color: 'var(--color-forest)', opacity: 0.2, marginBottom: '1.25rem' }} />
-                    <h3 style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--color-forest)', marginBottom: '0.5rem' }}>No formulations found</h3>
-                  </div>
-                );
-              })()
-            )}
+        <div style={{ marginBottom: '3.5rem' }}>
+          <div style={{ marginBottom: '1.6rem' }}>
+            <CategoryTogglePills />
           </div>
-        )}
 
-        {isCategoryPage &&
-          (selectedCategory.id === 'poultry' ? (
+          <h3 style={{ fontSize: '1.65rem', color: 'var(--color-forest)', marginBottom: '1.2rem' }}>{activeMainCategory.label}</h3>
+
+          {activeMainCategory.id === 'poultry' ? (
             <div className="glass-card" style={{ padding: '2.5rem', backgroundColor: 'var(--color-white)', textAlign: 'center' }}>
               <h4 style={{ color: 'var(--color-forest)', fontSize: '1.25rem' }}>Coming Soon</h4>
             </div>
-          ) : categoryProducts.length > 0 ? (
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: '2rem' }} className="product-grid">
-              {categoryProducts.map((prod) => (
-                <ProductCard key={prod.id} prod={prod} setSelectedProductId={setSelectedProductId} />
-              ))}
-            </div>
           ) : (
-            <div className="glass-card" style={{ padding: '4rem 2rem', textAlign: 'center', backgroundColor: 'var(--color-white)' }}>
-              <AlertCircle size={48} style={{ color: 'var(--color-forest)', opacity: 0.2, marginBottom: '1.25rem' }} />
-              <h3 style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--color-forest)', marginBottom: '0.5rem' }}>No formulations found</h3>
-            </div>
-          ))}
-
-        {isCategoryPage && (
-          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '2.75rem' }}>
-            <button
-              type="button"
-              onClick={showAllCategories}
-              style={{
-                border: '1px solid rgba(1,42,28,0.12)',
-                backgroundColor: 'var(--color-white)',
-                color: 'var(--color-forest)',
-                fontWeight: 700,
-                fontSize: '0.95rem',
-                padding: '0.85rem 1.35rem',
-                borderRadius: '999px',
-                boxShadow: '0 8px 20px rgba(1, 42, 28, 0.06)',
-                cursor: 'pointer'
-              }}
-            >
-              Back to All Categories
-            </button>
-          </div>
-        )}
+            (() => {
+              const data = searchableProducts.filter((prod) => prod.category === activeMainCategory.productCategory);
+              const displayed = isCategoryExpanded ? data : data.slice(0, 5);
+              return data.length > 0 ? (
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))', gap: '2rem' }} className="product-grid">
+                  {displayed.map((prod) => (
+                    <ProductCard key={prod.id} prod={prod} setSelectedProductId={setSelectedProductId} />
+                  ))}
+                  {!isCategoryExpanded && data.length > 5 && (
+                    <ShowMoreCard onClick={() => setIsCategoryExpanded(true)} label={activeMainCategory.label} />
+                  )}
+                  {isCategoryExpanded && data.length > 5 && (
+                    <ShowLessCard
+                      onClick={() => {
+                        setIsCategoryExpanded(false);
+                        document.getElementById('catalog')?.scrollIntoView({ behavior: 'smooth' });
+                      }}
+                      label={activeMainCategory.label}
+                    />
+                  )}
+                </div>
+              ) : (
+                <div className="glass-card" style={{ padding: '4rem 2rem', textAlign: 'center', backgroundColor: 'var(--color-white)' }}>
+                  <AlertCircle size={48} style={{ color: 'var(--color-forest)', opacity: 0.2, marginBottom: '1.25rem' }} />
+                  <h3 style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--color-forest)', marginBottom: '0.5rem' }}>No formulations found</h3>
+                </div>
+              );
+            })()
+          )}
+        </div>
 
         {selectedProduct && (
           <div className="drawer-backdrop" style={{ position: 'fixed', inset: 0, zIndex: 2000, display: 'flex', justifyContent: 'flex-end' }}>
