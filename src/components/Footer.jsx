@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Mail, Phone, Clock, MapPin, Send, CheckCircle, HelpCircle } from 'lucide-react';
+import signateLogo from '../../IMages/signate logo.png';
 
 export default function Footer() {
-  const logoUrl = 'logo.png';
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -257,7 +257,7 @@ export default function Footer() {
           {/* Logo & motto */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <img
-              src={logoUrl}
+              src={signateLogo}
               alt="Signate logo"
               style={{ height: '44px', width: 'auto', objectFit: 'contain', maxWidth: '220px' }}
             />

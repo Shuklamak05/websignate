@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Microscope, FlaskConical, Settings2, GraduationCap, Quote, CheckSquare, Award } from 'lucide-react';
 import { founders } from '../data/team';
+import diagnosticsBg from '../../IMages/diagnostics-bg.png';
+import researchBg from '../../IMages/research-bg.png';
+import manufacturingBg from '../../IMages/manufacturing-bg.png';
 
 export default function ServicesShowcase() {
   const [activeTab, setActiveTab] = useState('diagnostics');
@@ -126,10 +129,10 @@ export default function ServicesShowcase() {
                   position: 'absolute',
                   inset: 0,
                   backgroundImage: activeTab === 'diagnostics'
-                    ? "url('/IMages/diagnostics-bg.png')"
+                    ? `url(${diagnosticsBg})`
                     : activeTab === 'research'
-                      ? "url('/IMages/research-bg.png')"
-                      : "url('/IMages/manufacturing-bg.png')",
+                      ? `url(${researchBg})`
+                      : `url(${manufacturingBg})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   opacity: 0.8,

@@ -1,7 +1,11 @@
+import keyurDaveImage from '../../IMages/keyurdave_pic.png';
+import shajilImage from '../../IMages/shajil_pic.png';
+import prashantImage from '../../IMages/prashant_pic.png';
+
 export const founders = [
   {
     name: "Dr. Keyur Dave",
-    image: "/IMages/keyurdave_pic.png",
+    image: keyurDaveImage,
     role: "Co-Founder & Director of Biochemistry",
     credentials: "Ph.D. in Biochemistry",
     specialty: "Molecular Biology, Diagnostics & Protein Chemistry",
@@ -10,7 +14,7 @@ export const founders = [
   },
   {
     name: "Dr. Shajil Madhavan",
-    image: "/IMages/shajil_pic.png",
+    image: shajilImage,
     role: "Co-Founder & Director of Animal Nutrition",
     credentials: "Ph.D. in Veterinary Biotechnology",
     specialty: "Bioprocess Technology & Feed Formulation Engineering",
@@ -19,7 +23,7 @@ export const founders = [
   },
   {
     name: "Dr. Prashant Kunjadia",
-    image: "/IMages/prashant_pic.png",
+    image: prashantImage,
     role: "Co-Founder & Director of Research & Development",
     credentials: "Ph.D. in Biotechnology",
     specialty: "Bioactive Compounds & Gut Microflora Genomics",

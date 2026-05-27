@@ -58,79 +58,88 @@ export default function AboutSection() {
       </div>
 
       <div style={{ backgroundColor: '#f3f3f5', borderTop: '1px solid rgba(1,42,28,0.08)', borderBottom: '1px solid rgba(1,42,28,0.08)' }}>
-        <div className="about-vm" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', minHeight: '520px' }}>
+        <div className="container" style={{ paddingTop: '4.5rem', paddingBottom: '5rem' }}>
           <div
+            className="about-unified"
             style={{
-              backgroundImage:
-                "linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url('https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1200&q=80')",
-              backgroundSize: 'cover',
-              backgroundPosition: 'center'
-            }}
-          />
-          <div style={{ padding: 'clamp(2rem, 4vw, 4rem)', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '2.6rem' }}>
-            <div>
-              <h3 style={{ fontSize: 'clamp(2.8rem, 5vw, 5rem)', marginBottom: '0.8rem', color: '#0a1018' }}>Vision</h3>
-              <p style={{ fontSize: 'clamp(1.1rem, 2.2vw, 1.4rem)', lineHeight: 1.6, color: 'rgba(10,16,24,0.82)', maxWidth: '28ch' }}>
-                To become a prominent and influential player in the animal health and nutrition supplements industry, setting new standards of excellence and leadership.
-              </p>
-            </div>
-            <div>
-              <h3 style={{ fontSize: 'clamp(2.8rem, 5vw, 5rem)', marginBottom: '0.8rem', color: '#0a1018' }}>Mission</h3>
-              <p style={{ fontSize: 'clamp(1.1rem, 2.2vw, 1.4rem)', lineHeight: 1.6, color: 'rgba(10,16,24,0.82)', maxWidth: '30ch' }}>
-                To enhance the productivity and well-being of animals by providing cutting-edge and innovative solutions that address their health and nutritional needs.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div style={{ backgroundColor: '#f3f3f5', borderBottom: '1px solid rgba(1,42,28,0.08)' }}>
-        <div className="container" style={{ paddingTop: '5rem', paddingBottom: '5.5rem' }}>
-          <div
-            style={{
-              background: 'linear-gradient(180deg, rgba(255,255,255,0.96) 0%, rgba(247,248,245,0.98) 100%)',
-              border: '1px solid rgba(1,42,28,0.08)',
+              display: 'grid',
+              gridTemplateRows: 'auto auto',
               borderRadius: '32px',
+              overflow: 'hidden',
+              border: '1px solid rgba(1,42,28,0.1)',
               boxShadow: '0 18px 46px rgba(1, 42, 28, 0.06)',
-              padding: 'clamp(1.8rem, 3.4vw, 3.2rem)'
+              backgroundImage:
+                "linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('https://images.unsplash.com/photo-1589941013453-ec89f33b5e95?auto=format&fit=crop&w=1600&q=80')",
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
             }}
           >
-            <div style={{ maxWidth: '56rem', marginBottom: '2.4rem' }}>
-              <p style={{ letterSpacing: '0.18em', textTransform: 'uppercase', color: 'rgba(1,42,28,0.55)', fontSize: '0.9rem', marginBottom: '0.75rem' }}>
-                Core Values
-              </p>
-              <h3 style={{ fontSize: 'clamp(2.6rem, 4.3vw, 4rem)', color: 'var(--color-forest)', marginBottom: '1rem' }}>Values</h3>
-              <p style={{ fontSize: 'clamp(1.05rem, 1.9vw, 1.3rem)', lineHeight: 1.7, color: 'rgba(1,42,28,0.72)', maxWidth: '60ch' }}>
-                The principles that guide our vision and mission are woven into how we build products, support customers, and grow with integrity.
-              </p>
+            <div
+              className="about-left-column"
+              style={{
+                padding: 'clamp(1.8rem, 3.2vw, 3rem)',
+                display: 'grid',
+                gridTemplateColumns: '1fr 1fr',
+                gap: '2rem',
+                minHeight: 'auto'
+              }}
+            >
+              <div className="about-left-card" style={{ padding: '0.2rem 0.2rem 0.4rem' }}>
+                <p style={{ fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(1,42,28,0.58)', marginBottom: '0.45rem' }}>
+                  Strategic Direction
+                </p>
+                <h3 style={{ fontSize: 'clamp(2.4rem, 4vw, 3.6rem)', marginBottom: '0.7rem', color: '#0a1018', lineHeight: 1.05 }}>Vision</h3>
+                <p style={{ fontSize: 'clamp(1.02rem, 1.9vw, 1.2rem)', lineHeight: 1.65, color: 'rgba(10,16,24,0.84)' }}>
+                  To become a prominent and influential player in the animal health and nutrition supplements industry, setting new standards of excellence and leadership.
+                </p>
+              </div>
+
+              <div className="about-left-card" style={{ padding: '0.2rem 0.2rem 0.4rem' }}>
+                <p style={{ fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(1,42,28,0.58)', marginBottom: '0.45rem' }}>
+                  Execution Purpose
+                </p>
+                <h3 style={{ fontSize: 'clamp(2.4rem, 4vw, 3.6rem)', marginBottom: '0.7rem', color: '#0a1018', lineHeight: 1.05 }}>Mission</h3>
+                <p style={{ fontSize: 'clamp(1.02rem, 1.9vw, 1.2rem)', lineHeight: 1.65, color: 'rgba(10,16,24,0.84)' }}>
+                  To enhance the productivity and well-being of animals by providing cutting-edge and innovative solutions that address their health and nutritional needs.
+                </p>
+              </div>
             </div>
 
-            <div className="values-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0, 1fr))', gap: '1.25rem' }}>
-              {values.map((item) => (
-                <div
-                  key={item.title}
-                  style={{
-                    background: 'rgba(255,255,255,0.88)',
-                    border: '1px solid rgba(1,42,28,0.08)',
-                    borderRadius: '24px',
-                    padding: '1.5rem',
-                    boxShadow: '0 10px 24px rgba(1, 42, 28, 0.04)',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: '0.9rem',
-                    minHeight: '100%'
-                  }}
-                >
-                  <div style={{ color: 'var(--color-forest)' }}>{item.icon}</div>
-                  <h4 style={{ color: 'var(--color-forest)', fontSize: '1.55rem', lineHeight: 1.15 }}>{item.title}</h4>
-                  <p style={{ fontSize: '1.02rem', lineHeight: 1.7, color: 'rgba(1,42,28,0.72)' }}>{item.text}</p>
-                </div>
-              ))}
-            </div>
+            <div
+              className="about-right-column"
+              style={{
+                padding: 'clamp(1.8rem, 3.2vw, 3rem)',
+                display: 'flex',
+                flexDirection: 'column',
+                borderTop: '1px solid rgba(1,42,28,0.14)'
+              }}
+            >
+              <p style={{ letterSpacing: '0.18em', textTransform: 'uppercase', color: 'rgba(1,42,28,0.55)', fontSize: '0.9rem', marginBottom: '0.7rem' }}>Core Values</p>
+              <h3 style={{ fontSize: 'clamp(2.2rem, 3.6vw, 3.2rem)', color: 'var(--color-forest)', marginBottom: '1.2rem' }}>Values</h3>
 
-            <p style={{ marginTop: '2rem', textAlign: 'center', color: 'rgba(1,42,28,0.6)', fontSize: '1.04rem', lineHeight: 1.7, maxWidth: '62rem', marginLeft: 'auto', marginRight: 'auto' }}>
-              These values are not separate from our vision and mission. They are the standards that make both of them real in day-to-day work.
-            </p>
+              <div className="values-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', flex: 1 }}>
+                {values.map((item) => (
+                  <div
+                    className="value-card"
+                    key={item.title}
+                    style={{
+                      background: 'rgba(255,255,255,0.8)',
+                      border: '1px solid rgba(1,42,28,0.1)',
+                      borderRadius: '16px',
+                      padding: '1rem',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '0.5rem'
+                    }}
+                  >
+                    <div style={{ color: 'var(--color-forest)' }}>{item.icon}</div>
+                    <h4 style={{ color: 'var(--color-forest)', fontSize: '1.22rem', lineHeight: 1.2 }}>{item.title}</h4>
+                    <p className="value-card-text" style={{ fontSize: '0.92rem', lineHeight: 1.55, color: 'rgba(1,42,28,0.74)' }}>{item.text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -138,10 +147,53 @@ export default function AboutSection() {
       <style
         dangerouslySetInnerHTML={{
           __html: `
+          @media (min-width: 981px) {
+            .about-unified {
+              min-height: 0;
+            }
+            .about-left-column {
+              display: grid !important;
+              grid-template-columns: 1fr 1fr !important;
+              gap: 2rem !important;
+              min-height: 0 !important;
+            }
+            .about-left-card {
+              height: 100%;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              background: none;
+              border: none;
+              box-shadow: none;
+            }
+            .about-right-column {
+              min-height: 0;
+            }
+            .values-grid {
+              grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+              grid-template-rows: repeat(2, minmax(0, 1fr));
+              grid-auto-rows: 1fr;
+              align-content: stretch;
+            }
+            .value-card {
+              min-height: 0;
+              height: 100%;
+            }
+            .value-card-text {
+              display: -webkit-box;
+              -webkit-line-clamp: 6;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+            }
+          }
           @media (max-width: 980px) {
-          .about-vm { grid-template-columns: 1fr !important; }
-            .about-vm > div:first-child { min-height: 320px; }
+            .about-unified { grid-template-columns: 1fr !important; }
+            .about-left-column { grid-template-columns: 1fr !important; min-height: 0 !important; }
             .values-grid { grid-template-columns: 1fr !important; }
+            .about-right-column { border-left: none !important; border-top: 1px solid rgba(1,42,28,0.14); }
+            .value-card-text {
+              display: block;
+            }
           }
         `
         }}
