@@ -4,7 +4,7 @@ import { ArrowUpRight, CalendarDays } from 'lucide-react';
 const insights = [
   {
     title: 'Signate At Pet Expo India 2026: Companion Wellness Focus',
-    date: 'September 2026',
+    date: 'March 2026',
     summary:
       'Highlights from Signate participation at Pet Expo India 2026, with focus on companion animal supplements and veterinarian engagement.',
     image: 'https://media.licdn.com/dms/image/v2/D4D22AQFE4d5jODQCLA/feedshare-shrink_1280/B4DZ09WliKGcAM-/0/1774850824660?e=2147483647&t=62vW1UG2ts9P6sfQu2cpONsAwQetWTqSfVDo_LStOzQ&v=beta',
@@ -12,7 +12,7 @@ const insights = [
   },
   {
     title: 'Pet Expo India 2026 Participation Announcement',
-    date: 'September 2026',
+    date: 'March 2026',
     summary:
       'An update covering Signate showcase plans for companion animal nutrition at Pet Expo India 2026 in Ahmedabad.',
     image: 'https://media.licdn.com/dms/image/v2/D4D22AQGc0Y6yN-kbOA/feedshare-shrink_1280/B4DZz5fbRFKoAM-/0/1773712291239?e=2147483647&t=Z7Pf87ChiVxbzrcY2S2JLAhdqIypvlvvVVtBa0mbwV8&v=beta',
@@ -20,7 +20,7 @@ const insights = [
   },
   {
     title: 'Clinically Driven Product Performance At Pet Expo',
-    date: 'September 2026',
+    date: 'March 2026',
     summary:
       'A technical update describing formulation depth and clinically guided companion product efficacy presented at the event.',
     image: 'https://media.licdn.com/dms/image/v2/D4D22AQGfqzJxktH9GA/feedshare-image-high-res/B4DZy8uLyRHcAU-/0/1772692749709?e=2147483647&t=oF5lUvxpzXfrSfTSzbo26XX0B_O8f033MLCQhtQ-LV4&v=beta',
@@ -28,7 +28,7 @@ const insights = [
   },
   {
     title: 'Industry Collaboration Through Veterinary Participation',
-    date: 'August 2026',
+    date: 'February 2026',
     summary:
       'Field-focused reflections on participation, knowledge exchange, and practical companion-animal solutions discussed with stakeholders.',
     image: 'https://media.licdn.com/dms/image/v2/D4D22AQHLy-GxZ1PHoA/feedshare-shrink_1280/B4DZwZUr9AJcAg-/0/1769951379475?e=2147483647&t=5Zp4dqUmbEtWNGiAIpAjfbni_H6Q6Q3ndlPOj4pasqg&v=beta',
