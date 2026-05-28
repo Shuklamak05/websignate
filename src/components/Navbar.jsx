@@ -19,7 +19,7 @@ export default function Navbar() {
     { name: 'About Us', href: '#about' },
     { name: 'Products', href: '#catalog' },
     { name: 'Services', href: '#services' },
-    { name: 'Insights/ Blogs', href: '#services' },
+    { name: 'Insights/ Blogs', href: '#insights' },
     { name: 'Contact Us', href: '#contact' }
   ];
 
@@ -51,7 +51,7 @@ export default function Navbar() {
             src={signateLogo}
             alt="Signate logo"
             style={{
-              height: '44px',
+              height: '150px',
               width: 'auto',
               objectFit: 'contain'
             }}

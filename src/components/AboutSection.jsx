@@ -115,8 +115,8 @@ export default function AboutSection() {
                 borderTop: '1px solid rgba(1,42,28,0.14)'
               }}
             >
-              <p style={{ letterSpacing: '0.18em', textTransform: 'uppercase', color: 'rgba(1,42,28,0.55)', fontSize: '0.9rem', marginBottom: '0.7rem' }}>Core Values</p>
-              <h3 style={{ fontSize: 'clamp(2.2rem, 3.6vw, 3.2rem)', color: 'var(--color-forest)', marginBottom: '1.2rem' }}>Values</h3>
+              <p style={{ letterSpacing: '0.18em', textTransform: 'uppercase', color: 'rgba(1,42,28,0.55)', fontSize: '0.9rem', marginBottom: '0.7rem', textAlign: 'center' }}>Core Values</p>
+              <h3 style={{ fontSize: 'clamp(2.2rem, 3.6vw, 3.2rem)', color: 'var(--color-forest)', marginBottom: '1.2rem', textAlign: 'center' }}>Values</h3>
 
               <div className="values-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', flex: 1 }}>
                 {values.map((item) => (

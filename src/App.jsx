@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import AboutSection from './components/AboutSection';
 import ProductCatalog from './components/ProductCatalog';
 import ServicesShowcase from './components/ServicesShowcase';
+import InsightsBlogs from './components/InsightsBlogs';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -35,6 +36,9 @@ export default function App() {
 
         {/* 5. PhD Bios & Molecular laboratory services */}
         <ServicesShowcase />
+
+        {/* 6. Insights & Blogs */}
+        <InsightsBlogs />
 
       </main>
 

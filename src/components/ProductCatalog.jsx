@@ -395,12 +395,9 @@ export default function ProductCatalog({ selectedProductId, setSelectedProductId
     </div>
   );
   return (
-    <section id="catalog" className="section-padding" style={{ backgroundColor: 'var(--color-ivory)' }}>
+    <section id="catalog" className="section-padding" style={{ backgroundColor: 'var(--color-ivory)', paddingBottom: 0 }}>
       <div className="container">
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.25rem', textAlign: 'center', marginBottom: '4.5rem' }}>
-          <span style={{ fontSize: '0.85rem', fontWeight: 800, color: 'var(--color-forest)', textTransform: 'uppercase', letterSpacing: '2.5px' }}>
-            PhD Formulated Supplements
-          </span>
           <h2 className="editorial-title" style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)', color: 'var(--color-forest)' }}>
             The Scientific Formulations
           </h2>
@@ -424,7 +421,7 @@ export default function ProductCatalog({ selectedProductId, setSelectedProductId
           </div>
         </div>
 
-        <div style={{ marginBottom: '3.5rem' }}>
+        <div style={{ marginBottom: 0 }}>
           <div style={{ marginBottom: '1.6rem' }}>
             <CategoryTogglePills />
           </div>
@@ -515,7 +512,7 @@ export default function ProductCatalog({ selectedProductId, setSelectedProductId
                       border: '1px solid rgba(1, 42, 28, 0.08)'
                     }}
                   />
-                  {selectedProduct.source_page && (
+                  {selectedProduct.image && (
                     <button
                       onClick={() => setIsLightboxOpen(true)}
                       style={{
@@ -678,7 +675,7 @@ export default function ProductCatalog({ selectedProductId, setSelectedProductId
         )}
 
         {/* Lightbox for full brochure page viewing */}
-        {isLightboxOpen && selectedProduct?.source_page && (
+        {isLightboxOpen && selectedProduct?.image && (
           <div
             style={{
               position: 'fixed',
@@ -733,8 +730,8 @@ export default function ProductCatalog({ selectedProductId, setSelectedProductId
               </button>
               
               <img
-                src={selectedProduct.source_page}
-                alt={`Brochure Page for ${selectedProduct.name}`}
+                src={selectedProduct.image}
+                alt={`Product Image for ${selectedProduct.name}`}
                 style={{
                   maxWidth: '100%',
                   maxHeight: '80vh',
@@ -746,7 +743,7 @@ export default function ProductCatalog({ selectedProductId, setSelectedProductId
               />
               
               <span style={{ color: 'var(--color-white)', opacity: 0.7, fontSize: '0.85rem', textAlign: 'center' }}>
-                Source Brochure Page (Signate Master Copy)
+                Product Image Preview
               </span>
             </div>
           </div>

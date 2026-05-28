@@ -50,9 +50,6 @@ export default function Footer() {
           
           {/* Left Column: Scientific Consulting Pitch */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-            <span style={{ fontSize: '0.85rem', fontWeight: 800, color: 'var(--color-gold)', textTransform: 'uppercase', letterSpacing: '2.5px' }}>
-              Doctoral Consultation
-            </span>
             <h2 className="editorial-title" style={{ fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', color: 'var(--color-white)', lineHeight: 1.2 }}>
               Request a <br />
               <span style={{ fontStyle: 'italic', color: 'var(--color-gold)' }}>Scientific Assessment</span>
@@ -259,7 +256,7 @@ export default function Footer() {
             <img
               src={signateLogo}
               alt="Signate logo"
-              style={{ height: '44px', width: 'auto', objectFit: 'contain', maxWidth: '220px' }}
+              style={{ height: '150px', width: 'auto', objectFit: 'contain', maxWidth: '220px' }}
             />
             <p style={{ fontSize: '0.85rem', color: 'rgba(255, 255, 255, 0.6)', lineHeight: 1.5, maxWidth: '280px', fontWeight: 300 }}>
               Specialized biochemistry and molecular animal wellness networks formulated by doctoral bioscientists.
@@ -272,10 +269,10 @@ export default function Footer() {
               Science Navigation
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.85rem' }}>
-              <a href="#home" style={{ color: 'rgba(255,255,255,0.7)' }} onMouseEnter={(e) => e.target.style.color = 'var(--color-gold)'} onMouseLeave={(e) => e.target.style.color = 'rgba(255,255,255,0.7)'}>Home Portal</a>
-              <a href="#diagnostic-biomap" style={{ color: 'rgba(255,255,255,0.7)' }} onMouseEnter={(e) => e.target.style.color = 'var(--color-gold)'} onMouseLeave={(e) => e.target.style.color = 'rgba(255,255,255,0.7)'}>Interactive Bio-Map</a>
-              <a href="#catalog" style={{ color: 'rgba(255,255,255,0.7)' }} onMouseEnter={(e) => e.target.style.color = 'var(--color-gold)'} onMouseLeave={(e) => e.target.style.color = 'rgba(255,255,255,0.7)'}>Supplement Catalogs</a>
-              <a href="#dose-finder" style={{ color: 'rgba(255,255,255,0.7)' }} onMouseEnter={(e) => e.target.style.color = 'var(--color-gold)'} onMouseLeave={(e) => e.target.style.color = 'rgba(255,255,255,0.7)'}>Dose Calculators</a>
+              <a href="#home" style={{ color: 'rgba(255,255,255,0.7)' }} onMouseEnter={(e) => e.target.style.color = 'var(--color-gold)'} onMouseLeave={(e) => e.target.style.color = 'rgba(255,255,255,0.7)'}>Home</a>
+              <a href="#about" style={{ color: 'rgba(255,255,255,0.7)' }} onMouseEnter={(e) => e.target.style.color = 'var(--color-gold)'} onMouseLeave={(e) => e.target.style.color = 'rgba(255,255,255,0.7)'}>About Us</a>
+              <a href="#catalog" style={{ color: 'rgba(255,255,255,0.7)' }} onMouseEnter={(e) => e.target.style.color = 'var(--color-gold)'} onMouseLeave={(e) => e.target.style.color = 'rgba(255,255,255,0.7)'}>Products</a>
+              <a href="#services" style={{ color: 'rgba(255,255,255,0.7)' }} onMouseEnter={(e) => e.target.style.color = 'var(--color-gold)'} onMouseLeave={(e) => e.target.style.color = 'rgba(255,255,255,0.7)'}>Services</a>
             </div>
           </div>
 
