@@ -425,7 +425,7 @@ export default function ProductCatalog({ selectedProductId, setSelectedProductId
 
           <h3 style={{ fontSize: '1.65rem', color: 'var(--color-forest)', marginBottom: '1.2rem' }}>{activeMainCategory.label}</h3>
 
-          {activeMainCategory.id === 'poultry' ? (
+          {(activeMainCategory.id === 'poultry' || activeMainCategory.id === 'equine') ? (
             <div className="glass-card" style={{ padding: '2.5rem', backgroundColor: 'var(--color-white)', textAlign: 'center' }}>
               <h4 style={{ color: 'var(--color-forest)', fontSize: '1.25rem' }}>Coming Soon</h4>
             </div>
