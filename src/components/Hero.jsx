@@ -53,7 +53,15 @@ export default function Hero() {
           >
             <Sparkles size={18} style={{ color: 'var(--color-gold)' }} />
             <span style={{ fontWeight: 900, letterSpacing: '1.6px', fontSize: '0.85rem' }}>
-              PREMIUM ANIMAL WELLNESS
+              SCIENCE
+            </span>
+            <Sparkles size={18} style={{ color: 'var(--color-gold)' }} />
+            <span style={{ fontWeight: 900, letterSpacing: '1.6px', fontSize: '0.85rem' }}>
+               NUTRITION
+            </span>
+            <Sparkles size={18} style={{ color: 'var(--color-gold)' }} />
+            <span style={{ fontWeight: 900, letterSpacing: '1.6px', fontSize: '0.85rem' }}>
+              PERFORMANCE
             </span>
           </div>
 
@@ -68,7 +76,7 @@ export default function Hero() {
                 letterSpacing: '-1.2px'
               }}
             >
-              Welcome to Signate Animal Health &amp; Nutrition
+              Advancing Animal Health & Performance Through Precision Scientific Nutrition
             </h1>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '1.15rem' }}>

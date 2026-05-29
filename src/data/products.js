@@ -3,7 +3,7 @@ export const products = [
     "id": "collasig-bj-pro",
     "name": "CollaSig Bj PRO",
     "category": "companion",
-    "tagline": "Bioactive Collagen Peptides for Elite Joint Integrity",
+    "tagline": "Bioactive Collagen Peptides",
     "description": "CollaSig BJ Pro is a state-of-the-art veterinary joint health supplement scientifically formulated with highly concentrated bioactive collagen peptides, high-purity glucosamine hydrochloride, chondroitin sulfate, and hyaluronic acid. It triggers natural chondrocyte collagen synthesis, repairs damaged cartilage matrices, improves synovial fluid lubrication, and reduces chronic arthritic pain and stiffness in senior pets.",
     "indications": [
       "Osteoarthritis",
@@ -40,7 +40,7 @@ export const products = [
     "id": "collasig-sh-pro",
     "name": "CollaSig Sh PRO",
     "category": "companion",
-    "tagline": "Advanced Bio-Collagen Formula for Healthy Skin & Shiny Coat",
+    "tagline": "Healthy Skin & Shiny Coat",
     "description": "CollaSig SH Pro is an advanced nutritional treatment designed to restore skin barrier health and maximize coat sheen in dogs and cats. Combining specialized Type I and III collagen peptides with a balanced profile of Omega 3, 6, and 9 essential fatty acids, pure biotin, zinc, and protecting vitamins, it deeply moisturizes the skin, controls excessive shedding, stops allergic flaking, and reduces skin inflammation.",
     "indications": [
       "Atopic Dermatitis & Pruritus",
@@ -75,7 +75,7 @@ export const products = [
     "id": "sigproe-companion",
     "name": "SigProe Companion",
     "category": "companion",
-    "tagline": "High-Density Multi-Strain Probiotic, Prebiotic & Enzyme Complex for Total Digestive Balance",
+    "tagline": "Improves Digestion & Gut Health",
     "description": "SigProe Companion is an advanced veterinary digestive supplement formulated with a high-density blend of nine distinct probiotic strains, targeted prebiotic fibers (FOS & MOS), and essential digestive enzymes. It populates the intestinal tract with beneficial microflora, manages acute or antibiotic-associated diarrhea, relieves painful gas and bloating, and supports nutrient absorption to reinforce systemic immunity.",
     "indications": [
       "Acute & Chronic Diarrhea",
@@ -122,7 +122,7 @@ export const products = [
     "id": "lenire-pure-hemp-seed-oil",
     "name": "Lenire Pure Hemp Seed Oil",
     "category": "companion",
-    "tagline": "100% Natural Phyto-Nutrient Solution to Relieve Stress, Anxiety & Pain",
+    "tagline": "Relieves Anxiety, Pain & Allergies",
     "description": "Lenire Hemp Seed Oil is a 100% pure, unrefined natural oil rich in protective phytocompounds, essential amino acids, and balanced Omega-6 and Omega-3 fatty acids. It offers a safe, multi-functional veterinary therapy that balances nervous system pathways to relieve separation anxiety and loud noise stress, manages chronic arthritic pain, and treats inflammatory skin allergies.",
     "indications": [
       "Separation & Environmental Noise Anxiety",
@@ -151,7 +151,7 @@ export const products = [
     "id": "sigimmune",
     "name": "Sigimmune",
     "category": "companion",
-    "tagline": "Advanced Immune Booster & Anti-Pathogenic Defence Formulation",
+    "tagline": "Boosts Immune Function & Infection Recovery",
     "description": "SigImmune is a advanced veterinary immuno-modulating supplement formulated to reinforce defense mechanisms in compromised or aging companion animals. Combining pure algal 1,3 beta-glucans, concentrated prebiotic fibers, high-purity botanical extracts, and essential immune-supporting micronutrients, it accelerates white blood cell production, dampens chronic inflammation, and shortens recovery times from complex infectious illnesses.",
     "indications": [
       "Weakened Immune System Support",
@@ -194,7 +194,7 @@ export const products = [
     "id": "sencare",
     "name": "Sencare",
     "category": "companion",
-    "tagline": "Comprehensive Comprehensive Senior Vitality Supplement for Aging Dogs",
+    "tagline": "Supplemennt For Senior Dogs",
     "description": "SenCare is an all-in-one veterinary geriatric supplement formulated to address the multi-system decline seen in aging canine patients. It integrates advanced joint rebuilding elements, cardioprotective nutrients, brain-boosting adaptogens, urinary tract protectants, and digestive enzymes and probiotics. SenCare preserves cognitive function, enhances mobility, maintains cardiac efficiency, and promotes vitality in senior dogs.",
     "indications": [
       "Cognitive Dysfunction Syndrome (CDS)",
@@ -241,7 +241,7 @@ export const products = [
     "id": "neurosig",
     "name": "Neurosig",
     "category": "companion",
-    "tagline": "Natural Brain Booster & Cognitive Function Enhancer",
+    "tagline": "Natural Brain Booster & Cognitive Functions",
     "description": "NeuroSig is a advanced veterinary neuro-nutritional formula developed to support brain health and enhance cognitive clarity in companion animals. Blending specialized short-chain fats, highly purified botanical brain adaptogens, neural phospholipids, and co-enzymatic vitamins, it reduces environmental anxiety, stabilizes anxious behavior, improves memory retention, and enhances overall focus and alertness.",
     "indications": [
       "Age-Related Behavioral Alterations (CDS)",
@@ -288,7 +288,7 @@ export const products = [
     "id": "sigcare-gestation",
     "name": "Sigcare Gestation",
     "category": "companion",
-    "tagline": "Advanced Gestational Fortification Formula for Pregnant & Lactating Dogs",
+    "tagline": "Supplement For Pregnant Dogs",
     "description": "SigCare Gestation is a premium veterinary prenatal and lactation supplement designed to satisfy the increased nutritional and metabolic demands of pregnant and lactating female dogs. It delivers balanced ratios of calcium, phosphorus, heme iron, and fetal-shielding vitamins alongside gut-active probiotics, supporting smooth embryonic development, healthy neonatal birth weights, and abundant milk production.",
     "indications": [
       "Maternal Prenatal Conditioning",
@@ -335,7 +335,7 @@ export const products = [
     "id": "sigmotile",
     "name": "Sigmotile",
     "category": "companion",
-    "tagline": "Male Breeding Optimization Core to Unlock Full Reproductive Potential",
+    "tagline": "Unlocks Full Reproductive Potential",
     "description": "SigMotile is an advanced veterinary reproductive booster designed to improve libido and maximize semen quality parameters in male breeding dogs. Combining nitric oxide precursors like L-Arginine, cellular energy shuttles like L-Carnitine, and standardized botanical testosterone boosters, it enhances overall stamina, optimizes sperm counts and progressive motility scores, and maximizes fertility rates.",
     "indications": [
       "Male Stud Infertility Resolution",
@@ -382,7 +382,7 @@ export const products = [
     "id": "fertisig",
     "name": "Fertisig",
     "category": "companion",
-    "tagline": "Female Fertility Optimization Core to Enhance Ovulation & Egg Quality",
+    "tagline": "Enhances Fertility",
     "description": "FertiSig is an advanced veterinary reproductive formula designed to optimize ovarian function and improve conception success in female breeding dogs. It blends standardized phyto-estrogenic roots, systemic circulation boosters, cell-protecting antioxidants, and necessary prenatal vitamins to stabilize cycling, promote balanced ovulation, improve egg health, and prevent early pregnancy loss.",
     "indications": [
       "Irregular/Absent Estrus Cycle Correction",
@@ -427,9 +427,9 @@ export const products = [
   },
   {
     "id": "chitosil-advanced-wound-healing-spray",
-    "name": "Chitosil Advanced Wound Healing Spray",
+    "name": "Chitosil",
     "category": "companion",
-    "tagline": "Nano-Silver & Nano-Chitosan Advanced Topical Barrier for Fast Wound Closure",
+    "tagline": "Advanced Wound Healing Spray",
     "description": "ChitoSil is a cutting-edge veterinary topical treatment featuring an engineered liquid tissue scaffold that combines pure silver nanoparticles and chitosan nanoparticles. When sprayed onto broken skin, it forms a clear, antimicrobial, and breathable protective layer that stops bacterial growth, prevents infection, calms hot inflammation, and accelerates tissue healing and wound closure.",
     "indications": [
       "Infected open wounds and abscesses",
@@ -459,9 +459,9 @@ export const products = [
   },
   {
     "id": "regeneron-oral-supplement",
-    "name": "Regeneron Oral Supplement",
+    "name": "Regeneron",
     "category": "companion",
-    "tagline": "Advanced Bio-Nutrient Treatment for Fast Cellular Wound Healing & Recovery",
+    "tagline": "Oral Supplement For Fast Wound Healing",
     "description": "Regeneron is an advanced oral veterinary supplement formulated to treat non-healing wounds, severe skin trauma, and complex surgical incisions from within. Combining essential tissue amino acids, advanced muscle protectants (HMB), anti-aging cellular repair molecules (NMN), high-potency zinc, and protecting vitamins, it stimulates rapid structural collagen production, reduces tissue swelling, and boosts internal immune defenses.",
     "indications": [
       "Non-Healing, Chronic Decubitus Ulcers",
@@ -499,8 +499,8 @@ export const products = [
     "id": "sigmin-vc",
     "name": "SigMin Vc",
     "category": "ruminant",
-    "tagline": "Chelated Minerals & Vitamins for Enhanced Bioavailability",
-    "description": "SigMin VC is a scientifically engineered mineral-vitamin blend featuring organically chelated trace minerals (glycinates) to maximize absorption, cellular uptake, and physiological bio-availability. It provides targeted therapeutic support to optimize lactation curves, enhance prompt reproductive performance, and solidify basal immune defenses in modern high-yield dairy herds.",
+    "tagline": "Chelated Minerals & Vitamins",
+    "description": "SigMin VC is a mineral-vitamin blend with organic chelated trace mineral (glycinates) for enhanced bioavailibity. It supports improved milk production, reproduction and overall health in dairy cattles.",
     "indications": [
       "Lactation Optimization",
       "Reproductive Efficiency",
@@ -544,8 +544,8 @@ export const products = [
     "id": "sigmin-bio",
     "name": "SigMin Bio",
     "category": "ruminant",
-    "tagline": "Comprehensive Advanced Nutritional Support Formula",
-    "description": "SigMin BIO represents a multi-tiered nutritional intervention matrix combining highly bioavailable chelated trace minerals, foundational metabolic vitamins, gut-active catalytic enzymes, powerful systemic buffering agents, high-capacity broad-spectrum toxin binders, liver-protective rumen-protected choline, and live active yeast cultures. It provides full-spectrum gastrointestinal and systemic support to unlock maximized feed efficiency and high-level productivity.",
+    "tagline": "Comprehensive Nutritional Support Formula",
+    "description": "SigMin BIO is an advanced formulation with chelated minerals, vitamins,enzymes, buffer, toxin binder, rumen-protected choline and active dry yeast. It is designed to support rumen health, milk production, reproduction and overall health in dairy cattle.",
     "indications": [
       "Advanced Rumen Management",
       "Sub-Acute Ruminal Acidosis (SARA) Prevention",
@@ -593,8 +593,8 @@ export const products = [
     "id": "sigmin-ultra",
     "name": "SigMin Ultra",
     "category": "ruminant",
-    "tagline": "Premium Chelated Minerals & Vitamins for Ultra-High Yielding Herds",
-    "description": "SigMin Ultra is an elite-tier nutritional powerhouse formulated explicitly to satisfy the extreme metabolic and physiological demands of high-producing dairy cattle. This premium matrix integrates organic trace minerals with high bioavailability, vital vitamins, therapeutic probiotics, and critical rumen-protected essential amino acids (Methionine, Lysine). It ensures rapid absorption, fast structural restoration, and unmatched performance curves.",
+    "tagline": "Chelated Minerals & Vitamins for High Yielding Dairy Cattle",
+    "description": "SigMin Ultra is a premium blend of organic minerals, vitamins, probiotics, and rumen-protected amino acids designed to meet the extreme metabolic demands of ultra-high yielding dairy cows. It enhances superior bioavailability, faster results and optimal herd performance",
     "indications": [
       "Peak-Lactation Metabolic Support",
       "Negative Energy Balance (NEB) Management",
@@ -641,8 +641,8 @@ export const products = [
     "id": "sigmin-v-plus",
     "name": "SigMin V Plus",
     "category": "ruminant",
-    "tagline": "Standard Inorganic Mineral & Vitamin Premix for General Herd Maintenance",
-    "description": "SigMin V Plus is a cost-effective, mineral-vitamin premix engineered to maintain basic nutrient levels and optimize foundational performance metrics in standard dairy cattle. This blend supplements routine diets with necessary trace elements, balancing home-grown forage variations to support daily milk production, reliable fertility parameters, skin vitality, and overall herd physiological stability.",
+    "tagline": "Inorganic Mineral & Vitamin",
+    "description": "SigMin V Plus is a mineral-vitamin premix. It supports milkyeild, reproduction and overall health in dairy cattle.",
     "indications": [
       "Basal Diet Fortification",
       "Cost-Effective Herd Mineralization",
@@ -685,8 +685,8 @@ export const products = [
     "id": "sigmin-max",
     "name": "SigMin Max",
     "category": "ruminant",
-    "tagline": "Concentrated Chelated Minerals & Vitamins Premix for Feed Compounding",
-    "description": "SigMin MAX is a highly concentrated, precision-engineered industrial premix comprising chelated trace minerals, essential microminerals, and pure vitamins. It is designed for commercial feed millers and large-scale farming self-mix operations. This technical product provides intense concentration levels to optimize micro-ingredient delivery, driving milk yield, reproductive efficiency, and skeletal durability.",
+    "tagline": "Chelated Minerals & Vitamins Premix",
+    "description": "SigMin MAX premix is formulated with chelated trace minerals, microminerals and vitamins to enhance milkyeild, reproduction and overall health of dairy cattle.",
     "indications": [
       "Commercial Compound Feed Formulation",
       "High-Concentrate TMR Self-Mixing",
@@ -725,8 +725,8 @@ export const products = [
     "id": "sigmin-pro",
     "name": "SigMin PRO",
     "category": "ruminant",
-    "tagline": "Ultra-Concentrated Chelated Minerals & Vitamins Premix for Industrial Feed Mills",
-    "description": "SigMin PRO is an ultra-concentrated industrial premix designed for high-throughput feed compounding plants and commercial integrators. It features premium chelated trace minerals and high-potency vitamins. SigMin PRO delivers exceptional micro-nutrient density to lower logistical and inclusion costs while ensuring superior feed quality and performance.",
+    "tagline": " Chelated Minerals & Vitamins Premix",
+    "description": "SigMin PRO contains chelated trace minerals and vitamins to enhance milkyeild, reproduction and overall health of dairy cattle.",
     "indications": [
       "Large-Scale Commercial Feed Milling",
       "Concentrated Mineral Block Manufacturing",
@@ -763,8 +763,8 @@ export const products = [
     "id": "transig-cl",
     "name": "Transig-Cl",
     "category": "ruminant",
-    "tagline": "Transition Mineral Mix for Close-Up Period (21 Days Pre-Calving)",
-    "description": "TranSig-CL is a highly technical, close-up transition supplement designed for the critical 21-day window before calving. Featuring a precise negative dietary cation-anion difference (DCAD) profile, it induces mild, safe metabolic acidosis to stimulate bone calcium mobilization. This proactively prevents hypocalcemia (milk fever) while reinforcing immune functions and liver health to ensure a smooth start to lactation.",
+    "tagline": "Transition Mineral Mix for Close-Up Period",
+    "description": "TranSig-CL is a highly technical, close-up transition supplement designed for the critical 21-day window before calving. Featuring a precise optimal dietary cation-anion difference (DCAD) profile, it induces mild, safe metabolic acidosis to stimulate bone calcium mobilization. This proactively prevents hypocalcemia (milk fever) while reinforcing immune functions and liver health to ensure a smooth start to lactation.",
     "indications": [
       "Pre-Calving Transition Management",
       "Hypocalcemia (Milk Fever) Prevention",
@@ -809,8 +809,8 @@ export const products = [
     "id": "transig-fr",
     "name": "Transig-Fr",
     "category": "ruminant",
-    "tagline": "Transition Mineral Mix for Fresh Period (21 Days Post-Calving)",
-    "description": "TranSig-FR is an advanced postpartum transition supplement designed for the first 21 days after calving. It targets the challenges of Negative Energy Balance (NEB) and metabolic stress. By providing readily available glucogenic energy sources and liver protectants, it supports optimal liver function, stabilizes rumen fermentation, drives dry matter intake, and accelerates reproductive recovery.",
+    "tagline": "Transition Mineral Mix for Fresh Period",
+    "description": "TranSig™ FR is a post-calving premix for the first 21 days that supports energy balance, liver and rumen health, dry matter intake, and early lactation performance, reducing ketosis risk and improving recovery, fertility, and milk yield",
     "indications": [
       "Postpartum Energy Optimization",
       "Negative Energy Balance Mitigation",
@@ -844,8 +844,8 @@ export const products = [
     "id": "calsig-ds",
     "name": "Calsig Ds",
     "category": "ruminant",
-    "tagline": "High-Potency Liquid Calcium & Phosphorus with Minerals & Herbal Galactagogues",
-    "description": "CalSig DS is a premium, high-potency liquid calcium and phosphorus supplement enriched with essential vitamins, trace minerals, and standardized herbal galactagogues. Formulated to optimize structural mineral balances, it prevents clinical milk fever, improves skeletal development, and stimulates lacteal cell synthesis to boost milk production and somatic health.",
+    "tagline": "Liquid Calcium & Phosphorus with Minerals & Herbal Galactagogues",
+    "description": "CalSig™ DS is a liquid supplement with bioavailable calcium, phosphorus, vitamins, and herbal extracts that prevents milk fever, boosts milk yield, and supports recovery from metabolic stress.",
     "indications": [
       "Acute Hypocalcemia Prevention",
       "Peak Lactation Volumetric Stimulation",
@@ -886,8 +886,8 @@ export const products = [
     "id": "sigbind",
     "name": "Sigbind",
     "category": "ruminant",
-    "tagline": "Broad-Spectrum Mycotoxin Binder for Comprehensive Gastrointestinal Protection",
-    "description": "SigBind is an advanced, high-capacity, broad-spectrum toxin adsorption compound engineered to clean animal feed matrices. Utilizing multi-layered porous mineral silicates and organic yeast cell walls, it selectively binds and neutralizes a wide range of mycotoxins (including Aflatoxins, Ochratoxins, T-2 toxin, and Zealaerone) within the digestive tract, safeguarding intestinal health and preserving milk quality.",
+    "tagline": "Broad-Spectrum toxin Binder",
+    "description": "SigBind™ neutralizes a broad spectrum of mycotoxins, supporting digestive health, overall well-being, and optimal performance in dairy cattle.",
     "indications": [
       "Total Mixed Ration Decontamination",
       "Aflatoxin M1 Milk Contamination Prevention",
@@ -919,8 +919,8 @@ export const products = [
     "id": "sigbind-c",
     "name": "Sigbind C",
     "category": "ruminant",
-    "tagline": "Broad-Spectrum Toxin Binder Enhanced with Activated Charcoal",
-    "description": "SigBind C is an elite-tier, multi-component toxin binding compound that pairs high-affinity mineral silicates with pure, activated charcoal. This creates an extremely powerful adsorption matrix capable of locking down both polar and highly complex non-polar mycotoxins, chemical residues, and bacterial endotoxins, providing excellent systemic defense during severe feed contamination events.",
+    "tagline": "Broad-Spectrum Toxin Binder with Activated Charcoal",
+    "description": "SigBind™ neutralizes a broad spectrum of mycotoxins, supporting digestive health, overall well-being, and optimal performance in dairy cattle.",
     "indications": [
       "Severe or Variable Feed Mold Contamination",
       "Non-Polar Toxin Neutralization",
@@ -950,8 +950,8 @@ export const products = [
     "id": "sigbuff",
     "name": "Sigbuff",
     "category": "ruminant",
-    "tagline": "High-Performance Rumen Buffer Matrix with Natural Lithothamnium",
-    "description": "SigBuff is an advanced ruminal buffering complex engineered to support a highly stable and productive rumen environment. It combines pure sodium bicarbonate, high-reactivity magnesium oxide, active dry yeast, and premium calcified marine seaweed (Lithothamnium). SigBuff delivers a slow, multi-stage release of buffering minerals, providing long-lasting pH control to prevent Sub-Acute Ruminal Acidosis (SARA) and optimize milk fat synthesis.",
+    "tagline": " Rumen Buffer with Lithothamnium",
+    "description": "SigBuff™ is a high performance rumen buffer formulated with natural Lithothamnium (calcified seaweed), bicarbonate, magnesium oxide and active dry yeast. It maintains stable rumen pH over an extended period through the slow, sustained rebase of buffering components.",
     "indications": [
       "High-Concentrate/Low-Forage Diet Management",
       "Sub-Acute Ruminal Acidosis (SARA) Prevention",
@@ -982,8 +982,8 @@ export const products = [
     "id": "sigmin-rp",
     "name": "SigMin Rp",
     "category": "ruminant",
-    "tagline": "Advanced Reproductive Solution for Ovarian Activation & Conception Optimization",
-    "description": "SigMin RP is a specialized reproductive supplement designed to treat silent anestrus, repeat breeding, and early embryonic loss in dairy cattle. Enriched with highly concentrated Omega-3 fatty acids (EPA & DHA), organic glycinate trace elements, and essential reproductive vitamins, it triggers prompt estrus expression, optimizes follicular maturation, and strengthens uterine health to improve first-service conception rates.",
+    "tagline": "Advanced Reproductive Solution ",
+    "description": "SigMin™ RP enhances fertility in dairy cattle by improving estrus expression and conception rates, helping reduce repeat breeding and anestrus",
     "indications": [
       "Postpartum Silent Anestrus Treatment",
       "Repeat Breeder Syndrome Resolution",
@@ -1022,8 +1022,8 @@ export const products = [
     "id": "sacchro-l",
     "name": "Sacchro L",
     "category": "ruminant",
-    "tagline": "Advanced Rumen Fermentation Catalyser to Enhance Milk Yield & Fat",
-    "description": "SacChro L is an advanced bio-catalytic feed additive combining high-potency active live yeast (Saccharomyces cerevisiae), targeted gut-stabilizing Lactobacillus casei, and organic chromium propionate. It optimizes the rumen microflora, reduces metabolic heat stress, improves fiber digestion, and ensures high milk volume and fat yield under challenging environmental conditions.",
+    "tagline": " Enhances Milk Yield & Fat",
+    "description": "SacChro L™ is a feed additive that supports rumen function, nutrient utilization, and feed intake, enhancing milk production, immunity and overall herd health under both normal and stress conditions",
     "indications": [
       "Heat Stress Performance Management",
       "Fiber Digestibility Optimization",
@@ -1052,8 +1052,8 @@ export const products = [
     "id": "masticurb",
     "name": "Masticurb",
     "category": "ruminant",
-    "tagline": "Advanced Therapeutic Adjunct for Comprehensive Mastitis Management",
-    "description": "MastiCurb is an advanced therapeutic adjunct formulated to support mammary tissue health and manage bovine mastitis. Combining powerful anti-inflammatory enzymes, immuno-modulating algal beta-glucans, tissue-repairing antioxidants, and chelated trace elements, it works alongside standard antibiotic therapies to reduce somatic cell counts (SCC), clear udder inflammation, and speed up recovery.",
+    "tagline": " Mastitis Management",
+    "description": "MastiCurb™ is a therapeutic adjunct for mastitis that supports udder health, reduces inflammation, promotes tissue repair, and works with antibiotics to shorten the recovery period.",
     "indications": [
       "Clinical Mastitis Treatment Co-Therapy",
       "Sub-Clinical Mastitis Somatic Management",
@@ -1094,8 +1094,8 @@ export const products = [
     "id": "signazyme-r",
     "name": "Signazyme R",
     "category": "ruminant",
-    "tagline": "Multi-Enzyme Premix to Maximize Fiber Digestion, Milk Volume & Fat Yield",
-    "description": "SignaZyme R is an advanced, highly stable multi-enzyme feed premix developed to maximize carbohydrate digestion in dairy cattle. It supplies precise concentrations of exogenous fibrolytic and amylolytic enzymes to break down tough plant cell walls. This releases extra energy and nutrients from high-fiber diets, improving feed conversion efficiency while lowering overall herd feed costs.",
+    "tagline": "Multi-Enzyme Premix For Fiber Digestion: To Improve Milk Volume & Fat Yield",
+    "description": "SignaZyme™ R is an enzyme premix that enhances digestion, improving nutrient utilization, feed efficiency, milk production, and overall performance in dairy cattle.",
     "indications": [
       "High-Fiber Crop Utilization Enhancement",
       "Feed Conversion Ratio (FCR) Optimization",
@@ -1129,8 +1129,8 @@ export const products = [
     "id": "sigyeast",
     "name": "Sigyeast",
     "category": "ruminant",
-    "tagline": "Concentrated Pure Active Dry Yeast (Saccharomyces cerevisiae) for Rumen Stability",
-    "description": "SigYeast is a highly concentrated, premium pure live active dry yeast supplement providing exactly 20 Billion CFU per gram of a selected Saccharomyces cerevisiae strain. It acts as a powerful oxygen scavenger within the rumen, creating a perfect anaerobic environment that supports beneficial fiber-digesting and lactic-acid-utilizing bacteria, stabilizing rumen pH and preventing acidosis.",
+    "tagline": "Active Dry Yeast (Saccharomyces cerevisiae) ",
+    "description": "SigYeast™ is a concentrated active dry yeast (20billion CFU/g) that supports rumen health, stabilizes pH, boosts fiber-digestion, improves VFA production, and enhances overall performance in dairy cattle.",
     "indications": [
       "Acute/Sub-Acute Acidosis Prevention",
       "Rumen Microflora Stabilization",
@@ -1157,8 +1157,8 @@ export const products = [
     "id": "molasig-molasig-pro",
     "name": "Molasig & Molasig PRO",
     "category": "ruminant",
-    "tagline": "Premium Molasses Feed Flavor & Sweetener Complex for Maximum Palatability",
-    "description": "MolaSig and MolaSig Pro are premium, high-stability feed flavor systems designed to replicate the rich aroma and sweet taste of natural sugarcane molasses. Formulated to mask unpalatable ingredients, bitter medications, or off-odors in compound feeds, these additives encourage rapid feed acceptance, reduce sortation behavior, and support high, consistent dry matter intake across all livestock categories.",
+    "tagline": " Molasses Feed Flavor With Sweetener",
+    "description": "MolaSig™ and MolaSig™ Pro are feed flavors that enhance palatability, increase feed intake, and help reduce feed rejction",
     "indications": [
       "Unpalatable Feed/Byproduct Masking",
       "Ration Sortation and Waste Prevention",
@@ -1187,8 +1187,8 @@ export const products = [
     "id": "sigproe-calf",
     "name": "SigProe Calf",
     "category": "ruminant",
-    "tagline": "Advanced Probiotic, Prebiotic & Digestive Enzyme Blend for Young Calves",
-    "description": "SigProe CALF is a advanced, highly target-specific digestive supplement designed to optimize gut health, immunity, and growth velocity in young dairy calves. Combining a high-density seven-strain probiotic core with tailored prebiotic fibers and a wide range of digestive enzymes, it establishes a healthy intestinal microbiome, accelerates rumen development, increases average daily gain (ADG), and reduces neonatal scours.",
+    "tagline": " Probiotic, Prebiotic & Digestive Enzyme ",
+    "description": "SigProe™ CALF is a probiotic, prebiotic, and enzyme blend that supports gut health, immunity, and growth in young calves, improves average daily weight gain, enhances feed efficiency, and reduces digestive issues for strong, healthy development.",
     "indications": [
       "Neonatal Calf Scours Prevention",
       "Average Daily Weight Gain Optimization",
@@ -1231,7 +1231,7 @@ export const products = [
     "id": "sigflav-feed-flavor-range",
     "name": "Sigflav Feed Flavor Range",
     "category": "ruminant",
-    "tagline": "Species-Specific Customized Aromatics & Sweetener Solutions",
+    "tagline": "Feed Flavors",
     "description": "The SigFlav Feed Flavor Range is an advanced palette of standardized and customizable sensory additives engineered to optimize feed palatability, mask off-odors, and maximize voluntary feed consumption across varied species, regions, and feed manufacturing systems. Every variant is available in both a standard aromatic profile (SigFlav) and an enhanced sweetening matrix (SigFlav Pro) to provide complete flexibility in feed formulation.",
     "indications": [
       "Feed Intolerance Mitigation",
@@ -1262,8 +1262,8 @@ export const products = [
     "id": "siglac-silage-inoculant",
     "name": "Siglac Silage Inoculant",
     "category": "ruminant",
-    "tagline": "Advanced Bacterial & Fibrolytic Enzyme Complex for Premium Silage Preservation",
-    "description": "SigLac is a cutting-edge silage inoculant engineered to ensure rapid fermentation and long-term aerobic stability in wrapped or bunker-stored forage. Combining targeted homofermentative and heterofermentative lactic acid bacteria with high-activity fibrolytic enzymes, it drives a fast initial pH drop, prevents secondary heating, controls yeast and mold setup, and locks in maximum nutrient value.",
+    "tagline": " Silage Inoculant",
+    "description": "SigLac™ is an advanced silage inoculant combining homo- and heterofermentative bacteria with fiber-degrading enzymes to enhance fermentation, nutrient retention, digestibility, and aerobic stability, enhancing silage quality.",
     "indications": [
       "Green Fodder Silage Preservation",
       "Aerobic Heating Minimization at Feed-Out",
@@ -1380,7 +1380,7 @@ export const products = [
     "icon": "Settings",
     "packaging_side": "right"
   },
-  {
+  /*{
     "id": "pcr-test-tick-borne-parasites",
     "name": "PCR Test for Tick-Borne Parasites",
     "category": "companion",
@@ -1414,5 +1414,5 @@ export const products = [
     "color": "#2a9d8f",
     "icon": "Activity",
     "packaging_side": "left"
-  }
+  }*/
 ];

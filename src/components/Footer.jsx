@@ -50,12 +50,12 @@ export default function Footer() {
           
           {/* Left Column: Scientific Consulting Pitch */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-            <h2 className="editorial-title" style={{ fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', color: 'var(--color-white)', lineHeight: 1.2 }}>
-              Request a <br />
-              <span style={{ fontStyle: 'italic', color: 'var(--color-gold)' }}>Scientific Assessment</span>
-            </h2>
+            <h3 className="editorial-title" style={{ fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', color: 'var(--color-white)', lineHeight: 1.2 }}>
+              Let us develop <br />
+              <span style={{ fontStyle: 'italic', color: 'var(--color-gold)' }}>advanced animal health & nutrition solutions together !</span>
+            </h3>
             <p style={{ color: 'rgba(255, 255, 255, 0.75)', fontSize: '0.95rem', lineHeight: 1.6, fontWeight: 300 }}>
-              Need a bespoke formulation or molecular pathogen screening for your veterinary practice or farm? Submit your inquiry. Our PhD directors will review your animal's case history and recommend targeted molecular therapy.
+              Whether you are a distributor, veterinarian, dairy farm owner, integrator, brand owner or business partner – Signate can help develop science backed solutions as per your requirements
             </p>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '1rem' }}>
@@ -64,7 +64,7 @@ export default function Footer() {
                   <Mail size={16} />
                 </div>
                 <div>
-                  <span style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)', display: 'block', textTransform: 'uppercase' }}>Scientific Inquiry Email</span>
+                  <span style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)', display: 'block', textTransform: 'uppercase' }}> Inquiry Email</span>
                   <a href="mailto:signatean@gmail.com" style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--color-white)' }}>signatean@gmail.com</a>
                 </div>
               </div>
@@ -74,7 +74,7 @@ export default function Footer() {
                   <Clock size={16} />
                 </div>
                 <div>
-                  <span style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)', display: 'block', textTransform: 'uppercase' }}>Research Lab Hours</span>
+                  <span style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)', display: 'block', textTransform: 'uppercase' }}>Work Hours</span>
                   <span style={{ fontSize: '0.9rem', fontWeight: 600 }}>10:00 AM - 6:00 PM IST (Mon - Sat)</span>
                 </div>
               </div>

@@ -4,30 +4,29 @@ import prashantImage from '../../IMages/prashant_pic.png';
 
 export const founders = [
   {
-    name: "Dr. Keyur Dave",
+    name: "Keyur Dave",
     image: keyurDaveImage,
-    role: "Co-Founder & Director of Biochemistry",
-    credentials: "Ph.D. in Biochemistry",
+    linkedin: "https://www.linkedin.com/in/keyur-dave-0958349/",
+    credentials: "PhD",
     specialty: "Molecular Biology, Diagnostics & Protein Chemistry",
-    bio: "Dr. Keyur Dave is a veteran biochemist specializing in identifying molecular biomarkers and developing diagnostics for animal infections. At Signate, he leads molecular diagnostics development and oversees scientific quality standards of animal feed formulations.",
-    contributions: "Engineered high-accuracy PCR testing panels for dairy cattle pathogens and discovered organic mineral absorption pathways."
+    bio: "With a PhD in Biochemistry from Maharaja Sayajirao University of Baroda, Keyur brings more than two decades of experience at the intersection of life sciences and finance. His professional journey includes roles at Bayer Diagnostics, Mehta Partners, and SBI Capital Markets, where he developed expertise in pharmaceutical and life sciences equity research, investment banking, valuations, and M&A activities.",
   },
   {
-    name: "Dr. Shajil Madhavan",
+    name: "Shajil Madhavan",
     image: shajilImage,
-    role: "Co-Founder & Director of Animal Nutrition",
-    credentials: "Ph.D. in Veterinary Biotechnology",
+    linkedin: "https://www.linkedin.com/in/shajil-madhavan-phd-b409b518/",
+    credentials: "PhD",
     specialty: "Bioprocess Technology & Feed Formulation Engineering",
-    bio: "Dr. Shajil Madhavan combines advanced biotechnology with practical animal husbandry. With over a decade of research, his primary focus is using encapsulation techniques to ensure probiotics and organic trace minerals bypass the rumen safely.",
-    contributions: "Created the chelated glycinate mineral combinations and developed the micro-encapsulated rumen-bypass lipids."
+    bio: "Shajil holds a PhD in Biochemistry from Maharaja Sayajirao University of Baroda and has over 20 years of experience spanning academia and industrial R&D. He has worked with institutions and organizations including the UW–Madison, CHARUSAT, Kemin Industries and Nitta Gelatin India, with expertise in developing and commercializing human and animal nutritional supplement products.",
+   
   },
   {
-    name: "Dr. Prashant Kunjadia",
+    name: "Prashant Kunjadia",
     image: prashantImage,
-    role: "Co-Founder & Director of Research & Development",
-    credentials: "Ph.D. in Biotechnology",
+    linkedin: "https://www.linkedin.com/in/prashant-kunjadiya-80a5b327/",
+    credentials: "PhD",
     specialty: "Bioactive Compounds & Gut Microflora Genomics",
-    bio: "Dr. Prashant Kunjadia is a molecular microbiologist focused on companion animal gut microbiome genomics. His research determines how prebiotic structures affect beneficial bacterial colonies, directly influencing systemic immunity and longevity.",
-    contributions: "Designed the Synbiotic ratio for SigProe and led safety and efficacy trials for CollaSig joint formulations."
+    bio: "Prashant is a scientist, research administrator and agricultural management professional with expertise in biochemistry, neuroscience research support, agriculture and dairy operations. Currently serving at the University of Kentucky, he contributes to interdisciplinary research programs and core facility management. He combines academic excellence, operational leadership, entrepreneurial insight, research collaboration and sustainable agricultural practices with a PhD in Biochemistry from Maharaja Sayajirao University of Baroda.",
+   
   }
 ];

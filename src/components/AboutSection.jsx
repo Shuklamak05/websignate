@@ -86,9 +86,6 @@ export default function AboutSection() {
               }}
             >
               <div className="about-left-card" style={{ padding: '0.2rem 0.2rem 0.4rem' }}>
-                <p style={{ fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(1,42,28,0.58)', marginBottom: '0.45rem' }}>
-                  Strategic Direction
-                </p>
                 <h3 style={{ fontSize: 'clamp(2.4rem, 4vw, 3.6rem)', marginBottom: '0.7rem', color: '#0a1018', lineHeight: 1.05 }}>Vision</h3>
                 <p style={{ fontSize: 'clamp(1.02rem, 1.9vw, 1.2rem)', lineHeight: 1.65, color: 'rgba(10,16,24,0.84)' }}>
                   To become a prominent and influential player in the animal health and nutrition supplements industry, setting new standards of excellence and leadership.
@@ -96,9 +93,6 @@ export default function AboutSection() {
               </div>
 
               <div className="about-left-card" style={{ padding: '0.2rem 0.2rem 0.4rem' }}>
-                <p style={{ fontSize: '0.78rem', fontWeight: 800, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'rgba(1,42,28,0.58)', marginBottom: '0.45rem' }}>
-                  Execution Purpose
-                </p>
                 <h3 style={{ fontSize: 'clamp(2.4rem, 4vw, 3.6rem)', marginBottom: '0.7rem', color: '#0a1018', lineHeight: 1.05 }}>Mission</h3>
                 <p style={{ fontSize: 'clamp(1.02rem, 1.9vw, 1.2rem)', lineHeight: 1.65, color: 'rgba(10,16,24,0.84)' }}>
                   To enhance the productivity and well-being of animals by providing cutting-edge and innovative solutions that address their health and nutritional needs.
@@ -115,7 +109,7 @@ export default function AboutSection() {
                 borderTop: '1px solid rgba(1,42,28,0.14)'
               }}
             >
-              <p style={{ letterSpacing: '0.18em', textTransform: 'uppercase', color: 'rgba(1,42,28,0.55)', fontSize: '0.9rem', marginBottom: '0.7rem', textAlign: 'center' }}>Core Values</p>
+              
               <h3 style={{ fontSize: 'clamp(2.2rem, 3.6vw, 3.2rem)', color: 'var(--color-forest)', marginBottom: '1.2rem', textAlign: 'center' }}>Values</h3>
 
               <div className="values-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', flex: 1 }}>

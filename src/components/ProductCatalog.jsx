@@ -399,16 +399,13 @@ export default function ProductCatalog({ selectedProductId, setSelectedProductId
       <div className="container">
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.25rem', textAlign: 'center', marginBottom: '4.5rem' }}>
           <h2 className="editorial-title" style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)', color: 'var(--color-forest)' }}>
-            The Scientific Formulations
+            PRODUCTS
           </h2>
-          <p style={{ maxWidth: '650px', color: 'var(--color-dark-text)', opacity: 0.8, fontSize: '1rem' }}>
-            Zero fillers, 100% molecular trace integrity.
-          </p>
 
           <div style={{ position: 'relative', width: '100%', maxWidth: '540px', marginTop: '1.5rem' }}>
             <input
               type="text"
-              placeholder="Search formulations by name, active ingredients, or clinical targets..."
+              placeholder="Search formulations by name, active ingredients,"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="form-input"
@@ -618,7 +615,7 @@ export default function ProductCatalog({ selectedProductId, setSelectedProductId
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem', marginBottom: '1.5rem' }}>
                   <h4 style={{ fontSize: '0.9rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.5px', color: 'var(--color-forest)' }}>
-                    Active Biological Composition (Per Serving)
+                    Composition
                   </h4>
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                     {selectedProduct.ingredients.map((ing) => (

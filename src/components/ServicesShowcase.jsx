@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Microscope, FlaskConical, Settings2, GraduationCap, Quote, CheckSquare, Award } from 'lucide-react';
+import { Microscope, FlaskConical, Settings2, GraduationCap, Quote, CheckSquare, Award, Linkedin } from 'lucide-react';
 import { founders } from '../data/team';
 import diagnosticsBg from '../../IMages/diagnostics-bg.png';
 import researchBg from '../../IMages/research-bg.png';
@@ -224,9 +224,7 @@ export default function ServicesShowcase() {
         <div id="founders" style={{ borderTop: '1px solid var(--color-border)', paddingTop: '6rem', display: 'flex', flexDirection: 'column', gap: '4rem' }}>
           
           <div style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
-            <span style={{ fontSize: '0.85rem', fontWeight: 800, color: 'var(--color-forest)', textTransform: 'uppercase', letterSpacing: '2.5px' }}>
-              Scientist Credentials
-            </span>
+           
             <h2 className="editorial-title" style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)', color: 'var(--color-forest)' }}>
               Meet The <span style={{ fontStyle: 'italic' }}>Founders</span>
             </h2>
@@ -298,9 +296,7 @@ export default function ServicesShowcase() {
                   <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--color-gold)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
                     {dr.credentials}
                   </span>
-                  <span style={{ fontSize: '0.85rem', color: 'var(--color-dark-text)', opacity: 0.6, fontWeight: 600 }}>
-                    {dr.role}
-                  </span>
+                  
                 </div>
 
                 <p style={{ fontSize: '0.85rem', color: 'var(--color-dark-text)', opacity: 0.8, lineHeight: 1.5, fontWeight: 400 }}>
@@ -309,15 +305,32 @@ export default function ServicesShowcase() {
 
                 <div style={{ borderBottom: '1px solid var(--color-border)', marginTop: 'auto' }} />
 
-                {/* Key scientific breakthroughs */}
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
-                  <span style={{ fontSize: '0.7rem', fontWeight: 800, color: 'var(--color-forest)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
-                    Core Scientific Breakthrough
-                  </span>
-                  <p style={{ fontSize: '0.8rem', color: 'var(--color-dark-text)', opacity: 0.9, fontWeight: 600, lineHeight: 1.4 }}>
-                    {dr.contributions}
-                  </p>
-                </div>
+            
+
+                <a
+                  href={dr.linkedin}
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{
+                    marginTop: '0.2rem',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '0.45rem',
+                    border: '1px solid rgba(1, 42, 28, 0.2)',
+                    backgroundColor: 'rgba(1, 42, 28, 0.03)',
+                    color: 'var(--color-forest)',
+                    fontWeight: 700,
+                    fontSize: '0.82rem',
+                    padding: '0.58rem 0.95rem',
+                    borderRadius: '999px',
+                    textDecoration: 'none',
+                    transition: 'var(--transition-smooth)'
+                  }}
+                >
+                  <Linkedin size={15} />
+                  Connect on LinkedIn
+                </a>
               </div>
             ))}
           </div>
