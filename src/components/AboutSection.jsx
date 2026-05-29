@@ -69,7 +69,7 @@ export default function AboutSection() {
               border: '1px solid rgba(1,42,28,0.1)',
               boxShadow: '0 18px 46px rgba(1, 42, 28, 0.06)',
               backgroundImage:
-                "linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('https://images.unsplash.com/photo-1589941013453-ec89f33b5e95?auto=format&fit=crop&w=1600&q=80')",
+                "linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('')",
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat'

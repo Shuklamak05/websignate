@@ -40,9 +40,11 @@ export default function Hero() {
         >
           {/* Pill label */}
           <div
+            className="home-science-pill"
             style={{
               display: 'inline-flex',
               alignItems: 'center',
+              flexWrap: 'wrap',
               gap: '0.7rem',
               backgroundColor: 'hsl(60, 35%, 93%)',
               border: '1px solid rgba(1, 42, 28, 0.10)',
@@ -65,27 +67,41 @@ export default function Hero() {
             </span>
           </div>
 
-          {/* Title + copy (keep narrower to leave open space at right, like the reference) */}
-          <div style={{ marginTop: '2.4rem', maxWidth: '920px' }}>
-            <h1
-              style={{
-                fontFamily: 'var(--font-serif)',
-                fontSize: 'clamp(2.1rem, 3.2vw, 3rem)',
-                lineHeight: 1.04,
-                color: 'var(--color-forest)',
-                letterSpacing: '-1.2px'
-              }}
-            >
-              Advancing Animal Health & Performance Through Precision Scientific Nutrition
-            </h1>
+          {/* Title + copy with right-side animal imagery */}
+          <div className="home-top-grid" style={{ marginTop: '2.4rem', display: 'grid', gridTemplateColumns: '1.15fr 0.85fr', gap: '1.4rem', alignItems: 'start' }}>
+            <div style={{ maxWidth: '920px' }}>
+              <h1
+                style={{
+                  fontFamily: 'var(--font-serif)',
+                  fontSize: 'clamp(2.1rem, 3.2vw, 3rem)',
+                  lineHeight: 1.04,
+                  color: 'var(--color-forest)',
+                  letterSpacing: '-1.2px'
+                }}
+              >
+                Advancing Animal Health & Performance Through Precision Scientific Nutrition
+              </h1>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '1.15rem' }}>
-              <p style={{ fontSize: '1.08rem', color: 'rgba(1, 42, 28, 0.70)', lineHeight: 1.65, maxWidth: '70ch' }}>
-                At Signate, we develop scientifically formulated animal health and nutrition solutions that improve performance, productivity, and overall well-being.
-              </p>
-              <p style={{ fontSize: '1.02rem', color: 'rgba(1, 42, 28, 0.62)', lineHeight: 1.7, maxWidth: '76ch' }}>
-                Backed by strong R&amp;D capabilities and industry expertise, we focus on developing effective and sustainable solutions for modern animal production systems.
-              </p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '1.15rem' }}>
+                <p style={{ fontSize: '1.08rem', color: 'rgba(1, 42, 28, 0.70)', lineHeight: 1.65, maxWidth: '70ch' }}>
+                  At Signate, we develop scientifically formulated animal health and nutrition solutions that improve performance, productivity, and overall well-being.
+                </p>
+                <p style={{ fontSize: '1.02rem', color: 'rgba(1, 42, 28, 0.62)', lineHeight: 1.7, maxWidth: '76ch' }}>
+                  Backed by strong R&amp;D capabilities and industry expertise, we focus on developing effective and sustainable solutions for modern animal production systems.
+                </p>
+              </div>
+            </div>
+
+            <div className="home-animals-media" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.8rem' }}>
+              <div style={{ gridColumn: '1 / 3', borderRadius: '20px', overflow: 'hidden', border: '1px solid rgba(1, 42, 28, 0.1)', boxShadow: '0 14px 30px rgba(1, 42, 28, 0.12)' }}>
+                <img
+                  src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1200&q=80"
+                  alt="Happy dogs and cats"
+                  style={{ width: '100%', height: '270px', objectFit: 'cover' }}
+                />
+              </div>
+              
+              
             </div>
           </div>
 
@@ -195,6 +211,19 @@ export default function Hero() {
             __html: `
             @media (max-width: 980px) {
               .home-cards { grid-template-columns: 1fr !important; }
+              .home-top-grid { grid-template-columns: 1fr !important; }
+              .home-animals-media { grid-template-columns: 1fr 1fr !important; }
+              .home-science-pill {
+                width: 100%;
+                justify-content: center;
+                border-radius: 22px !important;
+                padding: 0.55rem 0.75rem !important;
+                gap: 0.45rem !important;
+              }
+              .home-science-pill span {
+                font-size: 0.74rem !important;
+                letter-spacing: 0.7px !important;
+              }
             }
           `
           }}

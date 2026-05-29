@@ -68,6 +68,15 @@ export default function Footer() {
                   <a href="mailto:signatean@gmail.com" style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--color-white)' }}>signatean@gmail.com</a>
                 </div>
               </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                <div style={{ width: '36px', height: '36px', borderRadius: '50%', backgroundColor: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-gold)' }}>
+                  <Phone size={16} />
+                </div>
+                <div>
+                  <span style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)', display: 'block', textTransform: 'uppercase' }}> Inquiry Phone</span>
+                  <a href="callto:+91-96196 89894" style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--color-white)' }}>+91-96196 89894, +91-97890 93341</a>
+                </div>
+              </div>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                 <div style={{ width: '36px', height: '36px', borderRadius: '50%', backgroundColor: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-gold)' }}>
@@ -85,7 +94,14 @@ export default function Footer() {
                 </div>
                 <div>
                   <span style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)', display: 'block', textTransform: 'uppercase' }}>Corporate HQ</span>
-                  <span style={{ fontSize: '0.9rem', fontWeight: 600 }}>Gujarat, India</span>
+                  <a
+                    href="https://maps.app.goo.gl/DtnECkvT6S9od6Ex6"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--color-white)', textDecoration: 'underline' }}
+                  >
+                    Plot No 15/A, Phase II, Vitthal Udhyog Nagar, GIDC, Anand - 388121
+                  </a>
                 </div>
               </div>
             </div>
@@ -108,7 +124,7 @@ export default function Footer() {
                   Inquiry Dispatched
                 </h3>
                 <p style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.8)', maxWidth: '340px', lineHeight: 1.5 }}>
-                  Thank you! Your clinical case dossier has been successfully transferred to Dr. Keyur Dave & the R&D panel. A reply will be routed to <strong>{formData.email}</strong> shortly.
+                  Thank you! Your clinical case dossier has been successfully transferred to Signate & the R&D panel. A reply will be routed to <strong>{formData.email}</strong> shortly.
                 </p>
                 <button
                   onClick={resetForm}
@@ -209,7 +225,7 @@ export default function Footer() {
                 </div>
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
-                  <label style={{ fontSize: '0.75rem', fontWeight: 700, color: 'rgba(255,255,255,0.6)' }}>Biological Case Notes / Inquiries</label>
+                  <label style={{ fontSize: '0.75rem', fontWeight: 700, color: 'rgba(255,255,255,0.6)' }}>Comments / Inquiries</label>
                   <textarea
                     name="message"
                     required
@@ -224,7 +240,7 @@ export default function Footer() {
                       resize: 'none',
                       fontFamily: 'var(--font-sans)'
                     }}
-                    placeholder="Provide animal age, body weight, specific deficiencies, or diagnostic kit counts..."
+                    placeholder="Provide animal age, body weight, specific deficiencies..."
                   />
                 </div>
 
@@ -237,7 +253,7 @@ export default function Footer() {
                     marginTop: '0.5rem'
                   }}
                 >
-                  Submit Clinical Inquiry dossier <Send size={16} />
+                  Submit  Inquiry <Send size={16} />
                 </button>
               </form>
             )}
@@ -266,7 +282,7 @@ export default function Footer() {
           {/* Directory */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <h4 style={{ fontSize: '0.8rem', fontWeight: 800, textTransform: 'uppercase', color: 'var(--color-gold)', letterSpacing: '0.5px' }}>
-              Science Navigation
+               Navigation
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.85rem' }}>
               <a href="#home" style={{ color: 'rgba(255,255,255,0.7)' }} onMouseEnter={(e) => e.target.style.color = 'var(--color-gold)'} onMouseLeave={(e) => e.target.style.color = 'rgba(255,255,255,0.7)'}>Home</a>
