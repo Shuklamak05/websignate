@@ -120,7 +120,7 @@ function ProductCard({ prod, setSelectedProductId }) {
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
         <h3 style={{ fontSize: '1.85rem', fontWeight: 700, color: 'var(--color-forest)', lineHeight: 1.1 }}>{prod.name}</h3>
-        <span style={{ fontSize: '1.03rem', fontWeight: 700, color: prod.color, fontStyle: 'italic', lineHeight: 1.45 }}>{prod.tagline}</span>
+        <span style={{ fontSize: '1.03rem', fontWeight: 700, color: '#2563eb', fontStyle: 'italic', lineHeight: 1.45 }}>{prod.tagline}</span>
       </div>
 
       <p
@@ -613,30 +613,6 @@ export default function ProductCatalog({ selectedProductId, setSelectedProductId
 
                 <div style={{ borderBottom: '1px solid var(--color-border)', marginBottom: '1.5rem' }} />
 
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem', marginBottom: '1.5rem' }}>
-                  <h4 style={{ fontSize: '0.9rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.5px', color: 'var(--color-forest)' }}>
-                    Composition
-                  </h4>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                    {selectedProduct.ingredients.map((ing) => (
-                      <div
-                        key={ing}
-                        style={{
-                          padding: '0.75rem 1rem',
-                          borderRadius: '8px',
-                          backgroundColor: 'rgba(1, 42, 28, 0.02)',
-                          border: '1px solid rgba(1, 42, 28, 0.05)',
-                          fontSize: '0.85rem',
-                          fontWeight: 600,
-                          color: 'var(--color-forest)'
-                        }}
-                      >
-                        {ing}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
                 <div
                   style={{
                     marginTop: 'auto',
@@ -651,7 +627,7 @@ export default function ProductCatalog({ selectedProductId, setSelectedProductId
                   }}
                 >
                   <span style={{ fontSize: '0.7rem', fontWeight: 800, textTransform: 'uppercase', color: 'var(--color-forest)', letterSpacing: '0.5px' }}>
-                    Veterinary Dosage Guidelines
+                     Dosage Guidelines
                   </span>
                   <p style={{ fontSize: '0.85rem', color: 'var(--color-dark-text)', fontWeight: 600, lineHeight: 1.4 }}>{selectedProduct.dosage}</p>
                 </div>
@@ -663,7 +639,7 @@ export default function ProductCatalog({ selectedProductId, setSelectedProductId
                     className="btn-primary"
                     style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '0.5rem', backgroundColor: 'var(--color-forest)', color: 'var(--color-white)', boxShadow: 'none' }}
                   >
-                    Inquire & Order Formula <ShoppingBag size={16} />
+                    Enquire <ShoppingBag size={16} />
                   </a>
                 </div>
               </div>

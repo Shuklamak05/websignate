@@ -48,11 +48,11 @@ export default function AboutSection() {
           }}
         >
           <h2 style={{ fontSize: 'clamp(2.6rem, 5vw, 4rem)', color: 'var(--color-forest)', marginBottom: '1.2rem' }}>About us</h2>
-          <p style={{ fontSize: 'clamp(1.2rem, 2.3vw, 1.95rem)', color: 'rgba(1,42,28,0.72)', lineHeight: 1.55, maxWidth: '56ch' }}>
-            Founded in 2019 by a team of passionate scientists, Signate is an innovative company dedicated to the development, manufacturing, and marketing of animal health and nutrition products.
+          <p style={{ marginTop: '1.2rem', fontSize: 'clamp(1.1rem, 2vw, 1.45rem)', color: 'rgba(1,42,28,0.67)', lineHeight: 1.65, maxWidth: '70ch' }}>
+Founded by scientists and industry professionals with a shared vision of advancing animal health and productivity through science and innovation, Signate develops science-based health and nutrition solutions for dairy cattle, companion animals, poultry and aquaculture. 
           </p>
           <p style={{ marginTop: '1.2rem', fontSize: 'clamp(1.1rem, 2vw, 1.45rem)', color: 'rgba(1,42,28,0.67)', lineHeight: 1.65, maxWidth: '70ch' }}>
-            Our team is driven by a deep commitment to improving animal well-being and productivity. We strive to deliver cutting-edge solutions based on scientific research and innovation for farmers, veterinarians, and animal caregivers.
+Through research, formulation expertise and technical excellence, we translate scientific knowledge into practical solutions that enhance animal health, productivity and performance.
           </p>
         </div>
       </div>

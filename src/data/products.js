@@ -1,13 +1,13 @@
 export const products = [
   {
     "id": "collasig-bj-pro",
-    "name": "CollaSig Bj PRO",
+    "name": "CollaSig BJ PRO™",
     "category": "companion",
-    "tagline": "Bioactive Collagen Peptides",
-    "description": "CollaSig BJ Pro is a state-of-the-art veterinary joint health supplement scientifically formulated with highly concentrated bioactive collagen peptides, high-purity glucosamine hydrochloride, chondroitin sulfate, and hyaluronic acid. It triggers natural chondrocyte collagen synthesis, repairs damaged cartilage matrices, improves synovial fluid lubrication, and reduces chronic arthritic pain and stiffness in senior pets.",
+    "tagline": "Healthy Joints & Bones",
+    "description": "CollaSig BJ Pro™ is a scientifically formulated bone and joint health supplement to support mobility, flexibility and long-term bone & joint health. It combines the benefits of Type I & III collagen peptides and undenatured Type II collagen with advanced joint-supportive nutrients to help maintain healthy cartilage, support joint lubrication, reduce stiffness and promote connective tissue repair. Ideal for pets affected by osteoarthritis, hip dysplasia, age-related joint degeneration and mobility challenges, CollaSig BJ Pro™ helps improve joint comfort, supports healthy movement, and enables pets to remain active and enjoy a better quality of life.",
     "indications": [
       "Osteoarthritis",
-      "Hip Dysplasia",
+      "Mobility",
       "Post-Orthopedic Surgery Recovery",
       "Stiffness & Limping",
       "Senior Mobility Decline"
@@ -28,7 +28,7 @@ export const products = [
       "Chronic Pain Management: Protects aging senior pets from persistent joint discomfort, restoring structural flexibility and movement.",
       "Dual-Phase Structural Matrix: Combines fast-absorbing Type I & III collagen peptides with undenatured Type II collagen for complete joint care."
     ],
-    "dosage": "Veterinary Dosage Guideline: 1 tablet per 10kg body weight daily, or as advised by a veterinarian.Powder Form Administration: - Pets <15 Kg: 2/3 scoop daily- Pets 16–30 Kg: 3/4 scoop daily- Pets >30 Kg: 1 full scoop daily (Average Dose: 3–5 g per day).",
+    "dosage": "Dosage Guideline: 1 tablet per 10kg body weight daily, or as advised by a veterinarian.Powder Form Administration: - Pets <15 Kg: 2/3 scoop daily- Pets 16–30 Kg: 3/4 scoop daily- Pets >30 Kg: 1 full scoop daily (Average Dose: 3–5 g per day).",
     "color": "#e07a5f",
     "icon": "Activity",
     "image": "/product_panels/collasig_bj_pro.jpg",
@@ -38,13 +38,13 @@ export const products = [
   },
   {
     "id": "collasig-sh-pro",
-    "name": "CollaSig Sh PRO",
+    "name": "CollaSig SH PRO™",
     "category": "companion",
     "tagline": "Healthy Skin & Shiny Coat",
-    "description": "CollaSig SH Pro is an advanced nutritional treatment designed to restore skin barrier health and maximize coat sheen in dogs and cats. Combining specialized Type I and III collagen peptides with a balanced profile of Omega 3, 6, and 9 essential fatty acids, pure biotin, zinc, and protecting vitamins, it deeply moisturizes the skin, controls excessive shedding, stops allergic flaking, and reduces skin inflammation.",
+    "description": "CollaSig SH Pro™ is a scientifically formulated skin and coat health supplement to support healthy skin, a lustrous coat and overall dermatological wellness in pets. Enriched with Type I & III collagen peptides and other skin-supportive nutrients, it helps maintain skin integrity, support natural skin repair and promote coat strength and shine. Ideal for pets experiencing dry skin, excessive shedding, dull coats, or seasonal skin challenges, CollaSig SH Pro™ helps enhance skin comfort and promotes a healthy, vibrant appearance.",
     "indications": [
-      "Atopic Dermatitis & Pruritus",
-      "Excessive Fur Shedding",
+      "Dry Skin",
+      "Excessive Shedding",
       "Flaky Skin & Dandruff Control",
       "Allergic Skin Sensitivity",
       "Dull/Brittle Hair Coat Restoration"
@@ -73,13 +73,13 @@ export const products = [
   },
   {
     "id": "sigproe-companion",
-    "name": "SigProe Companion",
+    "name": "SigProe™",
     "category": "companion",
     "tagline": "Improves Digestion & Gut Health",
-    "description": "SigProe Companion is an advanced veterinary digestive supplement formulated with a high-density blend of nine distinct probiotic strains, targeted prebiotic fibers (FOS & MOS), and essential digestive enzymes. It populates the intestinal tract with beneficial microflora, manages acute or antibiotic-associated diarrhea, relieves painful gas and bloating, and supports nutrient absorption to reinforce systemic immunity.",
+    "description": "SigProe™ is an advanced digestive health supplement to support optimal gastrointestinal balance, nutrient absorption and overall gut health. It combines multiple strains of probiotics, prebiotics and digestive enzymes to help restore healthy intestinal microflora, improve digestion and enhance efficiency. SigProe™ helps in managing common digestive disorders such as diarrhea, dysentery, smelly stool, bloating, flatulence and indigestion. It also supports recovery from digestive disturbances and antibiotic-associated gut imbalance, promoting long-term digestive wellness and immune support through a healthy gut–immune axis.",
     "indications": [
       "Acute & Chronic Diarrhea",
-      "Antibiotic-Associated Gut Dysbiosis",
+      "Gut Health",
       "Gastrointestinal Gas, Bloating & Flatulence",
       "Malabsorption Syndrome",
       "Poor Appetite & Digestive Stress Recovery"
@@ -497,13 +497,13 @@ export const products = [
   },
   {
     "id": "sigmin-vc",
-    "name": "SigMin Vc",
+    "name": "SigMin™ VC",
     "category": "ruminant",
     "tagline": "Chelated Minerals & Vitamins",
     "description": "SigMin VC is a mineral-vitamin blend with organic chelated trace mineral (glycinates) for enhanced bioavailibity. It supports improved milk production, reproduction and overall health in dairy cattles.",
     "indications": [
-      "Lactation Optimization",
-      "Reproductive Efficiency",
+      "Improved Mineral Bioavailability",
+      "Better Health & Productivity",
       "Fertility Enhancement",
       "Herd Immunocompetency",
       "Sub-clinical Deficiency Prevention"
@@ -532,7 +532,7 @@ export const products = [
       "Basal Immunity Boost: Re-establishes cellular immunity mechanisms to substantially mitigate disease susceptibility.",
       "Long-Term Herd Asset Protection: Prevents systemic depletion of vital structural microminerals across multi-lactation lifespans."
     ],
-    "dosage": "Lactating Cows & Buffaloes: 80–100 g daily post-milking.Non-Lactating / Dry Animals: 50 g daily incorporated into localized rations.",
+    "dosage": "80-100 g daily for lactating cows and buffalos.50 g for nonlactating animals",
     "color": "#2a9d8f",
     "icon": "Activity",
     "image": "/product_panels/sigmin_vc.jpg",
@@ -542,13 +542,13 @@ export const products = [
   },
   {
     "id": "sigmin-bio",
-    "name": "SigMin Bio",
+    "name": "SigMin™ BIO",
     "category": "ruminant",
     "tagline": "Comprehensive Nutritional Support Formula",
     "description": "SigMin BIO is an advanced formulation with chelated minerals, vitamins,enzymes, buffer, toxin binder, rumen-protected choline and active dry yeast. It is designed to support rumen health, milk production, reproduction and overall health in dairy cattle.",
     "indications": [
-      "Advanced Rumen Management",
-      "Sub-Acute Ruminal Acidosis (SARA) Prevention",
+      "Complete Nutrution",
+      "Improved Feed Efficiency",
       "Total Mixed Ration (TMR) Efficiency",
       "Immune Resilience",
       "Hepatic Optimization"
@@ -581,7 +581,7 @@ export const products = [
       "Enhanced Structural Fiber Cleavage: Catalyzes detailed cellular cell-wall carbohydrate breakdown, expanding overall dry matter conversion efficiency.",
       "Aggressive Pathogenic Biosecurity: Neutralizes complex dietary mycotoxins to mitigate systemic stress and preserve liver capacity via bio-protected choline."
     ],
-    "dosage": "Lactating Cows & Buffaloes: 80–100 g per head daily.Non-Lactating Cattle: 50 g per head daily mixed directly into feed.",
+    "dosage": "80-100 g daily for lactating cows and buffalos. 50 g for non lactating animals.",
     "color": "#264653",
     "icon": "Sparkles",
     "image": "/product_panels/sigmin_bio.jpg",
@@ -591,13 +591,13 @@ export const products = [
   },
   {
     "id": "sigmin-ultra",
-    "name": "SigMin Ultra",
+    "name": "SigMin™ Ultra",
     "category": "ruminant",
     "tagline": "Chelated Minerals & Vitamins for High Yielding Dairy Cattle",
     "description": "SigMin Ultra is a premium blend of organic minerals, vitamins, probiotics, and rumen-protected amino acids designed to meet the extreme metabolic demands of ultra-high yielding dairy cows. It enhances superior bioavailability, faster results and optimal herd performance",
     "indications": [
-      "Peak-Lactation Metabolic Support",
-      "Negative Energy Balance (NEB) Management",
+      "Advanced Organic Minerals & Vitamins Nutrition",
+      "Optimizes Health, Fertility & Milk Yield",
       "Advanced Amino Acid Balancing",
       "High-Volume Fat & Protein Correction",
       "Hoof and Foot Health Optimization"
@@ -629,7 +629,7 @@ export const products = [
       "Advanced Probiotic Intestinal Splinting: Deploys robust strains of S. cerevisiae and L. acidophilus to maximize metabolic pathways and sustain healthy microflora.",
       "Aggressive Hepatic Support: Deploys rumen-protected choline to accelerate fat export from the liver, preventing clinical ketosis configurations."
     ],
-    "dosage": "Lactating Cows & Buffaloes: 80–100 g daily based on absolute milk production metrics.Non-Lactating / Dry Transition Animals: 50 g daily.",
+    "dosage": "80-100 g daily for lactating cows and buffalos. 50 g for nonlactating animals.",
     "color": "#6b705c",
     "icon": "Shield",
     "image": "/product_panels/sigmin_ultra.jpg",
@@ -639,13 +639,13 @@ export const products = [
   },
   {
     "id": "sigmin-v-plus",
-    "name": "SigMin V Plus",
+    "name": "SigMin™ V Plus",
     "category": "ruminant",
-    "tagline": "Inorganic Mineral & Vitamin",
+    "tagline": "Inorganic Minerals & Vitamins",
     "description": "SigMin V Plus is a mineral-vitamin premix. It supports milkyeild, reproduction and overall health in dairy cattle.",
     "indications": [
-      "Basal Diet Fortification",
-      "Cost-Effective Herd Mineralization",
+      "Inorganic Minerals & Vitamin Mix",
+      "Promotes Health & Productivity",
       "Lactation Curve Maintenance",
       "General Skin & Coat Health"
     ],
@@ -673,7 +673,7 @@ export const products = [
       "Basal Immune Defense: Strengthens standard immune profiles to manage environmental and structural pathogens.",
       "Dermal Health Integration: Combines optimized Zinc and Biotin levels to improve skin integrity and ensure a sleek, shiny coat."
     ],
-    "dosage": "Lactating Cows & Buffaloes: 80–100 g daily thoroughly incorporated into primary grains.Non-Lactating Stock: 50 g daily.",
+    "dosage": "80-100 g daily for lactating cows and buffalos. 50 g for nonlactating animals.",
     "color": "#e76f51",
     "icon": "TrendingUp",
     "image": "/product_panels/sigmin_v_plus.jpg",
@@ -683,13 +683,13 @@ export const products = [
   },
   {
     "id": "sigmin-max",
-    "name": "SigMin Max",
+    "name": "SigMin™ MAX",
     "category": "ruminant",
     "tagline": "Chelated Minerals & Vitamins Premix",
     "description": "SigMin MAX premix is formulated with chelated trace minerals, microminerals and vitamins to enhance milkyeild, reproduction and overall health of dairy cattle.",
     "indications": [
-      "Commercial Compound Feed Formulation",
-      "High-Concentrate TMR Self-Mixing",
+      "Premium Chelated Mineral & Vitamin Premix",
+      "Higher Yield & Fertility",
       "Skeletal and Hoof Structural Integrity",
       "Industrial-Scale Herd Optimization"
     ],
@@ -713,7 +713,7 @@ export const products = [
       "Volumetric Production Catalyst: Provides necessary nutritional building blocks to maximize daily milk output.",
       "Hoof & Epidermal Tissue Integrity: Highly enriched with Zinc and Biotin to reduce lameness and protect hoof health."
     ],
-    "dosage": "For Commercial Compound Feed: Formulate at 1–2 Kg per Metric Ton (MT) of finished feed.Direct Farm Supplementation: Cows/Buffaloes: 15–20 g/animal/day. Goats/Sheep: 5 g/animal/day.",
+    "dosage": "For compoundfeed: 1-2 Kg/MT For cows/buffaloes: 15-20 g/animal/day Goats/Sheep: 5 g/animal/day",
     "color": "#457b9d",
     "icon": "Leaf",
     "image": "/product_panels/sigmin_max.jpg",
@@ -723,13 +723,13 @@ export const products = [
   },
   {
     "id": "sigmin-pro",
-    "name": "SigMin PRO",
+    "name": "SigMin™ PRO",
     "category": "ruminant",
     "tagline": " Chelated Minerals & Vitamins Premix",
     "description": "SigMin PRO contains chelated trace minerals and vitamins to enhance milkyeild, reproduction and overall health of dairy cattle.",
     "indications": [
-      "Large-Scale Commercial Feed Milling",
-      "Concentrated Mineral Block Manufacturing",
+      "Premium Chelated Mineral & Vitamin Premix",
+      "Higher Yield & Fertility",
       "High-Volume Corporate Integration"
     ],
     "ingredients": [
@@ -751,7 +751,7 @@ export const products = [
       "Optimized Biological Performance: Features organic glycinate pathing to ensure maximum tissue retention and physiological output.",
       "Enhanced Immune Competency: Highly concentrated vitamins and antioxidants improve overall disease resistance across diverse farming environments."
     ],
-    "dosage": "For Commercial Compound Feed: Blend at exactly 1 Kg per Metric Ton (MT) of finished feed.Individual Animal Rescue Dosing: 5 g/cow/day thoroughly incorporated into localized feed.",
+    "dosage": "For compoundFeed: 1 Kg/MT & For cows/Buffaloes: 5 g/animal/day",
     "color": "#2a9d8f",
     "icon": "Box",
     "image": "/product_panels/sigmin_pro.jpg",
@@ -761,7 +761,7 @@ export const products = [
   },
   {
     "id": "transig-cl",
-    "name": "Transig-Cl",
+    "name": "TranSig™-Cl",
     "category": "ruminant",
     "tagline": "Transition Mineral Mix for Close-Up Period",
     "description": "TranSig-CL is a highly technical, close-up transition supplement designed for the critical 21-day window before calving. Featuring a precise optimal dietary cation-anion difference (DCAD) profile, it induces mild, safe metabolic acidosis to stimulate bone calcium mobilization. This proactively prevents hypocalcemia (milk fever) while reinforcing immune functions and liver health to ensure a smooth start to lactation.",
@@ -797,7 +797,7 @@ export const products = [
       "Metabolic Disease Mitigation: Reduces risks of retained placenta, ketosis, and displaced abomasum.",
       "Hepatic and Energy Priming: Deploys specialized nutrients to support energy processing pathways, setting up high early-lactation output."
     ],
-    "dosage": "100–125 g per cow daily. Initiate usage exactly 21 days before the projected calving date. Continue consistently until calving.",
+    "dosage": "100-125 g/cow/day, starting 21 days before calving or as directed by a veterinarian.",
     "color": "#264653",
     "icon": "Activity",
     "image": "/product_panels/transig_cl.jpg",
@@ -807,13 +807,13 @@ export const products = [
   },
   {
     "id": "transig-fr",
-    "name": "Transig-Fr",
+    "name": "TranSig™-Fr",
     "category": "ruminant",
     "tagline": "Transition Mineral Mix for Fresh Period",
     "description": "TranSig™ FR is a post-calving premix for the first 21 days that supports energy balance, liver and rumen health, dry matter intake, and early lactation performance, reducing ketosis risk and improving recovery, fertility, and milk yield",
     "indications": [
-      "Postpartum Energy Optimization",
-      "Negative Energy Balance Mitigation",
+      "Fresh Cow Support",
+      "Faster Recovery Post Calving",
       "Clinical/Subclinical Ketosis Prevention",
       "Early Uterine Involution Support"
     ],
@@ -832,7 +832,7 @@ export const products = [
       "Appetite and Feed Intake Catalyst: Drives dry matter intake (DMI) to match rising production requirements.",
       "Accelerated Repro Recovery: Supplies highly bioavailable organic trace minerals to promote prompt uterine recovery and early cyclicity."
     ],
-    "dosage": "100–125 g per cow daily, given alongside the standard routine mineral mix. Begin immediately post-calving and maintain for 21 days.",
+    "dosage": "100- 125g/cow/day along with routine mineral mix supplementation. Start after calving and continue for21 days or as directed by a veterinarian.",
     "color": "#6b705c",
     "icon": "Sparkles",
     "image": "/product_panels/transig_fr.jpg",
@@ -842,13 +842,13 @@ export const products = [
   },
   {
     "id": "calsig-ds",
-    "name": "Calsig Ds",
+    "name": "CalSig™ DS",
     "category": "ruminant",
     "tagline": "Liquid Calcium & Phosphorus with Minerals & Herbal Galactagogues",
     "description": "CalSig™ DS is a liquid supplement with bioavailable calcium, phosphorus, vitamins, and herbal extracts that prevents milk fever, boosts milk yield, and supports recovery from metabolic stress.",
     "indications": [
-      "Acute Hypocalcemia Prevention",
-      "Peak Lactation Volumetric Stimulation",
+      "Rapid Calcium & Phosphorus Support",
+      "Supports Milk Production",
       "Postpartum Stress Recovery",
       "Skeletal Integrity Reinforcement"
     ],
@@ -874,7 +874,7 @@ export const products = [
       "Hepato-Digestive Stabilization: Natural bitter tonics improve liver function, stabilizing nutrient digestion and uptake.",
       "Metabolic Shock Shielding: Speeds up metabolic recovery during high-stress calving and early lactation windows."
     ],
-    "dosage": "Lactating Cows & Buffaloes: 100–150 ml daily for routine maintenance.Fresh Calving Recovery: 150–200 ml daily for the first 3–5 days post-calving.Calves & Heifers: 30–50 ml daily.",
+    "dosage": "Lactating cows & buffalos: 100-150 ml/animal/day. During calving or early lactation: 150-200 ml/day for 3-5 days, or as advised by a veterinarian or nutritionist. Calves & Heifers: 30-50 ml/animal/day",
     "color": "#e76f51",
     "icon": "Shield",
     "image": "/product_panels/calsig_ds.jpg",
@@ -884,13 +884,13 @@ export const products = [
   },
   {
     "id": "sigbind",
-    "name": "Sigbind",
+    "name": "SigBind™",
     "category": "ruminant",
     "tagline": "Broad-Spectrum toxin Binder",
     "description": "SigBind™ neutralizes a broad spectrum of mycotoxins, supporting digestive health, overall well-being, and optimal performance in dairy cattle.",
     "indications": [
-      "Total Mixed Ration Decontamination",
-      "Aflatoxin M1 Milk Contamination Prevention",
+      "Broad Spectrum Mycotoxin Control",
+      "Improves Feed Safety",
       "Intestinal Mucosal Protection",
       "Feed Efficiency Stabilization"
     ],
@@ -907,7 +907,7 @@ export const products = [
       "Intestinal Barrier Preservation: Reduces toxin-induced enteritis, supporting robust, uninhibited nutrient absorption.",
       "Immune Resilience: Lowers systemic toxin load, releasing vital white blood cells to defend against standard production diseases."
     ],
-    "dosage": "For Compound Feed Manufacturing: Blend at 1.0–1.5 Kg per Metric Ton (MT) of finished feed.Direct Farm Top-Dressing: 25–30 g per animal daily.",
+    "dosage": "1-1.5 Kg/MT of feed or 25-30 g/animal/day",
     "color": "#457b9d",
     "icon": "TrendingUp",
     "image": "/product_panels/sigbind.jpg",
@@ -917,19 +917,19 @@ export const products = [
   },
   {
     "id": "sigbind-c",
-    "name": "Sigbind C",
+    "name": "SigBind™ C",
     "category": "ruminant",
     "tagline": "Broad-Spectrum Toxin Binder with Activated Charcoal",
     "description": "SigBind™ neutralizes a broad spectrum of mycotoxins, supporting digestive health, overall well-being, and optimal performance in dairy cattle.",
     "indications": [
-      "Severe or Variable Feed Mold Contamination",
-      "Non-Polar Toxin Neutralization",
+      "Mycotoxin Control",
+      "Improves Feed Safety",
       "Bacterial Endotoxemia Defense",
       "Acute Enteric Toxemia Recovery"
     ],
     "ingredients": [
-      "Premium Activated Carbon (Charcoal)",
-      "Hydrated Sodium Calcium Aluminosilicates",
+      "Extended Rumen Buffering",
+      "SARA Prevention",
       "Purified Magnesium Silicate",
       "Synergistic Organic Acids and Shading Carrier Salts"
     ],
@@ -938,7 +938,7 @@ export const products = [
       "Reduces Intestinal Inflammation: Prevents toxic chemical damage to the gut wall, minimizing leaky gut syndrome.",
       "Drives Feed Conversion Stability: Preserves performance and daily milk yield during feed quality drops."
     ],
-    "dosage": "Therapeutic Herd Treatment / Direct Dosing: 60–80 g per animal daily mixed into rations.Preventative inclusion via Feed Milling: 1.0–1.5 Kg per Metric Ton (MT) of finished feed or 25-30g/animal/day.",
+    "dosage": "1-1.5 Kg/MT of feed or 25-30 g/animal/day",
     "color": "#2a9d8f",
     "icon": "Leaf",
     "image": "/product_panels/sigbind_c.jpg",
@@ -948,13 +948,13 @@ export const products = [
   },
   {
     "id": "sigbuff",
-    "name": "Sigbuff",
+    "name": "Sigbuff™",
     "category": "ruminant",
     "tagline": " Rumen Buffer with Lithothamnium",
     "description": "SigBuff™ is a high performance rumen buffer formulated with natural Lithothamnium (calcified seaweed), bicarbonate, magnesium oxide and active dry yeast. It maintains stable rumen pH over an extended period through the slow, sustained rebase of buffering components.",
     "indications": [
-      "High-Concentrate/Low-Forage Diet Management",
-      "Sub-Acute Ruminal Acidosis (SARA) Prevention",
+      "Enhances Fertility & Conception",
+      "Management of Anestrous & Repeat Breeding",
       "Milk Fat Depression Correction",
       "Heat Stress Acidosis Mitigation"
     ],
@@ -980,7 +980,7 @@ export const products = [
   },
   {
     "id": "sigmin-rp",
-    "name": "SigMin Rp",
+    "name": "SigMin™ RP",
     "category": "ruminant",
     "tagline": "Advanced Reproductive Solution ",
     "description": "SigMin™ RP enhances fertility in dairy cattle by improving estrus expression and conception rates, helping reduce repeat breeding and anestrus",
@@ -1010,7 +1010,7 @@ export const products = [
       "Reduces Repeat Breeding Intervals: Organic zinc, copper, and manganese glycinates accelerate uterine repair and recovery post-calving.",
       "Protects Early Pregnancies: Progesterone-priming elements reduce early embryonic death, extending overall lifetime performance."
     ],
-    "dosage": "To Resolve Anestrus/Repeat Breeding: 20–25 g per animal daily starting 45 days post-calving and continuing through day 90.Post-Insemination Conception Shielding: 20–25 g per animal daily for exactly 21 days (3 weeks) following artificial insemination.",
+    "dosage": "20-25 g/day/animal from 45-90 days of calving.20-25 g/day/animal after insemination for three weeks.",
     "color": "#6b705c",
     "icon": "Activity",
     "image": "/product_panels/sigmin_rp.jpg",
@@ -1020,13 +1020,13 @@ export const products = [
   },
   {
     "id": "sacchro-l",
-    "name": "Sacchro L",
+    "name": "SacChro L",
     "category": "ruminant",
     "tagline": " Enhances Milk Yield & Fat",
     "description": "SacChro L™ is a feed additive that supports rumen function, nutrient utilization, and feed intake, enhancing milk production, immunity and overall herd health under both normal and stress conditions",
     "indications": [
-      "Heat Stress Performance Management",
-      "Fiber Digestibility Optimization",
+      "Enhances Milk Production & Efficiency",
+      "Manage Heat Stress",
       "Dry Matter Intake Stabilization",
       "Lactation Consistency Support"
     ],
@@ -1040,7 +1040,7 @@ export const products = [
       "Chromium-Driven Heat Stress Protection: Insulin-sensitizing chromium propionate lowers core cortisol levels, maintaining feed intake during hot weather.",
       "Improves Rumen Fermentation Stability: Lactobacillus casei produces lactic acid dynamically to stabilize the rumen ecosystem."
     ],
-    "dosage": "For Feed Compounders: 300–500 g per Metric Ton (MT) of finished feed.Direct Farm Administration: 5 g per animal daily top-dressed onto grain.",
+    "dosage": "300-500 g/MT of feed or 5 g/animal/day.",
     "color": "#e76f51",
     "icon": "Sparkles",
     "image": "/product_panels/sacchro_l.jpg",
@@ -1050,7 +1050,7 @@ export const products = [
   },
   {
     "id": "masticurb",
-    "name": "Masticurb",
+    "name": "MastiCurb™",
     "category": "ruminant",
     "tagline": " Mastitis Management",
     "description": "MastiCurb™ is a therapeutic adjunct for mastitis that supports udder health, reduces inflammation, promotes tissue repair, and works with antibiotics to shorten the recovery period.",
@@ -1082,7 +1082,7 @@ export const products = [
       "Rapid Somatic Cell Count Reduction: Clears abnormal dead somatic cells to quickly restore standard milk quality.",
       "Mammary Tissue Repair: High concentrations of vitamins and organic minerals repair the blood-milk barrier."
     ],
-    "dosage": "50 g per animal daily for 6 consecutive days during clinical events, or as directed by a veterinarian. Administer top-dressed onto appetizing feed, or mix with jaggery to form a paste given directly into the mouth.",
+    "dosage": "50 g/animal/day, or as directed by a veterinarian. On the top ofthe feed/mix with jaggery to form a paste and feed.",
     "color": "#457b9d",
     "icon": "Shield",
     "image": "/product_panels/masticurb.jpg",
@@ -1092,13 +1092,13 @@ export const products = [
   },
   {
     "id": "signazyme-r",
-    "name": "Signazyme R",
+    "name": "SignaZyme™ R",
     "category": "ruminant",
     "tagline": "Multi-Enzyme Premix For Fiber Digestion: To Improve Milk Volume & Fat Yield",
     "description": "SignaZyme™ R is an enzyme premix that enhances digestion, improving nutrient utilization, feed efficiency, milk production, and overall performance in dairy cattle.",
     "indications": [
-      "High-Fiber Crop Utilization Enhancement",
-      "Feed Conversion Ratio (FCR) Optimization",
+      "Enhances Fiber Digestion",
+      "Improves Feed Efficiency",
       "Low-Cost Ration Formulation Supporting Performance",
       "Starch and Cellulose Breakdown Catalysis"
     ],
@@ -1117,7 +1117,7 @@ export const products = [
       "Maximizes Volumetric and Component Yields: Increases volatile fatty acid (VFA) synthesis in the rumen, driving higher milk volume and butterfat content.",
       "Optimizes Feed Cost Efficiency: Allows safe use of high-fiber, lower-cost crop byproducts without sacrificing production metrics."
     ],
-    "dosage": "For Commercial Feed Compounders: 500 g–1 Kg per Metric Ton (MT) of finished feed.Direct Farm Top-Dressing: 5–10 g per animal daily mixed into the primary feed ration.",
+    "dosage": "500g-1Kg/MT offeed or 5-10 g/animal/day.",
     "color": "#2a9d8f",
     "icon": "TrendingUp",
     "image": "/product_panels/signazyme_r.jpg",
@@ -1127,13 +1127,13 @@ export const products = [
   },
   {
     "id": "sigyeast",
-    "name": "Sigyeast",
+    "name": "SigYeast™",
     "category": "ruminant",
     "tagline": "Active Dry Yeast (Saccharomyces cerevisiae) ",
     "description": "SigYeast™ is a concentrated active dry yeast (20billion CFU/g) that supports rumen health, stabilizes pH, boosts fiber-digestion, improves VFA production, and enhances overall performance in dairy cattle.",
     "indications": [
-      "Acute/Sub-Acute Acidosis Prevention",
-      "Rumen Microflora Stabilization",
+      "Promotes Rumen Stability",
+      "Supports Milk Production",
       "Dry Matter Intake Stimulation",
       "Fiber Conversion Optimization"
     ],
@@ -1155,13 +1155,13 @@ export const products = [
   },
   {
     "id": "molasig-molasig-pro",
-    "name": "Molasig & Molasig PRO",
+    "name": "MolaSig™ and MolaSig™ Pro",
     "category": "ruminant",
     "tagline": " Molasses Feed Flavor With Sweetener",
     "description": "MolaSig™ and MolaSig™ Pro are feed flavors that enhance palatability, increase feed intake, and help reduce feed rejction",
     "indications": [
-      "Unpalatable Feed/Byproduct Masking",
-      "Ration Sortation and Waste Prevention",
+      "Enhances Feed Palatability",
+      "Improves Feed Intake",
       "Stress/Ration Change Appetite Stimulation",
       "Feed Palatability Standardization"
     ],
@@ -1175,7 +1175,7 @@ export const products = [
       "Minimizes Feed Sorting and Waste: Encourages clean, uniform consumption of total mixed rations, reducing waste.",
       "Supports Appetite During Transition: Maintains regular feed intake during stress events, diet shifts, or extreme weather conditions."
     ],
-    "dosage": "300–500 g per Metric Ton (MT) of finished feed, adjusted based on the bitter raw materials profile used in compounding.",
+    "dosage": "300-500 g/MT of feed",
     "color": "#6b705c",
     "icon": "Box",
     "image": "/product_panels/molasig_molasig_pro.jpg",
@@ -1185,13 +1185,13 @@ export const products = [
   },
   {
     "id": "sigproe-calf",
-    "name": "SigProe Calf",
+    "name": "SigProe™ CALF",
     "category": "ruminant",
     "tagline": " Probiotic, Prebiotic & Digestive Enzyme ",
     "description": "SigProe™ CALF is a probiotic, prebiotic, and enzyme blend that supports gut health, immunity, and growth in young calves, improves average daily weight gain, enhances feed efficiency, and reduces digestive issues for strong, healthy development.",
     "indications": [
-      "Neonatal Calf Scours Prevention",
-      "Average Daily Weight Gain Optimization",
+      "Supports Early Calf Growth",
+      "Strengthens Gut Health & Immunity",
       "Rumen Papillary Development Support",
       "Weaning Transition Stress Management"
     ],
@@ -1229,13 +1229,13 @@ export const products = [
   },
   {
     "id": "sigflav-feed-flavor-range",
-    "name": "Sigflav Feed Flavor Range",
+    "name": "SigFlav Feed Flavor Range",
     "category": "ruminant",
     "tagline": "Feed Flavors",
-    "description": "The SigFlav Feed Flavor Range is an advanced palette of standardized and customizable sensory additives engineered to optimize feed palatability, mask off-odors, and maximize voluntary feed consumption across varied species, regions, and feed manufacturing systems. Every variant is available in both a standard aromatic profile (SigFlav) and an enhanced sweetening matrix (SigFlav Pro) to provide complete flexibility in feed formulation.",
+    "description": "The SigFlav Feed Flavor Range is an advanced palette of standardized and customizable sensory additives engineered to optimize feed palatability, mask off-odors, and maximize feed consumption across varied species, regions, and feed manufacturing systems. Every variant is available in both a standard aromatic profile (SigFlav) and an enhanced sweetening matrix (SigFlav Pro) to provide complete flexibility in feed formulation.",
     "indications": [
-      "Feed Intolerance Mitigation",
-      "Regional Preference Adaptation",
+      "Enhances Feed palatability",
+      "Improves Feed Acceptance",
       "Aromatic Core Masking",
       "Commercial Brand Differentiation"
     ],
@@ -1260,13 +1260,13 @@ export const products = [
   },
   {
     "id": "siglac-silage-inoculant",
-    "name": "Siglac Silage Inoculant",
+    "name": "SigLac™",
     "category": "ruminant",
     "tagline": " Silage Inoculant",
     "description": "SigLac™ is an advanced silage inoculant combining homo- and heterofermentative bacteria with fiber-degrading enzymes to enhance fermentation, nutrient retention, digestibility, and aerobic stability, enhancing silage quality.",
     "indications": [
-      "Green Fodder Silage Preservation",
-      "Aerobic Heating Minimization at Feed-Out",
+      "Enhances Silage Fermentation",
+      "Preserves Nutritional Quality",
       "Dry Matter Loss Reduction",
       "Lactic-to-Acetic Acid Balance Optimization"
     ],

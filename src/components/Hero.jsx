@@ -68,7 +68,7 @@ export default function Hero() {
           </div>
 
           {/* Title + copy with right-side animal imagery */}
-          <div className="home-top-grid" style={{ marginTop: '2.4rem', display: 'grid', gridTemplateColumns: '1.15fr 0.85fr', gap: '1.4rem', alignItems: 'start' }}>
+          <div className="home-top-grid" style={{ marginTop: '2.4rem', display: 'grid', gridTemplateColumns: '1.15fr 0.85fr', gap: '1.4rem', alignItems: 'center' }}>
             <div style={{ maxWidth: '920px' }}>
               <h1
                 style={{
@@ -92,16 +92,39 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="home-animals-media" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.8rem' }}>
-              <div style={{ gridColumn: '1 / 3', borderRadius: '20px', overflow: 'hidden', border: '1px solid rgba(1, 42, 28, 0.1)', boxShadow: '0 14px 30px rgba(1, 42, 28, 0.12)' }}>
+            <div className="home-animals-media" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+              <div
+                style={{
+                  width: 'min(100%, 520px)',
+                  aspectRatio: '1 / 1',
+                  position: 'relative',
+                  borderRadius: '50%',
+                  overflow: 'hidden',
+                  border: '10px solid rgba(255,255,255,0.78)',
+                  boxShadow: '0 22px 55px rgba(1, 42, 28, 0.16), inset 0 0 0 1px rgba(1, 42, 28, 0.08)',
+                  backgroundColor: 'rgba(255,255,255,0.7)'
+                }}
+              >
                 <img
-                  src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1200&q=80"
+                  src="../../IMages/Picture_1.png"
                   alt="Happy dogs and cats"
-                  style={{ width: '100%', height: '270px', objectFit: 'cover' }}
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    objectPosition: 'center 25%'
+                  }}
+                />
+                <div
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    background: 'radial-gradient(circle at 50% 35%, rgba(255,255,255,0.04), rgba(255,255,255,0.18) 55%, rgba(1,42,28,0.10) 100%)'
+                  }}
                 />
               </div>
-              
-              
             </div>
           </div>
 
@@ -142,11 +165,11 @@ export default function Hero() {
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.8rem' }}>
                 <Sparkles size={18} style={{ color: 'var(--color-gold)' }} />
                 <span style={{ fontSize: '0.95rem', fontWeight: 900, letterSpacing: '1.2px', color: 'rgba(1, 42, 28, 0.55)' }}>
-                  SCIENTIFIC PROMISE
+                  RESEARCH LED INNOVATION
                 </span>
               </div>
               <h3 style={{ fontSize: '1.12rem', lineHeight: 1.35, color: 'var(--color-forest)', fontWeight: 800 }}>
-                Scientific Solutions for Better Nutrition, Productivity &amp; Health
+                Developing advanced nutritional and health solutions through scientific research, formulation expertise and continuous innovation.
               </h3>
             </div>
 
@@ -162,11 +185,11 @@ export default function Hero() {
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.8rem' }}>
                 <Sparkles size={18} style={{ color: 'var(--color-gold)' }} />
                 <span style={{ fontSize: '0.95rem', fontWeight: 900, letterSpacing: '1.2px', color: 'rgba(1, 42, 28, 0.55)' }}>
-                  PERFORMANCE LED
+                  FIELD PROVEN PERFORMANCE
                 </span>
               </div>
               <p style={{ fontSize: '1.05rem', fontWeight: 800, lineHeight: 1.6, color: 'rgba(1, 42, 28, 0.85)' }}>
-                Innovative health and nutrition solutions for companion animals, dairy, poultry, equine and aqua - developed through science and driven by performance.
+Delivering measurable improvements in animal health, productivity, efficiency and overall performance under real-world conditions.
               </p>
             </div>
           </div>
@@ -212,7 +235,7 @@ export default function Hero() {
             @media (max-width: 980px) {
               .home-cards { grid-template-columns: 1fr !important; }
               .home-top-grid { grid-template-columns: 1fr !important; }
-              .home-animals-media { grid-template-columns: 1fr 1fr !important; }
+              .home-animals-media { margin-top: 0.5rem; }
               .home-science-pill {
                 width: 100%;
                 justify-content: center;
