@@ -970,7 +970,7 @@ export const products = [
       "Corrects Milk Fat Depression: Enhances acetate-to-propionate ratios, supporting increased milk fat and protein synthesis.",
       "Mitigates Laminitis Risks: Reduces systemic lactic acid spikes to prevent laminitis and associated hoof damage."
     ],
-    "dosage": "50–100 g per head daily, adjusted based on total grain intake and heat stress levels. Blend thoroughly into total mixed rations (TMR).",
+    "dosage": "60-80g/animal/day",
     "color": "#264653",
     "icon": "Box",
     "image": "/product_panels/sigbuff.jpg",
