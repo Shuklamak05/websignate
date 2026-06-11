@@ -47,7 +47,7 @@ export default function InsightsBlogs() {
             Insights / Blogs
           </h2>
           <p style={{ color: 'var(--color-dark-text)', opacity: 0.75, fontSize: '0.98rem' }}>
-            Recent scientific perspectives and field notes from the Signate team.
+            Recent News & Updates
           </p>
         </div>
 

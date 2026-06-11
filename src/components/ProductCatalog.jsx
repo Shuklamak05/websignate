@@ -169,22 +169,7 @@ function ProductCard({ prod, setSelectedProductId }) {
 
       <div style={{ borderBottom: '1px solid var(--color-border)', marginTop: 'auto' }} />
 
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <div>
-          <span
-            style={{
-              fontSize: '0.7rem',
-              color: 'var(--color-dark-text)',
-              opacity: 0.5,
-              display: 'block',
-              textTransform: 'uppercase',
-              letterSpacing: '0.5px'
-            }}
-          >
-            Clinical Dosage
-          </span>
-          <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--color-forest)' }}>Scientifically Verified</span>
-        </div>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <button
           onClick={(e) => {
             e.stopPropagation();

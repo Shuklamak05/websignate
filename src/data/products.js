@@ -120,13 +120,13 @@ export const products = [
   },
   {
     "id": "lenire-pure-hemp-seed-oil",
-    "name": "Lenire Pure Hemp Seed Oil",
+    "name": "Lenire™ Hemp Seed Oil",
     "category": "companion",
     "tagline": "Relieves Anxiety, Pain & Allergies",
-    "description": "Lenire Hemp Seed Oil is a 100% pure, unrefined natural oil rich in protective phytocompounds, essential amino acids, and balanced Omega-6 and Omega-3 fatty acids. It offers a safe, multi-functional veterinary therapy that balances nervous system pathways to relieve separation anxiety and loud noise stress, manages chronic arthritic pain, and treats inflammatory skin allergies.",
+    "description": "Lenire™ is hemp seed oil for companion animals, formulated to support stress relief, anxiety reduction, anti-inflammatory action and natural comfort. It helps promote calm behaviour and emotional balance during stressful situations such as grooming, hospital visits, travel and separation. Lenire™ can be used both orally and topically, making it ideal for post-grooming massage to relax the pet, ease discomfort and support muscle and joint comfort. It also helps moisturize the skin, reduce dryness and control shedding, promoting a healthier coat and overall well-being.",
     "indications": [
-      "Separation & Environmental Noise Anxiety",
-      "Chronic Joint Discomfort & Inflammatory Arthritic Pain",
+      "Reduces stress and anxiety",
+      "Post grooming massage",
       "Allergic Atopy & Intense Pruritus",
       "Excessive Hair Coat Shedding",
       "Dry, Damaged Skin Conditions"
@@ -149,13 +149,13 @@ export const products = [
   },
   {
     "id": "sigimmune",
-    "name": "Sigimmune",
+    "name": "SigImmune™",
     "category": "companion",
     "tagline": "Boosts Immune Function & Infection Recovery",
-    "description": "SigImmune is a advanced veterinary immuno-modulating supplement formulated to reinforce defense mechanisms in compromised or aging companion animals. Combining pure algal 1,3 beta-glucans, concentrated prebiotic fibers, high-purity botanical extracts, and essential immune-supporting micronutrients, it accelerates white blood cell production, dampens chronic inflammation, and shortens recovery times from complex infectious illnesses.",
+    "description": "SigImmune™ is a premium immunity booster formulated with highly bioactive algal 1,3-β glucan, one of the most effective natural immune modulators. It is enriched with prebiotics, standardized herbal extracts and essential vitamins to provide comprehensive immune support. SigImmune™ helps strengthen the body’s natural defense system, enhance resistance against infections and support faster recovery from illness. It promotes long-term immune resilience and overall health, making it ideal for animals under stress, during convalescence or requiring daily immune support.",
     "indications": [
-      "Weakened Immune System Support",
-      "Infectious Pathogen Recovery Support",
+      "Advanced Immunity Support",
+      "Faster Recovery Support",
       "Post-Surgical Immunity Protection",
       "Chronic Secondary Illness Reduction",
       "Geriatric Vitality Decline Management"
@@ -192,13 +192,13 @@ export const products = [
   },
   {
     "id": "sencare",
-    "name": "Sencare",
+    "name": "SenCare™",
     "category": "companion",
     "tagline": "Supplemennt For Senior Dogs",
-    "description": "SenCare is an all-in-one veterinary geriatric supplement formulated to address the multi-system decline seen in aging canine patients. It integrates advanced joint rebuilding elements, cardioprotective nutrients, brain-boosting adaptogens, urinary tract protectants, and digestive enzymes and probiotics. SenCare preserves cognitive function, enhances mobility, maintains cardiac efficiency, and promotes vitality in senior dogs.",
+    "description": "SenCare™ is a comprehensive senior dog care supplement formulated to support healthy ageing and overall well-being. It is formulated to maintain bone and joint health, improve mobility and support cartilage integrity for better movement and comfort. SenCare™ also helps strengthen immunity, enhance digestion and nutrient absorption, and support cardiac health for sustained vitality. In addition, it promotes cognitive function and brain health, while supporting urinary tract health, making it an all-in-one advanced wellness solution for senior dogs.",
     "indications": [
-      "Cognitive Dysfunction Syndrome (CDS)",
-      "Geriatric Osteoarthritis & Muscle Wasting",
+      "Complete Senior Dog Wellness Support",
+      "Healthy Ageing",
       "Age-Related Cardiac and Visual Decline",
       "Senior Digestive Dysfunction",
       "Chronic Urinary Tract Vulnerability"
@@ -239,13 +239,13 @@ export const products = [
   },
   {
     "id": "neurosig",
-    "name": "Neurosig",
+    "name": "NeuroSig™",
     "category": "companion",
     "tagline": "Natural Brain Booster & Cognitive Functions",
-    "description": "NeuroSig is a advanced veterinary neuro-nutritional formula developed to support brain health and enhance cognitive clarity in companion animals. Blending specialized short-chain fats, highly purified botanical brain adaptogens, neural phospholipids, and co-enzymatic vitamins, it reduces environmental anxiety, stabilizes anxious behavior, improves memory retention, and enhances overall focus and alertness.",
+    "description": "NeuroSig™ is a brain health supplement formulated with functional ingredients to support cognitive function, mental alertness, focus and overall neurological well-being . It combines brain-supportive nutrients, antioxidants and botanical extracts that help enhance memory, learning ability, concentration and responsiveness while supporting healthy brain ageing. NeuroSig™ is particularly beneficial during dog training, helping improve focus, attention and alertness for better learning and performance. It promotes optimal cognitive functions making it ideal for growing, working and senior dogs.",
     "indications": [
-      "Age-Related Behavioral Alterations (CDS)",
-      "Environmental & Separation Anxiety",
+      "Cognitive Health Support",
+      "Focus & Memory Support",
       "Geographic Disorientation",
       "Restlessness, Pacing & Vocalization",
       "Training Focus Enhancement"
@@ -286,13 +286,13 @@ export const products = [
   },
   {
     "id": "sigcare-gestation",
-    "name": "Sigcare Gestation",
+    "name": "SigCare™",
     "category": "companion",
     "tagline": "Supplement For Pregnant Dogs",
-    "description": "SigCare Gestation is a premium veterinary prenatal and lactation supplement designed to satisfy the increased nutritional and metabolic demands of pregnant and lactating female dogs. It delivers balanced ratios of calcium, phosphorus, heme iron, and fetal-shielding vitamins alongside gut-active probiotics, supporting smooth embryonic development, healthy neonatal birth weights, and abundant milk production.",
+    "description": "SigCare™ is a specialized nutritional supplement for pregnant dogs, formulated to provide comprehensive nutritional support throughout gestation. With essential vitamins, minerals, amino acids and functional nutrients, it helps support reproductive health, fetal development, and maternal well-being. SigCare™ promotes proper growth and development of puppies, supports healthy birth weights, and helps reduce the risk of developmental abnormalities associated with nutritional deficiencies. It supports healthy pregnancy outcomes while ensuring the increased nutritional demands of both the dam and developing pups are adequately met.",
     "indications": [
-      "Maternal Prenatal Conditioning",
-      "Fetal Developmental Support",
+      "Pregnancy Nutrition Support",
+      "Fetal Development Support",
       "Postpartum Lactation Boosting",
       "Prevention of Maternal Calcium Exhaustion",
       "Neonatal Birth Weight Maximization"
@@ -333,13 +333,13 @@ export const products = [
   },
   {
     "id": "sigmotile",
-    "name": "Sigmotile",
+    "name": "SigMotile™",
     "category": "companion",
     "tagline": "Unlocks Full Reproductive Potential",
-    "description": "SigMotile is an advanced veterinary reproductive booster designed to improve libido and maximize semen quality parameters in male breeding dogs. Combining nitric oxide precursors like L-Arginine, cellular energy shuttles like L-Carnitine, and standardized botanical testosterone boosters, it enhances overall stamina, optimizes sperm counts and progressive motility scores, and maximizes fertility rates.",
+    "description": "SigMotile™ is an advanced fertility and breeding support supplement for stud dogs, formulated to maximize reproductive performance and breeding success. With scientifically selected nutrients and functional ingredients, it helps enhance libido, energy, strength, and stamina while supporting overall reproductive health. SigMotile™ promotes improved sperm quality, concentration, motility and viability, contributing to optimal semen characteristics and fertility potential. It also helps improve alertness, responsiveness and mating performance, making it an ideal nutritional solution for breeding males requiring peak reproductive efficiency.",
     "indications": [
-      "Male Stud Infertility Resolution",
-      "Low Sperm Count (Oligospermia) Correction",
+      "Male Fertility Support",
+      "Sperm Quality & Motility Support",
       "Poor Sperm Motility Support",
       "Breeding Libido & Stamina Stimulation",
       "Mating Responsiveness Optimization"
@@ -380,13 +380,13 @@ export const products = [
   },
   {
     "id": "fertisig",
-    "name": "Fertisig",
+    "name": "FertiSig™",
     "category": "companion",
     "tagline": "Enhances Fertility",
-    "description": "FertiSig is an advanced veterinary reproductive formula designed to optimize ovarian function and improve conception success in female breeding dogs. It blends standardized phyto-estrogenic roots, systemic circulation boosters, cell-protecting antioxidants, and necessary prenatal vitamins to stabilize cycling, promote balanced ovulation, improve egg health, and prevent early pregnancy loss.",
+    "description": "FertiSig™ is a fertility support supplement for female dogs, formulated to optimize reproductive performance and breeding success. It helps support hormonal balance, healthy reproductive cycles and consistent ovulation. FertiSig™ promotes egg quality and reproductive health, helping improve fertility potential, conception rates and litter size. It also supports reproductive wellbeing during pre-breeding and breeding programs, making it an ideal nutritional solution for female dogs intended for reproduction.",
     "indications": [
-      "Irregular/Absent Estrus Cycle Correction",
-      "Sub-Optimal Ovulation Output Support",
+      "Female Fertility Support",
+      "Breeding Performance Support",
       "Poor Oocyte (Egg) Quality Resolution",
       "Early Embryonic Loss Prophylaxis",
       "Uterine Vascular Flow Maximization"
@@ -427,13 +427,13 @@ export const products = [
   },
   {
     "id": "chitosil-advanced-wound-healing-spray",
-    "name": "Chitosil",
+    "name": "ChitoSil™",
     "category": "companion",
     "tagline": "Advanced Wound Healing Spray",
-    "description": "ChitoSil is a cutting-edge veterinary topical treatment featuring an engineered liquid tissue scaffold that combines pure silver nanoparticles and chitosan nanoparticles. When sprayed onto broken skin, it forms a clear, antimicrobial, and breathable protective layer that stops bacterial growth, prevents infection, calms hot inflammation, and accelerates tissue healing and wound closure.",
+    "description": "ChitoSil™ is an advanced wound care spray with stabilized silver and chitosan nanoparticles for rapid wound healing and skin regeneration. It forms a protective barrier over the wound, supports tissue repair, and accelerates the natural healing process. Chitosil™ delivers broad-spectrum antibacterial and antifungal protection to help reduce the risk of infection and promote healthy recovery. Its non-irritating, lick-safe formula is gentle on the skin, safe for regular use and does not cause the black discoloration often seen with conventional silver-based wound products.",
     "indications": [
-      "Infected open wounds and abscesses",
-      "Post-Surgical Incision Healing",
+      "Faster Wound Recovery",
+      "Infection Protection Support",
       "Acute Cuts, Lacerations & Skin Abrasions",
       "Bite Wounds & Interdigital Dermatitis",
       "Moist Eczema (Hot Spots) Recovery"
@@ -459,13 +459,13 @@ export const products = [
   },
   {
     "id": "regeneron-oral-supplement",
-    "name": "Regeneron",
+    "name": "Regeneron™",
     "category": "companion",
     "tagline": "Oral Supplement For Fast Wound Healing",
-    "description": "Regeneron is an advanced oral veterinary supplement formulated to treat non-healing wounds, severe skin trauma, and complex surgical incisions from within. Combining essential tissue amino acids, advanced muscle protectants (HMB), anti-aging cellular repair molecules (NMN), high-potency zinc, and protecting vitamins, it stimulates rapid structural collagen production, reduces tissue swelling, and boosts internal immune defenses.",
+    "description": "Regeneron™ is a comprehensive wound healing and tissue regeneration supplement to accelerate recovery and support enhanced healing in pets. Its advanced formulation helps stimulate collagen synthesis, promote healthy tissue repair, and support the formation of strong, resilient skin. Regeneron™ helps reduce inflammation and swelling associated with wounds and injuries while supporting immune function and the body's natural defense mechanisms. By providing targeted nutritional support throughout the healing process, it promotes faster recovery from wounds, surgery, trauma, burns, and other tissue injuries. Regeneron™ supports faster healing, improved tissue regeneration, and enhanced recovery.",
     "indications": [
-      "Non-Healing, Chronic Decubitus Ulcers",
-      "Severe Traumatic/Infected Body Wounds",
+      "Oral Wound Healing Support",
+      "Faster Wound Healing",
       "Major Orthopedic/Soft-Tissue Post-Op Healing",
       "Extensive Dermal Burns & Tissue Loss Recovery",
       "Aged Pets with Slow Healing Capacity"

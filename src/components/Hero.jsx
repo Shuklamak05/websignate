@@ -1,5 +1,6 @@
 import React from 'react';
 import { Sparkles, ShieldCheck, ChevronRight, ArrowRight } from 'lucide-react';
+import heroAnimals from '../../IMages/Picture_1.png';
 
 export default function Hero() {
   return (
@@ -106,7 +107,7 @@ export default function Hero() {
                 }}
               >
                 <img
-                  src="../../IMages/Picture_1.png"
+                  src={heroAnimals}
                   alt="Happy dogs and cats"
                   style={{
                     position: 'absolute',

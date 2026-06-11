@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Microscope, FlaskConical, Settings2, GraduationCap, Quote, CheckSquare, Award, Linkedin } from 'lucide-react';
+import { Microscope, FlaskConical, Settings2, GraduationCap, Quote, Linkedin } from 'lucide-react';
 import { founders } from '../data/team';
 import diagnosticsBg from '../../IMages/diagnostics-bg.png';
 import researchBg from '../../IMages/research-bg.png';
@@ -10,41 +10,20 @@ export default function ServicesShowcase() {
 
   const services = {
     diagnostics: {
-      title: 'Molecular Diagnostics & Pathogen Screen',
-      subtitle: 'Doctoral PCR & DNA Assay Systems',
+      title: 'Molecular Diagnostics',
       description: 'Signate has recently ventured into the field of animal health disease diagnostics. We have standardized molecular diagnostic techniques to identify various types of protozoans present in dogs’ blood, which will greatly enhance the effectiveness of treatment. Additionally, we are actively working on developing several other molecular diagnostic methods to further advance our diagnostic capabilities.',
-      capabilities: [
-        'Pathogen screening for dairy herds',
-        'Polymerase Chain Reaction (PCR) pathogen isolation assays',
-        'Somatic cell DNA count indexing',
-        'Fast turnaround biomarker screening systems'
-      ],
       icon: <Microscope size={36} />,
       color: '#e28743'
     },
     research: {
-      title: 'Contract Research & Efficacy Trials',
-      subtitle: 'In-vivo Efficacy and Bio-equivalence Studies',
+      title: 'Contract Research',
       description: 'Signate’s venture into contract research for animal health and nutrition products brings a wealth of scientific expertise to support your product development journey. Our commitment to accelerating time-to-market and conducting product efficacy trials in ruminants and companion animals sets us apart as a reliable and efficient partner. Together, we can create impactful products that benefit your business and profitable farming.',
-      capabilities: [
-        'Chelated mineral absorption studies',
-        'Gut microflora genomic sequencing assays',
-        'Pre-clinical safety and toxicological indexes',
-        'Feed digest-efficiency verification trials'
-      ],
       icon: <FlaskConical size={36} />,
       color: '#2a9d8f'
     },
     manufacturing: {
-      title: 'Contract Veterinary Manufacturing',
-      subtitle: 'ISO & WHO Compliant Specialized Blending',
+      title: 'Contract Manufacturing',
       description: 'Signate has ventured into the field of contract manufacturing for animal health and nutrition products, further solidifying our commitment to the well-being of animals. Our primary objective is to offer top-tier services that cater to the specific needs of our clients in the animal health industry. Whether you are a start-up looking to enter the market or an established brand seeking to expand your product line, we are here to assist you at every step of the way. One of our key strengths lies in delivering cost-effective solutions without compromising on quality. We strive to optimize the process to ensure competitive pricing, making our services accessible to businesses of all sizes. Whether you require small batches for market testing or large-scale production, we are equipped to meet your needs and deliver on time.',
-      capabilities: [
-        'Micro-encapsulation rumen-bypass processing',
-        'Specialized chelated glycinate tableting',
-        'High-density energy sugarcane blocks (weatherproof)',
-        'Vacuum-sealed moisture-protected Synbiotic powder packaging'
-      ],
       icon: <Settings2 size={36} />,
       color: '#b5828f'
     }
@@ -114,10 +93,8 @@ export default function ServicesShowcase() {
           <div className="glass-card fade-in services-card-split" style={{
             padding: '3rem',
             backgroundColor: 'var(--color-white)',
-            display: 'grid',
-            gridTemplateColumns: '1.2fr 0.8fr',
-            gap: '3rem',
-            alignItems: 'center',
+            display: 'flex',
+            justifyContent: 'center',
             marginBottom: '6rem',
             position: 'relative',
             overflow: 'hidden'
@@ -155,64 +132,28 @@ export default function ServicesShowcase() {
             )}
             
             {/* Service details */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', position: 'relative', zIndex: 1 }}>
+            <div style={{
+              width: '100%',
+              maxWidth: '920px',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: '1.5rem',
+              position: 'relative',
+              zIndex: 1,
+              textAlign: 'center'
+            }}>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>
-                <span style={{ fontSize: '0.8rem', fontWeight: 800, color: activeService.color, textTransform: 'uppercase', letterSpacing: '1px' }}>
-                  {activeService.subtitle}
-                </span>
                 <h3 style={{ fontSize: '2rem', fontWeight: 700, color: 'var(--color-forest)', fontFamily: 'var(--font-serif)' }}>
                   {activeService.title}
                 </h3>
               </div>
               
-              <p style={{ fontSize: '0.95rem', color: 'var(--color-dark-text)', opacity: 0.85, lineHeight: 1.6 }}>
+              <p style={{ maxWidth: '82ch', fontSize: '0.98rem', color: 'var(--color-dark-text)', opacity: 0.88, lineHeight: 1.75 }}>
                 {activeService.description}
               </p>
 
-              <div style={{ borderBottom: '1px solid var(--color-border)' }} />
-
-              {/* Action indicators */}
-              <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
-                  <Award size={16} style={{ color: 'var(--color-gold)' }} />
-                  <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--color-forest)' }}>
-                    ISO 9001:2015 Standards
-                  </span>
-                </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
-                  <Award size={16} style={{ color: 'var(--color-gold)' }} />
-                  <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'var(--color-forest)' }}>
-                    Doctoral Quality Audited
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Service Capabilities Checklist */}
-            <div style={{
-              backgroundColor: 'var(--color-sage)',
-              padding: '2rem 2.5rem',
-              borderRadius: '20px',
-              border: '1px solid rgba(1, 42, 28, 0.08)',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '1rem',
-              position: 'relative',
-              zIndex: 1
-            }}>
-              <h4 style={{ fontSize: '0.85rem', fontWeight: 800, textTransform: 'uppercase', color: 'var(--color-forest)', letterSpacing: '0.5px' }}>
-                Core Capabilities & Scope
-              </h4>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                {activeService.capabilities.map((cap) => (
-                  <div key={cap} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem' }}>
-                    <CheckSquare size={16} style={{ color: activeService.color, marginTop: '0.25rem', flexShrink: 0 }} />
-                    <span style={{ fontSize: '0.85rem', color: 'var(--color-dark-text)', fontWeight: 600, lineHeight: 1.4 }}>
-                      {cap}
-                    </span>
-                  </div>
-                ))}
-              </div>
+              <div style={{ width: '72px', height: '3px', borderRadius: '999px', backgroundColor: activeService.color }} />
             </div>
 
           </div>
@@ -228,9 +169,7 @@ export default function ServicesShowcase() {
             <h2 className="editorial-title" style={{ fontSize: 'clamp(2rem, 3.5vw, 3rem)', color: 'var(--color-forest)' }}>
               Meet The <span style={{ fontStyle: 'italic' }}>Founders</span>
             </h2>
-            <p style={{ maxWidth: '650px', color: 'var(--color-dark-text)', opacity: 0.8, fontSize: '1rem' }}>
-              Signate is founded and operationally directed by molecular biochemists. We design formulations from the cellular level up.
-            </p>
+            
           </div>
 
           {/* Founders Grid */}
@@ -291,11 +230,11 @@ export default function ServicesShowcase() {
                 {/* Bios */}
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.15rem' }}>
                   <h3 style={{ fontSize: '1.3rem', fontWeight: 700, color: 'var(--color-forest)' }}>
-                    {dr.name}
-                  </h3>
-                  <span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--color-gold)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+                    {dr.name},<span style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--color-gold)', letterSpacing: '0.5px' }}>
                     {dr.credentials}
                   </span>
+                  </h3>
+                  
                   
                 </div>
 

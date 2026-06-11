@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, Clock, MapPin, Send, CheckCircle, HelpCircle } from 'lucide-react';
+import { Mail, Phone, Clock, MapPin, Send, CheckCircle, HelpCircle, Linkedin, Instagram, Facebook } from 'lucide-react';
 import signateLogo from '../../IMages/signate logo.png';
 
 export default function Footer() {
@@ -40,7 +40,7 @@ export default function Footer() {
   };
 
   return (
-    <footer id="contact" style={{ backgroundColor: 'var(--color-forest)', color: 'var(--color-white)', paddingTop: '6rem' }}>
+    <footer id="contact" style={{ backgroundColor: 'rgb(242, 242, 227)', color: 'var(--color-black)', paddingTop: '6rem' }}>
       
       {/* ==========================================
           CONTACT FORM & INQUIRY DIVISION
@@ -50,11 +50,11 @@ export default function Footer() {
           
           {/* Left Column: Scientific Consulting Pitch */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-            <h3 className="editorial-title" style={{ fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', color: 'var(--color-white)', lineHeight: 1.2 }}>
+            <h3 className="editorial-title" style={{ fontSize: 'clamp(2rem, 3.5vw, 2.8rem)', color: 'rgb(0, 0, 0)', lineHeight: 1.2 }}>
               Let us develop <br />
               <span style={{ fontStyle: 'italic', color: 'var(--color-gold)' }}>advanced animal health & nutrition solutions together !</span>
             </h3>
-            <p style={{ color: 'rgba(255, 255, 255, 0.75)', fontSize: '0.95rem', lineHeight: 1.6, fontWeight: 300 }}>
+            <p style={{ color: 'rgba(0, 0, 0, 0.75)', fontSize: '0.95rem', lineHeight: 1.6, fontWeight: 300 }}>
               Whether you are a distributor, veterinarian, dairy farm owner, integrator, brand owner or business partner – Signate can help develop science backed solutions as per your requirements
             </p>
 
@@ -64,8 +64,8 @@ export default function Footer() {
                   <Mail size={16} />
                 </div>
                 <div>
-                  <span style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)', display: 'block', textTransform: 'uppercase' }}> Inquiry Email</span>
-                  <a href="mailto:signatean@gmail.com" style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--color-white)' }}>signatean@gmail.com</a>
+                  <span style={{ fontSize: '0.7rem', color: 'rgba(0, 0, 0, 0.4)', display: 'block', textTransform: 'uppercase' }}>  Email</span>
+                  <a href="mailto:signatean@gmail.com" style={{ fontSize: '0.9rem', fontWeight: 600, color: 'rgb(0, 0, 0)' }}>signatean@gmail.com , info@signate.co.in</a>
                 </div>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
@@ -73,8 +73,8 @@ export default function Footer() {
                   <Phone size={16} />
                 </div>
                 <div>
-                  <span style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)', display: 'block', textTransform: 'uppercase' }}> Inquiry Phone</span>
-                  <a href="callto:+91-96196 89894" style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--color-white)' }}>+91-96196 89894, +91-97890 93341</a>
+                  <span style={{ fontSize: '0.7rem', color: 'rgba(1, 1, 1, 0.4)', display: 'block', textTransform: 'uppercase' }}> Phone</span>
+                  <a href="callto:+91-96196 89894" style={{ fontSize: '0.9rem', fontWeight: 600, color: 'rgb(0, 0, 0)' }}>+91-96196 89894, +91-97890 93341</a>
                 </div>
               </div>
 
@@ -83,7 +83,7 @@ export default function Footer() {
                   <Clock size={16} />
                 </div>
                 <div>
-                  <span style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)', display: 'block', textTransform: 'uppercase' }}>Work Hours</span>
+                  <span style={{ fontSize: '0.7rem', color: 'rgba(0, 0, 0, 0.4)', display: 'block', textTransform: 'uppercase' }}>Work Hours</span>
                   <span style={{ fontSize: '0.9rem', fontWeight: 600 }}>10:00 AM - 6:00 PM IST (Mon - Sat)</span>
                 </div>
               </div>
@@ -93,12 +93,12 @@ export default function Footer() {
                   <MapPin size={16} />
                 </div>
                 <div>
-                  <span style={{ fontSize: '0.7rem', color: 'rgba(255,255,255,0.4)', display: 'block', textTransform: 'uppercase' }}>Corporate HQ</span>
+                  <span style={{ fontSize: '0.7rem', color: 'rgba(0, 0, 0, 0.4)', display: 'block', textTransform: 'uppercase' }}>Address</span>
                   <a
                     href="https://maps.app.goo.gl/DtnECkvT6S9od6Ex6"
                     target="_blank"
                     rel="noreferrer"
-                    style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--color-white)', textDecoration: 'underline' }}
+                    style={{ fontSize: '0.9rem', fontWeight: 600, color: 'var(--color-black)', textDecoration: 'underline' }}
                   >
                     Plot No 15/A, Phase II, Vitthal Udhyog Nagar, GIDC, Anand - 388121
                   </a>
@@ -155,7 +155,7 @@ export default function Footer() {
                       onChange={handleInputChange}
                       className="form-input"
                       style={{
-                        backgroundColor: 'rgba(255,255,255,0.05)',
+                        backgroundColor: 'rgba(255, 255, 255, 0.05)',
                         border: '1px solid rgba(255,255,255,0.1)',
                         color: 'var(--color-white)'
                       }}
@@ -253,7 +253,7 @@ export default function Footer() {
                     marginTop: '0.5rem'
                   }}
                 >
-                  Submit  Inquiry <Send size={16} />
+                  Submit  Enquiry <Send size={16} />
                 </button>
               </form>
             )}
@@ -274,9 +274,7 @@ export default function Footer() {
               alt="Signate logo"
               style={{ height: '150px', width: 'auto', objectFit: 'contain', maxWidth: '220px' }}
             />
-            <p style={{ fontSize: '0.85rem', color: 'rgba(255, 255, 255, 0.6)', lineHeight: 1.5, maxWidth: '280px', fontWeight: 300 }}>
-              Specialized biochemistry and molecular animal wellness networks formulated by doctoral bioscientists.
-            </p>
+            
           </div>
 
           {/* Directory */}
@@ -285,30 +283,59 @@ export default function Footer() {
                Navigation
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.85rem' }}>
-              <a href="#home" style={{ color: 'rgba(255,255,255,0.7)' }} onMouseEnter={(e) => e.target.style.color = 'var(--color-gold)'} onMouseLeave={(e) => e.target.style.color = 'rgba(255,255,255,0.7)'}>Home</a>
-              <a href="#about" style={{ color: 'rgba(255,255,255,0.7)' }} onMouseEnter={(e) => e.target.style.color = 'var(--color-gold)'} onMouseLeave={(e) => e.target.style.color = 'rgba(255,255,255,0.7)'}>About Us</a>
-              <a href="#catalog" style={{ color: 'rgba(255,255,255,0.7)' }} onMouseEnter={(e) => e.target.style.color = 'var(--color-gold)'} onMouseLeave={(e) => e.target.style.color = 'rgba(255,255,255,0.7)'}>Products</a>
-              <a href="#services" style={{ color: 'rgba(255,255,255,0.7)' }} onMouseEnter={(e) => e.target.style.color = 'var(--color-gold)'} onMouseLeave={(e) => e.target.style.color = 'rgba(255,255,255,0.7)'}>Services</a>
+              <a href="#home" style={{ color: 'rgba(0, 0, 0, 0.7)' }} onMouseEnter={(e) => e.target.style.color = 'var(--color-gold)'} onMouseLeave={(e) => e.target.style.color = 'rgba(0, 0, 0, 0.7)'}>Home</a>
+              <a href="#about" style={{ color: 'rgba(0, 0, 0, 0.7)' }} onMouseEnter={(e) => e.target.style.color = 'var(--color-gold)'} onMouseLeave={(e) => e.target.style.color = 'rgba(0, 0, 0, 0.7)'}>About Us</a>
+              <a href="#catalog" style={{ color: 'rgba(0, 0, 0, 0.7)' }} onMouseEnter={(e) => e.target.style.color = 'var(--color-gold)'} onMouseLeave={(e) => e.target.style.color = 'rgba(0, 0, 0, 0.7)'}>Products</a>
+              <a href="#services" style={{ color: 'rgba(0, 0, 0, 0.7)' }} onMouseEnter={(e) => e.target.style.color = 'var(--color-gold)'} onMouseLeave={(e) => e.target.style.color = 'rgba(0, 0, 0, 0.7)'}>Services</a>
             </div>
           </div>
 
-          {/* Compliance & Regulatory notes */}
+          {/* Social media links  */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
             <h4 style={{ fontSize: '0.8rem', fontWeight: 800, textTransform: 'uppercase', color: 'var(--color-gold)', letterSpacing: '0.5px' }}>
-              Regulatory & Standards
+              Connect on Social Media 
             </h4>
-            <p style={{ fontSize: '0.75rem', color: 'rgba(255, 255, 255, 0.5)', lineHeight: 1.5, fontWeight: 300 }}>
-              All Signate formulations represent feed supplements and biological adjuvants. They do not contain scheduled prescription drugs. Always consult registered veterinarians for severe clinical pathologies.
-            </p>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem', fontSize: '0.85rem' }}>
+              <a
+                href="https://www.linkedin.com/company/signate-animal-health-and-nutrition-pvt-ltd/?viewAsMember=true"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: 'rgba(0, 0, 0, 0.7)', display: 'inline-flex', alignItems: 'center', gap: '0.55rem', width: 'fit-content' }}
+                onMouseEnter={(e) => e.currentTarget.style.color = 'var(--color-gold)'}
+                onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(0, 0, 0, 0.7)'}
+              >
+                <Linkedin size={17} />
+                LinkedIn
+              </a>
+              <a
+                href="https://www.instagram.com/signate_ahn/"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: 'rgba(0, 0, 0, 0.7)', display: 'inline-flex', alignItems: 'center', gap: '0.55rem', width: 'fit-content' }}
+                onMouseEnter={(e) => e.currentTarget.style.color = 'var(--color-gold)'}
+                onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(0, 0, 0, 0.7)'}
+              >
+                <Instagram size={17} />
+                Instagram
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61551727821548"
+                target="_blank"
+                rel="noreferrer"
+                style={{ color: 'rgba(0, 0, 0, 0.7)', display: 'inline-flex', alignItems: 'center', gap: '0.55rem', width: 'fit-content' }}
+                onMouseEnter={(e) => e.currentTarget.style.color = 'var(--color-gold)'}
+                onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(0, 0, 0, 0.7)'}
+              >
+                <Facebook size={17} />
+                Facebook
+              </a>
+              </div>
           </div>
         </div>
 
-        <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.08)', paddingTop: '2rem', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem', fontSize: '0.75rem', color: 'rgba(255, 255, 255, 0.4)', fontWeight: 500 }}>
+        <div style={{ borderTop: '1px solid rgba(255, 255, 255, 0.08)', paddingTop: '2rem', display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem', fontSize: '0.75rem', color: 'rgba(0, 0, 0, 0.4)', fontWeight: 500 }}>
           <span>© {new Date().getFullYear()} Signate Animal Health & Nutrition Pvt. Ltd. All rights reserved.</span>
-          <div style={{ display: 'flex', gap: '1.5rem' }}>
-            <a href="#home" style={{ color: 'rgba(255,255,255,0.4)' }}>ISO Standards Certifications</a>
-            <a href="#home" style={{ color: 'rgba(255,255,255,0.4)' }}>R&D Clinical Guidelines</a>
-          </div>
+          
         </div>
       </div>
 
