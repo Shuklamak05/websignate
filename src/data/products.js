@@ -1145,7 +1145,7 @@ export const products = [
       "Prevents Ruminal Lactic Acid Spikes: Stimulates Megasphaera elsdenii to convert excess lactic acid into stable propionate, keeping pH steady.",
       "Improves Milk Solids: Increases overall volatile fatty acid production, supporting higher volumetric milk and milk solids yield."
     ],
-    "dosage": "For Industrial Feed Milling Operations: 1–2 Kg per Metric Ton (MT) of finished compound feed.Direct Farm Dosing: 5-10 g per animal daily.",
+    "dosage": "1–2 Kg per MT of feed",
     "color": "#264653",
     "icon": "Leaf",
     "image": "/product_panels/sigyeast.jpg",
@@ -1219,7 +1219,7 @@ export const products = [
       "Reduces Diarrhea Incidences: Forms a protective physical barrier on the intestinal wall, minimizing pathogen setup and matching scours.",
       "Water/Milk Soluble Setup: Designed to mix easily into warm milk replacers or water bottles for stress-free dosing."
     ],
-    "dosage": "5 g per calf daily. Mix exactly 5 g of SigProe CALF powder into warm water or milk in a feeding bottle, shake well to form a uniform suspension, and administer directly into the calf's mouth.",
+    "dosage": "5 g/animal/day. Mix 5 g of SigProe™ CALF in warm water or milk in a bottle, shake well and administer directly into calf's mouth.",
     "color": "#e76f51",
     "icon": "Activity",
     "image": "/product_panels/sigpro_calf.jpg",
@@ -1250,7 +1250,7 @@ export const products = [
       "Masks Unpleasant Feed Odors: Neutralizes strong odors from blood meal, urea, or oxidized fats, preventing feed rejection.",
       "Fully Customizable Formulations: Designed to let large integrators develop unique custom smell signatures that align with their commercial goals."
     ],
-    "dosage": "Standard Dosage: 300–500 g per Metric Ton (MT) of finished compound feed.",
+    "dosage": "60-80g/animal/day",
     "color": "#457b9d",
     "icon": "Sparkles",
     "image": "/product_panels/flavour_range.jpg",
