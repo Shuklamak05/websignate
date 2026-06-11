@@ -948,13 +948,13 @@ export const products = [
   },
   {
     "id": "sigbuff",
-    "name": "Sigbuff™",
+    "name": "SigBuff™",
     "category": "ruminant",
     "tagline": " Rumen Buffer with Lithothamnium",
     "description": "SigBuff™ is a high performance rumen buffer formulated with natural Lithothamnium (calcified seaweed), bicarbonate, magnesium oxide and active dry yeast. It maintains stable rumen pH over an extended period through the slow, sustained rebase of buffering components.",
     "indications": [
-      "Enhances Fertility & Conception",
-      "Management of Anestrous & Repeat Breeding",
+      "Extended Rumen Buffering",
+      "SARA Prevention",
       "Milk Fat Depression Correction",
       "Heat Stress Acidosis Mitigation"
     ],
@@ -1229,10 +1229,10 @@ export const products = [
   },
   {
     "id": "sigflav-feed-flavor-range",
-    "name": "SigFlav Feed Flavor Range",
+    "name": "SigFlav™",
     "category": "ruminant",
     "tagline": "Feed Flavors",
-    "description": "The SigFlav Feed Flavor Range is an advanced palette of standardized and customizable sensory additives engineered to optimize feed palatability, mask off-odors, and maximize feed consumption across varied species, regions, and feed manufacturing systems. Every variant is available in both a standard aromatic profile (SigFlav) and an enhanced sweetening matrix (SigFlav Pro) to provide complete flexibility in feed formulation.",
+    "description": "The SigFlav Feed Flavor Range is an advanced palette of standardized and customizable sensory additives developed to optimize feed palatability, mask off-odors, and maximize feed consumption across varied species, regions, and feed manufacturing systems. Every variant is available in both a standard aromatic profile (SigFlav) and an enhanced sweetening matrix (SigFlav Pro) to provide complete flexibility in feed formulation.",
     "indications": [
       "Enhances Feed palatability",
       "Improves Feed Acceptance",
