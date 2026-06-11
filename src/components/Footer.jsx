@@ -65,7 +65,7 @@ export default function Footer() {
                 </div>
                 <div>
                   <span style={{ fontSize: '0.7rem', color: 'rgba(0, 0, 0, 0.4)', display: 'block', textTransform: 'uppercase' }}>  Email</span>
-                  <a href="mailto:signatean@gmail.com" style={{ fontSize: '0.9rem', fontWeight: 600, color: 'rgb(0, 0, 0)' }}>signatean@gmail.com , info@signate.co.in</a>
+                  <a href="mailto:signatean@gmail.com,info@signate.co.in" style={{ fontSize: '0.9rem', fontWeight: 600, color: 'rgb(0, 0, 0)' }}>signatean@gmail.com , info@signate.co.in</a>
                 </div>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>

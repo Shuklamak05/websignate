@@ -28,7 +28,7 @@ export const products = [
       "Chronic Pain Management: Protects aging senior pets from persistent joint discomfort, restoring structural flexibility and movement.",
       "Dual-Phase Structural Matrix: Combines fast-absorbing Type I & III collagen peptides with undenatured Type II collagen for complete joint care."
     ],
-    "dosage": "Dosage Guideline: 1 tablet per 10kg body weight daily, or as advised by a veterinarian.Powder Form Administration: - Pets <15 Kg: 2/3 scoop daily- Pets 16–30 Kg: 3/4 scoop daily- Pets >30 Kg: 1 full scoop daily (Average Dose: 3–5 g per day).",
+    "dosage": "Pets <15 Kg: 2/3 scoop daily- Pets 16–30 Kg: 3/4 scoop daily- Pets >30 Kg: 1 full scoop daily (Average Dose: 3–5 g per day).",
     "color": "#e07a5f",
     "icon": "Activity",
     "image": "/product_panels/collasig_bj_pro.jpg",
@@ -63,7 +63,7 @@ export const products = [
       "Soothes Itching & Redness: Dampens systemic skin allergic pathways, reducing scratching and self-trauma.",
       "Reinforces the Epidermal Barrier: Helps heal red, scaly skin and protects against environmental allergens."
     ],
-    "dosage": "Recommended Feeding Guideline: 3–5 g per day mixed directly into wet or dry food.Weight-Stratified Serving Sizes:- Pets <15 Kg: 2/3 scoop daily- Pets 16–30 Kg: 3/4 scoop daily- Pets >30 Kg: 1 full scoop daily.",
+    "dosage": "Pets <15 Kg: 2/3 scoop daily- Pets 16–30 Kg: 3/4 scoop daily- Pets >30 Kg: 1 full scoop daily.",
     "color": "#3d5a80",
     "icon": "Sparkles",
     "image": "/product_panels/collasig_sh_pro.jpg",
@@ -110,7 +110,7 @@ export const products = [
       "Improves Nutrient Uptake: A full panel of digestive enzymes breaks down proteins, fats, and starches, maximizing nutrient absorption.",
       "Supports Gut-Derived Immunity: Boosts intestinal antibody production, strengthening defense systems against pathogens."
     ],
-    "dosage": "Powder Jar Dosing Matrix (3–5 g/day):- Pets <15 Kg: 2/3 scoop daily | - Pets 16–30 Kg: 3/4 scoop daily | - Pets >30 Kg: 1 full scoop daily.Convenient Unit-Dose Sachet Guidelines:- Cats & Small Dogs (<15 Kg): 1/2 sachet daily- Medium Dogs (15–40 Kg): 1 full sachet daily- Large/Giant Dogs (>40 Kg): 2 full sachets daily.",
+    "dosage": " Pets <15 Kg: 2/3 scoop daily | - Pets 16–30 Kg: 3/4 scoop daily | - Pets >30 Kg: 1 full scoop daily. Sachet Guidelines:- Cats & Small Dogs (<15 Kg): 1/2 sachet daily- Medium Dogs (15–40 Kg): 1 full sachet daily- Large/Giant Dogs (>40 Kg): 2 full sachets daily.",
     "color": "#81b29a",
     "icon": "Shield",
     "image": "/product_panels/sigproe.jpg",
@@ -139,7 +139,7 @@ export const products = [
       "Systemic Anti-Inflammatory Impact: Naturally dampens tissue inflammation pathways to relieve joint stiffness and chronic pain.",
       "Dual-Purpose Topical Use: Can be massaged directly onto arthritic joints or dry, itchy skin to speed up structural healing and enhance coat shine."
     ],
-    "dosage": "Oral Administration Guidelines (Administer twice daily):- Small Dogs & Cats: 2 sprays orally twice a day.- Medium Breed Dogs: 3 sprays orally twice a day.- Large Breed Dogs: 4 sprays orally twice a day.Topical Application Instructions:- Localized Skin Allergies: Apply 2–3 sprays directly over the affected skin and rub in gently once daily.- Arthritic Joints: Apply 2–3 sprays over the joint area twice daily and massage thoroughly.",
+    "dosage": "(Administer twice daily):- Small Dogs & Cats: 2 sprays twice a day.- Medium Breed Dogs: 3 sprays twice a day.- Large Breed Dogs: 4 sprays twice a day.Topical Application Instructions:- Localized Skin Allergies: Apply 2–3 sprays directly over the affected skin and rub in gently once daily.- Arthritic Joints: Apply 2–3 sprays over the joint area twice daily and massage thoroughly.",
     "color": "#f4a261",
     "icon": "TrendingUp",
     "image": "/product_panels/lenire.jpg",
@@ -182,7 +182,7 @@ export const products = [
       "Speeds Up Disease Recovery: Helps sick or recovering pets regain strength, vitality, and health much faster.",
       "Balances Inflammatory Pathways: Standardizes cellular cytokine output to control tissue-damaging inflammation."
     ],
-    "dosage": "Recommended General Daily Dosing: 1–3 g per day based on size.Weight-Stratified Scoop Guidelines (Using enclosed measuring scoop):- Dogs & Cats up to 20 Kg: 1 scoop daily.- Medium/Large Dogs 20–40 Kg: 2 scoops daily.- Giant Breed Dogs over 40 Kg: 3 scoops daily.",
+    "dosage": "Dogs & Cats up to 20 Kg: 1 scoop daily.- Medium/Large Dogs 20–40 Kg: 2 scoops daily.- Giant Breed Dogs over 40 Kg: 3 scoops daily.",
     "color": "#2a9d8f",
     "icon": "Leaf",
     "image": "/product_panels/sigimmune.jpg",
@@ -229,7 +229,7 @@ export const products = [
       "Supports Senior Digestion: Supplies vital enzymes and stable probiotics to settle sensitive senior stomachs and maximize nutrient uptake.",
       "Cardiovascular & Bladder Reinforcement: Features L-Carnitine and concentrated cranberry extracts to maintain heart muscle strength and protect bladder health."
     ],
-    "dosage": "Recommended Senior Maintenance Dosing: 3–5 g per day.Weight-Stratified Administration Guidelines:- Aging Senior Dogs up to 15 Kg: 2/3 scoop daily.- Senior Dogs 16–30 Kg: 3/4 scoop daily.- Large Senior Dogs over 30 Kg: 1 full scoop daily.",
+    "dosage": "Senior Dogs up to 15 Kg: 2/3 scoop daily.- Senior Dogs 16–30 Kg: 3/4 scoop daily.- Large Senior Dogs over 30 Kg: 1 full scoop daily.",
     "color": "#e07a5f",
     "icon": "Box",
     "image": "/product_panels/sencare.jpg",
@@ -276,7 +276,7 @@ export const products = [
       "Quickly Stabilizes Mood Pathways: L-Theanine and Phosphatidylserine work together to soothe pacing and nightly vocalizations.",
       "Supplies Immediate Brain Energy: Medium Chain Triglycerides (MCTs) cross the blood-brain barrier to provide a clean energy source for aging brain cells."
     ],
-    "dosage": "Recommended Behavioral Daily Intake: 1–3 g per day.Weight-Stratified Measuring Guidelines:- Small Dogs & Cats (<20 Kg): 1 level scoop daily.- Medium/Large Dogs (20–40 Kg): 2 level scoops daily.- Giant Breed Dogs (>40 Kg): 3 level scoops daily.",
+    "dosage": "Small Dogs & Cats (<20 Kg): 1 level scoop daily.- Medium/Large Dogs (20–40 Kg): 2 level scoops daily.- Giant Breed Dogs (>40 Kg): 3 level scoops daily.",
     "color": "#3d5a80",
     "icon": "Activity",
     "image": "/product_panels/neurosig.jpg",
@@ -323,7 +323,7 @@ export const products = [
       "Boosts Milk Yield and Component Values: Supports abundant milk flow and rich antibody content for nursing puppies.",
       "Protects Maternal Minerals: Balanced calcium, iron, and trace elements prevent clinical exhaustion and milk fever."
     ],
-    "dosage": "Recommended Maternal Intake: 1–3 g per day mixed into food.Weight-Stratified Dosing Guidelines:- Pregnant/Lactating Females up to 20 Kg: 1 scoop daily.- Females 20–40 Kg: 2 scoops daily.- Large/Giant Breeding Females over 40 Kg: 3 scoops daily.",
+    "dosage": "Pregnant Females up to 20 Kg: 1 scoop daily.- Females 20–40 Kg: 2 scoops daily.- Large Females over 40 Kg: 3 scoops daily.",
     "color": "#81b29a",
     "icon": "Sparkles",
     "image": "/product_panels/sigcare.jpg",
@@ -370,7 +370,7 @@ export const products = [
       "Improves Stud Endurance: L-Carnitine and adaptogens provide sustainable physical stamina and muscle strength.",
       "Maximizes Insemination Success Rates: Enhances cell health, reducing breeding failures and ensuring larger litter sizes."
     ],
-    "dosage": "Recommended Stud Daily Dosing: 1–3 g per day based on size.Weight-Stratified Scoop Guidelines:- Stud Dogs up to 20 Kg: 1 scoop daily.- Stud Dogs 20–40 Kg: 2 scoops daily.- Large/Giant Stud Dogs over 40 Kg: 3 scoops daily.",
+    "dosage": "Stud Dogs up to 20 Kg: 1 scoop daily.- Stud Dogs 20–40 Kg: 2 scoops daily.- Large/Giant Stud Dogs over 40 Kg: 3 scoops daily.",
     "color": "#f4a261",
     "icon": "Shield",
     "image": "/product_panels/sigmotile.jpg",
@@ -417,7 +417,7 @@ export const products = [
       "Enhances Uterine Blood Flow: L-Arginine improves vascular circulation to the reproductive organs, supporting proper embryo setup.",
       "Maximizes Litter Sizes: Optimizes cellular conditions to support healthy embryonic survival, ensuring larger, uniform litters."
     ],
-    "dosage": "Recommended Daily Dosage: 1–3 g per day based on size.Weight-Stratified Scoop Guidelines:- Female Breeding Dogs up to 20 Kg: 1 scoop daily.- Female Dogs 20–40 Kg: 2 scoops daily.- Large/Giant Breeding Females over 40 Kg: 3 scoops daily.",
+    "dosage": "Female Breeding Dogs up to 20 Kg: 1 scoop daily.- Female Dogs 20–40 Kg: 2 scoops daily.- Large/Giant Breeding Females over 40 Kg: 3 scoops daily.",
     "color": "#2a9d8f",
     "icon": "TrendingUp",
     "image": "/product_panels/fertisig.jpg",
@@ -487,7 +487,7 @@ export const products = [
       "Prevents Secondary Wound Infections: Strengthens systemic immune function, sending vital defense cells directly to the wound site.",
       "NMN-Driven Cellular Recovery: Boosts cellular energy generation, speeding up repair mechanisms in senior or weak pets."
     ],
-    "dosage": "Recommended Oral Dosing Regime (Mix powder directly into wet food or jaggery/water paste):- Small Dogs & Cats up to 20 Kg: 1/2 sachet daily.- Medium Breed Dogs 20–45 Kg: 1 full sachet daily.- Large/Giant Breed Dogs over 45 Kg: 2 full sachets daily.",
+    "dosage": "Small Dogs & Cats up to 20 Kg: 1/2 sachet daily.- Medium Breed Dogs 20–45 Kg: 1 full sachet daily.- Large/Giant Breed Dogs over 45 Kg: 2 full sachets daily.",
     "color": "#3d5a80",
     "icon": "Box",
     "image": "/product_panels/regeneron.jpg",
