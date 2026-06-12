@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Signate favicon">
+  <rect width="512" height="512" fill="#4d1218"/>
+  <rect x="56" y="56" width="400" height="400" rx="92" fill="#313131"/>
+  <text
+    x="256"
+    y="304"
+    text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="150"
+    font-weight="700"
+    fill="#0bb06a"
+  >Sig</text>
+</svg>
