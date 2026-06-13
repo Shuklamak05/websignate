@@ -3,8 +3,8 @@ import { Search, CheckCircle2, ChevronRight, X, AlertCircle, ShoppingBag } from 
 import { products } from '../data/products';
 
 const CATEGORY_CONFIG = [
-  { id: 'ruminant', label: 'Dairy Cattle', productCategory: 'ruminant' },
   { id: 'companion', label: 'Companion Animals', productCategory: 'companion' },
+  { id: 'ruminant', label: 'Dairy Cattle', productCategory: 'ruminant' },
   { id: 'equine', label: 'Equine', productCategory: 'equine' },
   { id: 'poultry', label: 'Poultry', productCategory: null }
 ];
@@ -282,7 +282,7 @@ export default function ProductCatalog({ selectedProductId, setSelectedProductId
   const [searchQuery, setSearchQuery] = useState('');
   const [activeMainCategoryId, setActiveMainCategoryId] = useState(() => {
     const categoryParam = new URLSearchParams(window.location.search).get('category');
-    return getCategoryById(categoryParam)?.id || 'ruminant';
+    return getCategoryById(categoryParam)?.id || 'companion';
   });
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const [isCategoryExpanded, setIsCategoryExpanded] = useState(() => new URLSearchParams(window.location.search).get('expanded') === 'true');
@@ -291,7 +291,7 @@ export default function ProductCatalog({ selectedProductId, setSelectedProductId
     const syncFromLocation = () => {
       const params = new URLSearchParams(window.location.search);
       const categoryParam = params.get('category');
-      setActiveMainCategoryId(getCategoryById(categoryParam)?.id || 'ruminant');
+      setActiveMainCategoryId(getCategoryById(categoryParam)?.id || 'companion');
       setIsCategoryExpanded(params.get('expanded') === 'true');
     };
 
