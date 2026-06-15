@@ -3,6 +3,7 @@ import { Mail, Phone, Clock, MapPin, Send, CheckCircle, HelpCircle, Linkedin, In
 import signateLogo from '../../IMages/signate logo.png';
 
 export default function Footer() {
+  const whatsappNumber = '919619689894';
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -20,11 +21,19 @@ export default function Footer() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Simulate instant local submission with zero lag
+    const inquiryMessage = [
+      'New inquiry from Signate website',
+      `Name: ${formData.name}`,
+      `Email: ${formData.email}`,
+      `Phone: ${formData.phone || 'Not provided'}`,
+      `Animal Category: ${formData.companionType}`,
+      `Clinical Focus: ${formData.concern}`,
+      `Message: ${formData.message}`
+    ].join('\n');
+
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(inquiryMessage)}`;
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
     setFormSubmitted(true);
-    setTimeout(() => {
-      // Keep successfully submitted but let them close or reset
-    }, 4000);
   };
 
   const resetForm = () => {
@@ -124,7 +133,7 @@ export default function Footer() {
                   Inquiry Dispatched
                 </h3>
                 <p style={{ fontSize: '0.9rem', color: 'rgba(255,255,255,0.8)', maxWidth: '340px', lineHeight: 1.5 }}>
-                  Thank you! Your clinical case dossier has been successfully transferred to Signate & the R&D panel. A reply will be routed to <strong>{formData.email}</strong> shortly.
+                  Thank you! Your inquiry has been prepared for WhatsApp and sent to our team at <strong>+91-96196 89894</strong>. We’ll reply to <strong>{formData.email}</strong> shortly.
                 </p>
                 <button
                   onClick={resetForm}
@@ -179,6 +188,23 @@ export default function Footer() {
                       placeholder="e.g. jane@clinic.com"
                     />
                   </div>
+                </div>
+
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+                  <label style={{ fontSize: '0.75rem', fontWeight: 700, color: 'rgba(255,255,255,0.6)' }}>Phone Number</label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    className="form-input"
+                    style={{
+                      backgroundColor: 'rgba(255,255,255,0.05)',
+                      border: '1px solid rgba(255,255,255,0.1)',
+                      color: 'var(--color-white)'
+                    }}
+                    placeholder="e.g. +91 98765 43210"
+                  />
                 </div>
 
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }} className="form-row-2">
